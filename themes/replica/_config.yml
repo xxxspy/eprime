@@ -1,10 +1,10 @@
 # left-side user profile
 avatar: # by default https://octodex.github.com/images/baracktocat.jpg
-location:
-email:
+location:  Bei Jing, China
+email: 675495787[at]qq.com
 social:
-  github:
-  weibo:
+  github: https://github.com/xxxspy
+  weibo: https://weibo.com/1312359657
   linkedin:
 
 # navbar menu
