@@ -1,0 +1,13 @@
+<% var links = config.links || theme.links; if(links){ %>
+<h4>友情链接</h4>
+<ul class="link-ul desktop-only">
+  <% for(var name in links){ %>
+    <li>
+      <a href="<%= links[name] %>" target="_blank">
+        <i class="fa fa-link"></i>
+        <%= name %>
+      </a>
+    </li>
+  <% } %>
+</ul>
+<% } %>

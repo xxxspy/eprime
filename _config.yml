@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: PsychologyTechnique
+title: PsychoTech
 subtitle: 心理学技术网站
 description: 致力于为心理学人解决技术问题
 keywords: eprime,e-prime,psychology,psychopy
@@ -79,3 +79,9 @@ theme: replica
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+
+links:
+  DataScience: http://mlln.cn
+  猪皮特: http://jupyter.cn
+  PsychoTech: http://eprime.cn
