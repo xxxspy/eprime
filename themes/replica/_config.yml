@@ -1,5 +1,6 @@
 # left-side user profile
-avatar: # by default https://octodex.github.com/images/baracktocat.jpg
+favicon: /images/head_3.png
+avatar: /images/head.png
 location:  Bei Jing, China
 email: 675495787[at]qq.com
 social:

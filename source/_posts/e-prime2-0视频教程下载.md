@@ -3,6 +3,7 @@ title: e-prime2.0视频教程下载
 date: 2018-05-04 10:56:44
 tags: eprime
 author: eprime.cn
+category: eprime
 ---
 
 这是从youtube上下载的eprime教程, 我放到网盘里, 供大家下载. 因为比较忙, 我会慢慢更新.
