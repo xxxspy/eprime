@@ -30,9 +30,10 @@ var recentPosts = page.posts.data.slice(0, 6);
                   <%= post.categories.data[0] ? post.categories.data[0].name : 'Uncategorized' %>
                 </a>
               </span>
+              <i class="fa fa-tag"></i>
               <% post.tags.forEach(function(tag){ %>
                 <a href="<%= tag.path %>">
-                  <i class="fa fa-tag"></i>
+                  
                   <%= tag.name %>
                 </a> 
               <% }) %>

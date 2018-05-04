@@ -28,11 +28,19 @@ var nav_selected = page.path.split('/')[0];
           </p>
           <ul class="tag-list clearfix">
             <% post.tags.forEach(function(tag){ %>
-            <li class="tag-list-item"><%= tag.name %></li>
+            <li class="tag-list-item">
+              <a href="<%= tag.path %>">
+                <%= tag.name %>
+              </a>
+            </li>
             <% }) %>
           </ul>
           <div class="post-info">
-            <span><i class="fa fa-folder-open"></i> <%= category %> </span>
+            <span><i class="fa fa-folder-open"></i> 
+              <a href="<%= post.categories.data[0] ? post.categories.data[0].path : '#' %>">
+              <%= post.categories.data[0] ? post.categories.data[0].name : 'Uncategorized' %>
+              </a> 
+            </span>
             <span><i class="fa fa-tag"></i> <%= post.tags.length %> </span>
             <span>Published {{moment(<%= post.date.valueOf() %>).fromNow()}}</span>
           </div>
