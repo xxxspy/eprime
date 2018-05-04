@@ -91,6 +91,6 @@ gitalk:
   client_id: 131c92915a8e4a9d4b2b
   client_secret: 52fb195416ac13af146a07a68394ba6a3c538fe4
   repo: eprime
-  owner: [xxxspy]
+  owner: xxxspy
 
 baidutongji: 1dc589ea02621bcd82bea559aa46ece9
