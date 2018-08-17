@@ -5,11 +5,14 @@
 # Site
 title: PsychoTech
 subtitle: 心理学技术网站
-description: 致力于为心理学人解决技术问题
-keywords: eprime,e-prime,psychology,psychopy
+description: 天下没有难做的科研
+keywords: eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos
 author: Sun
 language: zh-CN
 timezone: Asia/Shanghai
+email: eprime[at]163.com
+qq: 3597392976
+tel: 17777785555
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
