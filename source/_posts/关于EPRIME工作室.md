@@ -1,7 +1,7 @@
 ---
 title: 关于EPRIME工作室
 date: 2018-08-17 08:11:28
-tags: [spss, 数据分析, python, amos, sas, eviews, stata]
+tags: [spss, 数据分析, python, amos, sas, eviews, stata, 服务内容]
 ---
 
 ### EPRIME数据分析工作室简介

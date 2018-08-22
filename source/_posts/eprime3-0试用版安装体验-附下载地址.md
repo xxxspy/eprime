@@ -1,8 +1,9 @@
 ---
 title: eprime3.0试用版安装体验(附下载地址)
 date: 2018-05-04 15:10:10
-tags: eprime
+tags: [eprime, 服务内容]
 category: eprime
+top: true
 ---
 
 今天我感受了一下eprime3.0(e-prime3.0)的试用版, 说实话eprime的优化明显. 作为一个eprime的重度使用患者, 看到eprime对之前痛点的优化还是很高兴的. 我们大概可以看一下eprime3的一些特点:

@@ -1,7 +1,8 @@
 ---
 title: eprime大量案例程序下载
 date: 2018-05-04 20:14:23
-tags: eprime
+tags: [eprime, 服务内容]
+top: true
 ---
 
 这是我从网上收集的eprime/e-prime程序案例, 有些改改就能作为你自己的实验程序, 大家可以随意下载. 下载链接附在文章最后.
