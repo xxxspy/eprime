@@ -4,10 +4,10 @@
 
 # Site
 title: EPRIME工作室
-subtitle: 心理学技术网站
+subtitle: 代做数据分析
 description: 天下没有难做的科研
 keywords: eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos
-author: Sun
+author: 数据分析服务
 language: zh-CN
 timezone: Asia/Shanghai
 email: eprime[at]163.com
@@ -20,6 +20,7 @@ url: http://eprime.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+service_url: /tags/服务内容/
 
 # Directory
 source_dir: source
