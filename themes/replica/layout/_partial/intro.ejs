@@ -14,8 +14,8 @@ var avatar = config.avatar || theme.avatar || 'https://octodex.github.com/images
   <div class="blog-intro-user">
     <img class="avatar" src="<%= avatar %>">
     <div class="user-name">
-      <div class="blog-title"><%= theme.title %></div>
-      <div class="blog-author"><%= theme.author %></div>
+      <div class="blog-title"><a href="<%= config.service_url %>"><%= theme.title %></a></div>
+      <div class="blog-author"><a href="<%= config.service_url %>"><%= theme.author %></a></div>
         <ul class="user-detail mobile-only">
     <% if(location){ %>
     <li>

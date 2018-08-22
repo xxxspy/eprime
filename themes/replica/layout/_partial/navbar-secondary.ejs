@@ -3,6 +3,7 @@ var isOverview = ['tags', 'archives', 'categories'].indexOf(nav_selected) === -1
 %>
 <nav class="blog-detail-nav desktop-only">
   <ul class="clearfix">
+    <li><a href="<%= config.service_url %>">Services</a></li>
     <li class="<%= isOverview ? 'selected' : '' %>">
       <a href="<%= config.root %>">Overview</a></li>
     <li class="<%= nav_selected === 'archives' ? 'selected' : '' %>">
