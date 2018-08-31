@@ -11,7 +11,15 @@ var publishTimestamp = page.date.valueOf();
       {{moment(<%= publishTimestamp %>).fromNow()}}
     </span>
   </h3>
-
+  <ul class="tag-list clearfix">
+    <% page.tags.forEach(function(tag){ %>
+      <li class="tag-list-item">
+        <a href="<%= url_for(tag.path) %>">
+          <%= tag.name %>
+        </a>
+      </li>
+      <% }) %>
+  </ul>
   <article class="post-content">
     <h1><%= page.title || 'Untitle' %></h1>
     <%- page.content %>

@@ -26,13 +26,13 @@ var recentPosts = page.posts.data.slice(0, 30);
             </p>
             <p class="post-info desktop-only">
               <span><i class="fa fa-folder-open"></i> 
-                <a href="<%= post.categories.data[0] ? post.categories.data[0].path : '#' %>">
+                <a href="<%= post.categories.data[0] ? url_for(post.categories.data[0].path) : '#' %>">
                   <%= post.categories.data[0] ? post.categories.data[0].name : 'Uncategorized' %>
                 </a>
               </span>
               <i class="fa fa-tag"></i>
               <% post.tags.forEach(function(tag){ %>
-                <a href="<%= tag.path %>">
+                <a href="<%= url_for(tag.path) %>">
                   
                   <%= tag.name %>
                 </a> 

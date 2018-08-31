@@ -29,7 +29,7 @@ var nav_selected = page.path.split('/')[0];
           <ul class="tag-list clearfix">
             <% post.tags.forEach(function(tag){ %>
             <li class="tag-list-item">
-              <a href="<%= tag.path %>">
+              <a href="<%= url_for(tag.path) %>">
                 <%= tag.name %>
               </a>
             </li>
@@ -37,7 +37,7 @@ var nav_selected = page.path.split('/')[0];
           </ul>
           <div class="post-info">
             <span><i class="fa fa-folder-open"></i> 
-              <a href="<%= post.categories.data[0] ? post.categories.data[0].path : '#' %>">
+              <a href="<%= post.categories.data[0] ? url_for(post.categories.data[0].path) : '#' %>">
               <%= post.categories.data[0] ? post.categories.data[0].name : 'Uncategorized' %>
               </a> 
             </span>
