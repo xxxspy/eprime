@@ -17,23 +17,23 @@ toc: true
 
 ### 服务介绍: 
  
-<img src="/taobao/TB2s8gAbLAPyuJjy0FcXXbCzpXa_!!1026234793.jpg" >
+<img src="/taobao/TB2Ig3zhC7PL1JjSZFHXXcciXXa_!!773291333.jpg" >
 
 
 
 ### 客户评价: 
-{% blockquote [2018年03月18日 11:10] %}卖家服务态度很好，虽然我只要求卖家负责实证分析部分，他顺便建议也给我写了，真的非常感谢！并且写论文遇到问题时，还可以请教卖家提出意见给予参考，并且售后也有保障，真的太好了，不要为论文发愁了，再次感谢卖家！{% endblockquote %}
-{% blockquote [2018年03月26日 18:49] %}很有耐心的帮忙解释指引了我的数据{% endblockquote %}
-{% blockquote [2018年03月28日 14:25] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
-{% blockquote [2018年03月18日 11:10] %}卖家服务态度很好，虽然我只要求卖家负责实证分析部分，他顺便建议也给我写了，真的非常感谢！并且写论文遇到问题时，还可以请教卖家提出意见给予参考，并且售后也有保障，真的太好了，不要为论文发愁了，再次感谢卖家！{% endblockquote %}
-{% blockquote [2018年03月26日 18:49] %}很有耐心的帮忙解释指引了我的数据{% endblockquote %}
-{% blockquote [2018年03月28日 14:25] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
-{% blockquote [2018年03月18日 11:10] %}卖家服务态度很好，虽然我只要求卖家负责实证分析部分，他顺便建议也给我写了，真的非常感谢！并且写论文遇到问题时，还可以请教卖家提出意见给予参考，并且售后也有保障，真的太好了，不要为论文发愁了，再次感谢卖家！{% endblockquote %}
-{% blockquote [2018年03月26日 18:49] %}很有耐心的帮忙解释指引了我的数据{% endblockquote %}
-{% blockquote [2018年03月28日 14:25] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
-{% blockquote [2018年03月18日 11:10] %}卖家服务态度很好，虽然我只要求卖家负责实证分析部分，他顺便建议也给我写了，真的非常感谢！并且写论文遇到问题时，还可以请教卖家提出意见给予参考，并且售后也有保障，真的太好了，不要为论文发愁了，再次感谢卖家！{% endblockquote %}
-{% blockquote [2018年03月26日 18:49] %}很有耐心的帮忙解释指引了我的数据{% endblockquote %}
-{% blockquote [2018年03月28日 14:25] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
-{% blockquote [2018年03月18日 11:10] %}卖家服务态度很好，虽然我只要求卖家负责实证分析部分，他顺便建议也给我写了，真的非常感谢！并且写论文遇到问题时，还可以请教卖家提出意见给予参考，并且售后也有保障，真的太好了，不要为论文发愁了，再次感谢卖家！{% endblockquote %}
-{% blockquote [2018年03月26日 18:49] %}很有耐心的帮忙解释指引了我的数据{% endblockquote %}
-{% blockquote [2018年03月28日 14:25] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
+{% blockquote [2018年07月15日 11:17] %}技术高，人超级nice。好评好评{% endblockquote %}
+{% blockquote [2018年08月11日 18:08] %}好评{% endblockquote %}
+{% blockquote [2018年08月04日 12:41] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
+{% blockquote [2018年07月15日 11:17] %}技术高，人超级nice。好评好评{% endblockquote %}
+{% blockquote [2018年08月11日 18:08] %}好评{% endblockquote %}
+{% blockquote [2018年08月04日 12:41] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
+{% blockquote [2018年07月15日 11:17] %}技术高，人超级nice。好评好评{% endblockquote %}
+{% blockquote [2018年08月11日 18:08] %}好评{% endblockquote %}
+{% blockquote [2018年08月04日 12:41] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
+{% blockquote [2018年07月15日 11:17] %}技术高，人超级nice。好评好评{% endblockquote %}
+{% blockquote [2018年08月11日 18:08] %}好评{% endblockquote %}
+{% blockquote [2018年08月04日 12:41] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
+{% blockquote [2018年07月15日 11:17] %}技术高，人超级nice。好评好评{% endblockquote %}
+{% blockquote [2018年08月11日 18:08] %}好评{% endblockquote %}
+{% blockquote [2018年08月04日 12:41] %}评价方未及时做出评价,系统默认好评!{% endblockquote %}
