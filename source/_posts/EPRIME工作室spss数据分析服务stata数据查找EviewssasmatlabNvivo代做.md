@@ -1,7 +1,7 @@
 
 ---
 title: EPRIME工作室spss数据分析服务stata数据查找Eviews sas matlab Nvivo代做
-date: 2018-08-18 12:09:10
+date: 2018-09-28 12:09:10
 tags: [stata, 服务内容]
 category: 数据分析服务
 toc: true
@@ -27,7 +27,6 @@ toc: true
 <img src="/taobao/TB2mrVdkVXXXXbSXXXXXXXXXXXX_!!2631875800.png" >
 <img src="/taobao/TB2sWQZkFXXXXaNXpXXXXXXXXXX_!!2631875800.png" >
 <img src="/taobao/TB2biULkFXXXXclXpXXXXXXXXXX_!!2631875800.png" >
-<img src="/taobao/TB2cnlfkVXXXXa.XXXXXXXXXXXX_!!2631875800.png" >
 
 
 
