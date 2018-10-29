@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    格拉布斯检验-Python实证分析 | EPRIME工作室
+  </title>
+  <meta name="description" content="天下没有难做的科研">
+  
+  <meta name="keywords" content="
+  统计的一般理论和方法,Python,统计假设检验
+  ">
+  
+  <meta name="author" content="数据分析服务">
+
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+  <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<script>
+  var _hmt = _hmt || [];
+  (function(){var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?1dc589ea02621bcd82bea559aa46ece9";
+    var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();
+</script>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+</head>
+
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head.png"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-container">
+  <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives"
+           class="header-toolbar-right"> 407 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/tags"
+           class="header-toolbar-right"> 58 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories"
+           class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">EPRIME工作室</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1540837010000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1540837010000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/统计的一般理论和方法/">
+          统计的一般理论和方法
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/Python/">
+          Python
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/统计假设检验/">
+          统计假设检验
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>格拉布斯检验-Python实证分析</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="Python数据分析服务"><a href="#Python数据分析服务" class="headerlink" title="Python数据分析服务:"></a><a href="/tags/Python/">Python</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://eprime.cn/">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://eprime.cn/2018/08/18/EPRIME工作室Python代做服务详情/">Python技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://eprime.cn/2018/08/17/关于EPRIME工作室/">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+<h3 id="格拉布斯检验"><a href="#格拉布斯检验" class="headerlink" title="格拉布斯检验:"></a>格拉布斯检验:</h3>
+<div class="p1">剔除异常值的统计检验。设总体X～N(μ，σ<sup>2</sup>)，X<sub>1</sub>，…，X<sub>n</sub>是对X的n次独立观测值，X<sub>(1)</sub>是最小观测值，X<sub>(n)</sub>是最大观测值。检验的统计量<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0147.5%5B0ba92422404f%5D.gif"></p>其中<span class="PUC01_E7"></span>和S<sup>2</sup>相应为样本均值和修正样本方差。 对于给定的显著性水平，若G<sub>1</sub>≥G(α，n)，则认为X<sub>(1)</sub>是异常值;若G<sub>n</sub>≥G(α，n)，则认为X<sub>(n)</sub>是异常值，其中G(α，n)是检验统计量的临界值，有编制好的数值表。</div>
+
+<h3 id="Python中相关概念"><a href="#Python中相关概念" class="headerlink" title="Python中相关概念"></a><a href="/tags/Python/">Python</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>格拉布斯检验</strong>: 一种检验多组测量的平均值一致性程度的统计检验方法。设l组测量值的均值分别为1,…</li>
+<li><strong>格拉布斯检验</strong>: 剔除异常值的统计检验。设总体X～N(μ,σ2),X1,…,Xn是对X的n次独立观测值,X(1)是最小观测值,X(n)是最大观测值。检验的统计量…</li>
+<li><strong>格拉布斯检验</strong>: 剔除异常值的统计检验。设总体X～N (μ,σ2),X1,…,Xn是对X的n次独立观测值,X(1)是最小观测值,X(R)是最大观测值。检验统计量Gk根据μ和σ2是否已知以及X(1)还是X(n…</li>
+<li><strong>异常值检验</strong>: 发现和剔除异常观测值的统计检验方法。异常值或离群值,是观测或试验过程中由于过失误差破坏了原有统计规律性而产生的观测值。异常值一般明显大于或小于其他观测值,故不难发现或剔除。只有在不明显场合,通过技术上的检查与核对无法断定某些观测值 (即可疑观测…</li>
+<li><strong>第四节 控制图</strong>: 一、控制图原理控制图是对制造过程质量加以测定、记录,从而进行控制的一种科学方法。图上只存在偶然波动时,产品质量将形成的某种典型分布。如果除去偶然波动外还有异常波动,则产品质量的分布必将偏离原来的典型分布。因此,根据典型分布是否偏离就能判断异常因素是否发…</li>
+<li><strong>第六节 控制图的应用实例</strong>: 一、滴丸丸重控制图例19-1:某一滴丸产品的丸重规格为30mg,用一台滴丸机进行滴丸生产,为制作丸重控制图,在生产条件稳定的情况下,每小时抽取一组样品,每组随机精密称量5丸滴丸,记录每丸丸重,共抽取样品25组,下面按步骤制作分析用控制图。第一步:收集、整理数据。将…</li>
+</ul>
+<h3 id="Python参考文献"><a href="#Python参考文献" class="headerlink" title="Python参考文献"></a><a href="/tags/Python/">Python</a><a href="/categories/数据分析服务/">参考文献</a></h3><ul>
+<li>[1]  蔡花;王惠民;贾心缘;徐鑫鑫;季伙燕; AD正态性检验在HBsAg内部质量控制中的应用. 现代预防医学 ,2016,(23)</li>
+<li>[2]  郑志宏;赵瑛; MATLAB在大学物理实验中的应用. 大学物理实验 ,2005,(04)</li>
+</ul>
+
+  </article>
+</div>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class='container' id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/10/30/数据分析服务-Python-格拉布斯检验/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+</div>
+
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://eprime.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://eprime.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://eprime.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    Eviews数据分析案例:原始对偶单纯形法 | EPRIME工作室
+  </title>
+  <meta name="description" content="天下没有难做的科研">
+  
+  <meta name="keywords" content="
+  运筹学,Eviews
+  ">
+  
+  <meta name="author" content="数据分析服务">
+
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+  <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<script>
+  var _hmt = _hmt || [];
+  (function(){var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?1dc589ea02621bcd82bea559aa46ece9";
+    var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();
+</script>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+</head>
+
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head.png"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-container">
+  <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives"
+           class="header-toolbar-right"> 407 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/tags"
+           class="header-toolbar-right"> 58 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories"
+           class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">EPRIME工作室</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1534852467000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1534852467000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/运筹学/">
+          运筹学
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/Eviews/">
+          Eviews
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>Eviews数据分析案例:原始对偶单纯形法</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="原始对偶单纯形法"><a href="#原始对偶单纯形法" class="headerlink" title="原始对偶单纯形法:"></a>原始对偶单纯形法:</h3>
+<div class="p1">由丹捷格 (Dantzig)、福特(Ford)和福菜克森(Fulekerson)于1956年提出。它在应用一般线性规划时，是以松弛这理为理论依据，把两阶段法中的两个阶段结合起来，包含原始单纯形法和对偶单纯形法两者的思想，故称“原始对偶单纯形法”。它能同时求出原始和对偶问题的最优解。考虑
+<p align="center"></p><div class="dtable"><table class="viewtb" border="1"><tr valign="top"><td class="viewtd">
+原始问题</td><td class="viewtd">
+对偶问题</td></tr><tr valign="top"><td class="viewtd">　<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043_R200806043.1332.15%5B4298713280FA%5D.4.0.bmp"></td><td class="viewtd">　<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043_R200806043.1332.15%5B4298713280FA%5D.5.0.bmp"></td></tr></table></div>
+其中A=(A<sub>·1</sub>，A<sub>·2</sub>，…，A<sub>·n</sub>)是m×n矩阵。 已知对偶问题 (Ⅱ) 的任一可行解Y，定义
+<p></p><p align="center">K={j|YA<sub>·j</sub>＝c<sub>j</sub>，1≤j≤n}</p>
+对应于Y和K，定义一新的线性规划称为问题(Ⅰ)的
+限制原始问题：
+<p align="center"><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" width="409" height="155" src="/CRFDPIC/R200806043/R200806043.1333.0%5B0470fb356144%5D.png"></span></p>
+其对偶问题称为限制对偶问题：
+<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.2%5B04728b2b0097%5D.gif"></p>
+<p>设(Ⅲ)、(Ⅳ)的最优解分别为(X<sup>*</sup>，U<sup>*</sup>)、V<sup>*</sup>，可以得到以下结果
+</p><p>最优性定理： 设已知Y是问题 (Ⅱ) 的可行解，
+</p><p>1. 若U<sup>*</sup>＝0，则X<sup>*</sup>和Y分别是 (Ⅰ) 和 (Ⅱ)的最优解。
+</p><p>2. 若U<sup>*</sup>≠0，则有
+</p><p>(1) 若V<sup>*</sup>A<sub>·j</sub>≤0， j=1， 2， …， n， 则问题(Ⅰ) 无可行解。
+</p><p>(2)若存在j，使V<sup>*</sup>A<sub>·j</sub>&gt;0， 则定义 (Ⅱ)的可行解<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.11.2.bmp">＝Y+ε<sub>0</sub>V<sup>*</sup>， 其中
+</p><p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.4%5B0945782d1056%5D.gif"></p>
+可证<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.12.2.bmp">是问题 (Ⅱ) 的一个新可行解， 且<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.12.21.bmp">b&lt;Yb。
+<p>有了新的<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.13.4.bmp">， 可定义新的<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.13.12.bmp">， 以<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.13.16.bmp">代替Y，<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1333.13.21.bmp">代替K，可得新的限制问题(Ⅲ)和(Ⅳ)。重复以上讨论，开始新的迭代。最终能确定(Ⅰ)和(Ⅱ)的最优解或 (Ⅰ) 无可行的解的结论。</p></div>
+
+<h3 id="Eviews中相关概念"><a href="#Eviews中相关概念" class="headerlink" title="Eviews中相关概念"></a><a href="/tags/Eviews/">Eviews</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>原始对偶单纯形法</strong>: 由丹捷格 (Dantzig)、福特(Ford)和福菜克森(Fulekerson)于1956年提出。它在应用一般线性规划时,是以松弛这理为理论依据,把两阶段法中的两个阶段结合起来,包含原始单纯形法和对偶单纯形法两者的思想,故称“原始对偶单纯形法”。它能同时求出原始和对偶问题的最优解。考虑…</li>
+<li><strong>原始-对偶方法</strong>: 求解线性规划的一种算法.指求解线性规划的一类特殊对偶型方法.其特殊性在于,它是以松弛互补性条件为基础去构造一个由原问题产生的限定问题,并通过求解此限定问题去改善解对原问题的可行性.这一过程含有单纯形方法与对偶单纯形方法的思想,所以有此名.设原问题(P)为min Z=c…</li>
+</ul>
+<h3 id="Eviews参考文献"><a href="#Eviews参考文献" class="headerlink" title="Eviews参考文献"></a><a href="/tags/Eviews/">Eviews</a><a href="/categories/数据分析服务/">参考文献</a></h3><ul>
+<li>[1]  曾友芳;潘华琴; 二阶锥规划的Lagrange对偶及2维原始对偶单纯形法. 广西大学学报(自然科学版) ,2009,(06)</li>
+</ul>
+<h3 id="Eviews数据分析服务"><a href="#Eviews数据分析服务" class="headerlink" title="Eviews数据分析服务:"></a><a href="/tags/Eviews/">Eviews</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://eprime.cn/">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://eprime.cn/2018/08/18/EPRIME工作室Eviews代做服务详情/">Eviews技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://eprime.cn/2018/08/17/关于EPRIME工作室/">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+
+  </article>
+</div>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class='container' id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/21/数据分析服务-Eviews-原始对偶单纯形法/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+</div>
+
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://eprime.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://eprime.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://eprime.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>

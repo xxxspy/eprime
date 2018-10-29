@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    SAS数据分析案例:频域分析 | EPRIME工作室
+  </title>
+  <meta name="description" content="天下没有难做的科研">
+  
+  <meta name="keywords" content="
+  统计的一般理论和方法,SAS,时间序列
+  ">
+  
+  <meta name="author" content="数据分析服务">
+
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+  <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<script>
+  var _hmt = _hmt || [];
+  (function(){var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?1dc589ea02621bcd82bea559aa46ece9";
+    var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();
+</script>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+</head>
+
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head.png"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-container">
+  <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives"
+           class="header-toolbar-right"> 407 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/tags"
+           class="header-toolbar-right"> 58 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories"
+           class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">EPRIME工作室</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1540917251000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1540917251000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/统计的一般理论和方法/">
+          统计的一般理论和方法
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/SAS/">
+          SAS
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/时间序列/">
+          时间序列
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>SAS数据分析案例:频域分析</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="SAS数据分析服务"><a href="#SAS数据分析服务" class="headerlink" title="SAS数据分析服务:"></a><a href="/tags/SAS/">SAS</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://eprime.cn/">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://eprime.cn/2018/08/18/EPRIME工作室SAS代做服务详情/">SAS技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://eprime.cn/2018/08/17/关于EPRIME工作室/">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+<h3 id="频域分析"><a href="#频域分析" class="headerlink" title="频域分析:"></a>频域分析:</h3>
+<div class="p1">设{x<sub>t</sub>}为随机平衡序列，在对其分析时倘若不是直接考查{x<sub>t</sub>}，而是对它进行富里埃—斯蒂吉斯变换后，考查其按角频率的分布特性，也就是以角率为自变量进行分析研究，就称为频域分析，其自变量的变化空间称为频率域或频域(谱域)。频域分析并不直接考查序列的自相关函数，而是对自相关函数进行富里埃变换，得到功率谱密度函数——以角频率为自变量的函数，考查功率谱在频率域的分布特征、性状等。</div>
+
+<h3 id="SAS中相关概念"><a href="#SAS中相关概念" class="headerlink" title="SAS中相关概念"></a><a href="/tags/SAS/">SAS</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>频域分析</strong>: 以频率为变量来分析电信号的幅度-频率特性。它通常是用频谱分析仪来观察信号的频谱。A(t)信号是由一个基波a(t)与一个二次谐波b(t)组成的。利用一定方法(滤波法)求得它们的幅度值a与b,并显示在频率座标上得到频谱A(f),这就是频域分析。它可以完成时域分析所不能完成的某些信号…</li>
+<li><strong>频域分析</strong>: 设{xt}为随机平衡序列,在对其分析时倘若不是直接考查{xt},而是对它进行富里埃—斯蒂吉斯变换后,考查其按角频率的分布特性,也就是以角率为自变量进行分析研究,就称为频域分析,其自变量的变化空间称为频率域或频域(谱域)。频域分析并不直接考查序列的自…</li>
+<li><strong>频域分析</strong>: 结构受到以频率的函数F(ω)表示的任意振动激励的作用时按频率进行的振动分析。对于线性结构,把任意振动激励按频率从零到无穷大展开成各个简谐分量项,求出结构对每个分量的响应,叠加这些响应即得结构的总响应。即把对结构的任意激励这个时间过程表示为对频率的福里衰积分。这…</li>
+<li><strong>频域分析</strong>: 是心室晚电位的一种分析方法,其对伴有室内传导阻滞的患者诊断意义大。…</li>
+<li><strong>频域分析</strong>: analysis in frequency domain,frequency domain analysis…</li>
+<li><strong>频域分析法</strong>: frequency domain analysis…</li>
+<li><strong>频域分析</strong>: 是心室晚电位的一种分析方法。其对伴有室内传导阻滞的患者诊断意义大。…</li>
+<li><strong>频域分析</strong>: frequency domain analysis…</li>
+<li><strong>频域分析法</strong>: frequency-domain analysis…</li>
+<li><strong>频域分析</strong>: frequency domain analysis…</li>
+</ul>
+<h3 id="SAS参考文献"><a href="#SAS参考文献" class="headerlink" title="SAS参考文献"></a><a href="/tags/SAS/">SAS</a><a href="/categories/数据分析服务/">参考文献</a></h3><ul>
+<li>[1]  邓钦元;唐燕;周毅;杨勇;胡松; 基于白光干涉频域分析的高精度表面形貌测量. 中国激光 ,,()</li>
+<li>[2]  吉淑娇;吕佳; 基于LabVIEW的频域特性分析仪的设计. 长春大学学报 ,2018,(08)</li>
+<li>[3]  张进秋;王兴野;贾进峰;孙宜权;李欣; 主动悬架有限频域H_∞时滞控制参数影响分析及优化. 兵工学报 ,2018,(09)</li>
+<li>[4]  翟佳伟;唐友刚;李焱;曲晓奇;张若瑜; 单点系泊FPSO气隙预报的时域和频域分析. 海洋工程 ,2017,(06)</li>
+<li>[5]  赵宣铭; 机械故障诊断的信号处理方法:频域分析. 时代农机 ,2017,(10)</li>
+<li>[6]  戴飞飞;王雪峰;刘晔;王淼坤; 基桩声波透射法桩径检测技术仿真与试验研究. 江苏建筑 ,2017,(06)</li>
+<li>[7]  薛洋洋;窦培林;陈刚; 三体组合式FLiDAR浮标概念设计及幅频运动特性研究. 舰船科学技术 ,2018,(01)</li>
+<li>[8]  刘斌;井清;吴澄; 考虑频域损伤谱的试验场耐久规范优化方法. 上海汽车 ,2018,(01)</li>
+<li>[9]  谢红; 不同运动方式对心脏植物神经功能影响的实验研究. 体育世界(学术版) ,2017,(12)</li>
+<li>[10]  艾晓秋;彭勇波;承颖瑶; 城市行道树动力学特性与风致破坏分析. 自然灾害学报 ,2018,(01)</li>
+<li>[1]  秦培江; 风浪联合作用下的海上风机支撑结构频域疲劳分析. 哈尔滨工程大学 ,2017</li>
+<li>[2]  傅菁菁; 基于时域频域联合的连续语音关键词识别技术研究. 兰州大学 ,2017</li>
+<li>[3]  陶阳; 基于振动信号的变速箱状态分析. 重庆理工大学 ,2017</li>
+<li>[4]  王涛; 干式采油树半潜式生产平台水动力性能分析. 哈尔滨工程大学 ,2015</li>
+<li>[5]  罗华清; 振荡浮子波浪能发电装置主浮体及系泊系统动力特性研究. 山东大学 ,2017</li>
+<li>[6]  盛金月; 声表面波用于表面加工损伤检测有限元仿真技术研究. 天津大学 ,2016</li>
+<li>[7]  刘智; 多普勒测速传感器信号处理算法的研究. 华中科技大学 ,2014</li>
+<li>[8]  王凌枫; 垂荡浮子式波能转换装置水动力性能研究. 大连理工大学 ,2016</li>
+<li>[9]  郑雯; 基于频率域的伺服系统建模、分析与控制. 东南大学 ,2016</li>
+<li>[10]  李仁庆; 动载荷下汽车胎压变化规律试验研究. 浙江工业大学 ,2016</li>
+<li>[1]  周翕; 不确定系统的分数阶鲁棒控制研究. 中国科学技术大学 ,2017</li>
+<li>[2]  杨晛; 网络化遥操作系统控制器设计及性能分析. 燕山大学 ,2015</li>
+<li>[1]  范宣华;于晨阳;王柯颖;肖世富; PANDA平台下的振动频域分析并行计算. 第十二届全国振动理论及应用学术会议论文集 ,2017</li>
+<li>[2]  谭述君;陈宇;王庆伟;吴志刚; POGO回路建模新方法及稳定性分析. 中国力学大会-2017暨庆祝中国力学学会成立60周年大会论文集（B） ,2017</li>
+<li>[3]  赵长权;侯春光; 快速傅里叶变换算法在继电保护中的应用. 第十五届沈阳科学学术年会论文集（理工农医） ,2018</li>
+<li>[4]  周珂;胡志强; FLNG与LNGC旁靠水动力遮蔽效应的频域分析. 第十八届中国海洋（岸）工程学术讨论会论文集（上） ,2017</li>
+<li>[5]  卢鹏;冯天毅;郭立辉;王鹏;朱清行; 时一频域分析在高线精轧机组故障诊断中的应用. 线棒材工艺技术、装备与应用学术研讨会论文集 ,2012</li>
+<li>[6]  朱列新;郑大钟; 线性离散事件系统频域分析. 1989年控制理论及其应用年会论文集（中） ,1989</li>
+<li>[7]  王锋;盛俊鹏;陈黎明;张志军; 北京谱仪(BES)附近空间电磁环境的静化. 第7届全国核电子学与核探测技术学术年会论文集（三） ,1994</li>
+<li>[8]  吴文启;梁石林;杨壮志; 动态姿态测量中惯性仪表信号的分析综合. 2001年飞行器惯性器件学术交流会论文集 ,2001</li>
+<li>[9]  宋海妍;裴永忠;刘斌; 大跨度机库屋盖结构的风振响应分析. 第十一届空间结构学术会议论文集 ,2005</li>
+<li>[10]  赵成林;潘纯;陈明艳;刘方明;周正; 一种超宽带信号的频域分析与测量方法. 第十五届全国电磁兼容学术会议论文集 ,2005</li>
+<li>[1]  杨牧之 主编; T000222  工程电路分析. 中国图书年鉴 ,2003</li>
+<li>[2]  柳斌杰;邬书林;阎晓宏 主编; T000285 控制工程与信号处理. 中国图书年鉴 ,2005</li>
+</ul>
+
+  </article>
+</div>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class='container' id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/10/31/数据分析服务-SAS-频域分析/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+</div>
+
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://eprime.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://eprime.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://eprime.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>
