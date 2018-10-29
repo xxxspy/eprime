@@ -1,7 +1,7 @@
 
 ---
-title: 有界变量-M-plus数据可视化代做
-date: 2018-09-18 02:31:33
+title: M-plus数据分析案例:有界变量
+date: 2018-11-01 06:16:50
 tags: [数学分析, 变量与函数, M-plus]
 category: 数据分析服务
 toc: true

@@ -1,7 +1,7 @@
 
 ---
-title: Eviews数据分析案例:反三角函数的第一类关系
-date: 2018-09-17 09:31:33
+title: 反三角函数的第一类关系-Eviews数据可视化代做
+date: 2018-10-29 21:16:50
 tags: [平面三角, 反三角函数, Eviews]
 category: 数据分析服务
 toc: true

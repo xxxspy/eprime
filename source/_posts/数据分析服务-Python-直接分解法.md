@@ -1,7 +1,7 @@
 
 ---
-title: Python直接分解法代做数据分析
-date: 2018-09-19 02:31:33
+title: 直接分解法-Python论文数据分析代做
+date: 2018-10-30 20:16:50
 tags: [经济统计, 国民经济平衡统计, Python]
 category: 数据分析服务
 toc: true

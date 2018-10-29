@@ -1,7 +1,7 @@
 
 ---
-title: Python数据分析案例:单调回归
-date: 2018-09-18 08:31:33
+title: 单调回归-Python实证分析
+date: 2018-11-01 08:16:50
 tags: [统计的一般理论和方法, 相关·相联与回归, Python]
 category: 数据分析服务
 toc: true

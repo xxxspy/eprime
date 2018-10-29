@@ -1,7 +1,7 @@
 
 ---
-title: 双向区组-Eviews数据可视化代做
-date: 2018-09-20 08:31:33
+title: Eviews双向区组代做数据分析
+date: 2018-10-29 19:16:50
 tags: [统计的一般理论和方法, 方差分析·多重比较·试验设计, Eviews]
 category: 数据分析服务
 toc: true

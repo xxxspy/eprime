@@ -1,7 +1,7 @@
 
 ---
-title: 回归平面-Eviews实证分析
-date: 2018-09-20 00:31:33
+title: Eviews数据分析案例:回归平面
+date: 2018-10-31 22:16:50
 tags: [概率论与统计学初步, 方差分析与回归分析, Eviews]
 category: 数据分析服务
 toc: true

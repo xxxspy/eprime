@@ -1,7 +1,7 @@
 
 ---
-title: STATA直接分解法代做数据分析
-date: 2018-09-19 11:31:33
+title: STATA数据分析案例:直接分解法
+date: 2018-11-01 06:16:50
 tags: [经济统计, 国民经济平衡统计, STATA]
 category: 数据分析服务
 toc: true

@@ -1,7 +1,7 @@
 
 ---
-title: M-plus直接分解法代做数据分析
-date: 2018-09-17 10:31:33
+title: 直接分解法-M-plus论文数据分析代做
+date: 2018-10-31 21:16:50
 tags: [经济统计, 国民经济平衡统计, M-plus]
 category: 数据分析服务
 toc: true

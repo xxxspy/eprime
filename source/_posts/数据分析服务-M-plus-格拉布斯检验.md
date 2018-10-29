@@ -1,7 +1,7 @@
 
 ---
-title: 格拉布斯检验-M-plus论文数据分析代做
-date: 2018-09-20 01:31:33
+title: 格拉布斯检验-M-plus数据可视化代做
+date: 2018-11-01 05:16:50
 tags: [统计的一般理论和方法, 统计假设检验, M-plus]
 category: 数据分析服务
 toc: true

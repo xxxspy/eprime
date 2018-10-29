@@ -1,7 +1,7 @@
 
 ---
-title: SAS有界变量代做数据分析
-date: 2018-09-18 17:31:33
+title: SAS数据分析案例:有界变量
+date: 2018-10-31 10:16:50
 tags: [数学分析, 变量与函数, SAS]
 category: 数据分析服务
 toc: true

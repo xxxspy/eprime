@@ -1,7 +1,7 @@
 
 ---
-title: 有界变量-Eviews数据可视化代做
-date: 2018-09-19 14:31:33
+title: Eviews数据分析案例:有界变量
+date: 2018-10-30 00:16:50
 tags: [数学分析, 变量与函数, Eviews]
 category: 数据分析服务
 toc: true

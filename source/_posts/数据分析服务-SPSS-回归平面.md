@@ -1,7 +1,7 @@
 
 ---
-title: SPSS回归平面代做数据分析
-date: 2018-09-19 06:31:33
+title: SPSS数据分析案例:回归平面
+date: 2018-11-01 14:16:50
 tags: [概率论与统计学初步, 方差分析与回归分析, SPSS]
 category: 数据分析服务
 toc: true

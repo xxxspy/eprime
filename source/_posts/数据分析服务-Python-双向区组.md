@@ -1,7 +1,7 @@
 
 ---
-title: 双向区组-Python数据可视化代做
-date: 2018-09-19 16:31:33
+title: Python双向区组代做数据分析
+date: 2018-10-31 14:16:50
 tags: [统计的一般理论和方法, 方差分析·多重比较·试验设计, Python]
 category: 数据分析服务
 toc: true

@@ -1,7 +1,7 @@
 
 ---
-title: 回归平面-M-plus论文数据分析代做
-date: 2018-09-18 04:31:33
+title: M-plus数据分析案例:回归平面
+date: 2018-10-29 18:16:50
 tags: [概率论与统计学初步, 方差分析与回归分析, M-plus]
 category: 数据分析服务
 toc: true

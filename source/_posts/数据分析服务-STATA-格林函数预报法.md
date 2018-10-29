@@ -1,7 +1,7 @@
 
 ---
-title: 格林函数预报法-STATA实证分析
-date: 2018-09-17 16:31:33
+title: STATA格林函数预报法代做数据分析
+date: 2018-10-31 03:16:50
 tags: [统计的一般理论和方法, 时间序列, STATA]
 category: 数据分析服务
 toc: true

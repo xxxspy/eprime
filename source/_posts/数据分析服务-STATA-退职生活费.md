@@ -1,7 +1,7 @@
 
 ---
-title: STATA数据分析案例:退职生活费
-date: 2018-09-18 08:31:33
+title: 退职生活费-STATA论文数据分析代做
+date: 2018-10-31 09:16:50
 tags: [社会统计, 劳动工资统计, STATA]
 category: 数据分析服务
 toc: true

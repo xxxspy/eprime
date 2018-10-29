@@ -1,7 +1,7 @@
 
 ---
-title: 格拉布斯检验-SPSS实证分析
-date: 2018-09-18 12:31:33
+title: 格拉布斯检验-SPSS数据可视化代做
+date: 2018-11-01 15:16:50
 tags: [统计的一般理论和方法, 统计假设检验, SPSS]
 category: 数据分析服务
 toc: true

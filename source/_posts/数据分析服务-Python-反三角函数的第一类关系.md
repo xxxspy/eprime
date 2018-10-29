@@ -1,7 +1,7 @@
 
 ---
-title: Python数据分析案例:反三角函数的第一类关系
-date: 2018-09-17 11:31:33
+title: 反三角函数的第一类关系-Python数据可视化代做
+date: 2018-10-31 11:16:50
 tags: [平面三角, 反三角函数, Python]
 category: 数据分析服务
 toc: true

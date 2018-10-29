@@ -1,7 +1,7 @@
 
 ---
-title: 退职生活费-Eviews论文数据分析代做
-date: 2018-09-18 15:31:33
+title: Eviews数据分析案例:退职生活费
+date: 2018-10-29 18:16:50
 tags: [社会统计, 劳动工资统计, Eviews]
 category: 数据分析服务
 toc: true

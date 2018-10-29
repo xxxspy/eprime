@@ -1,7 +1,7 @@
 
 ---
-title: 回归平面-Python实证分析
-date: 2018-09-19 15:31:33
+title: 回归平面-Python数据可视化代做
+date: 2018-10-31 21:16:50
 tags: [概率论与统计学初步, 方差分析与回归分析, Python]
 category: 数据分析服务
 toc: true

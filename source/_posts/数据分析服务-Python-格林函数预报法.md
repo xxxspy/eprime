@@ -1,7 +1,7 @@
 
 ---
-title: 格林函数预报法-Python论文数据分析代做
-date: 2018-09-18 15:31:33
+title: Python格林函数预报法代做数据分析
+date: 2018-10-31 22:16:50
 tags: [统计的一般理论和方法, 时间序列, Python]
 category: 数据分析服务
 toc: true

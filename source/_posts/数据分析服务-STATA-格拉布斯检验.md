@@ -1,7 +1,7 @@
 
 ---
-title: 格拉布斯检验-STATA数据可视化代做
-date: 2018-09-20 05:31:33
+title: STATA数据分析案例:格拉布斯检验
+date: 2018-11-01 12:16:50
 tags: [统计的一般理论和方法, 统计假设检验, STATA]
 category: 数据分析服务
 toc: true

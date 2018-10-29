@@ -1,7 +1,7 @@
 
 ---
-title: 有界变量-STATA实证分析
-date: 2018-09-20 03:31:33
+title: STATA有界变量代做数据分析
+date: 2018-10-30 14:16:50
 tags: [数学分析, 变量与函数, STATA]
 category: 数据分析服务
 toc: true

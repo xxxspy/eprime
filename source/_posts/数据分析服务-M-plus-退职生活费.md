@@ -1,7 +1,7 @@
 
 ---
-title: M-plus数据分析案例:退职生活费
-date: 2018-09-18 13:31:33
+title: M-plus退职生活费代做数据分析
+date: 2018-10-30 02:16:50
 tags: [社会统计, 劳动工资统计, M-plus]
 category: 数据分析服务
 toc: true

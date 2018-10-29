@@ -1,7 +1,7 @@
 
 ---
-title: STATA数据分析案例:单调回归
-date: 2018-09-18 21:31:33
+title: 单调回归-STATA实证分析
+date: 2018-11-01 02:16:50
 tags: [统计的一般理论和方法, 相关·相联与回归, STATA]
 category: 数据分析服务
 toc: true

@@ -1,7 +1,7 @@
 
 ---
-title: Eviews数据分析案例:格林函数预报法
-date: 2018-09-18 23:31:33
+title: Eviews格林函数预报法代做数据分析
+date: 2018-10-30 23:16:50
 tags: [统计的一般理论和方法, 时间序列, Eviews]
 category: 数据分析服务
 toc: true

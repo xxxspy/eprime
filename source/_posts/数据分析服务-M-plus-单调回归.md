@@ -1,7 +1,7 @@
 
 ---
-title: 单调回归-M-plus实证分析
-date: 2018-09-19 11:31:33
+title: 单调回归-M-plus论文数据分析代做
+date: 2018-10-31 04:16:50
 tags: [统计的一般理论和方法, 相关·相联与回归, M-plus]
 category: 数据分析服务
 toc: true

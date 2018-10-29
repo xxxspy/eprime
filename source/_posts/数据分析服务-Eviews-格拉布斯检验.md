@@ -1,7 +1,7 @@
 
 ---
-title: 格拉布斯检验-Eviews实证分析
-date: 2018-09-18 00:31:33
+title: 格拉布斯检验-Eviews数据可视化代做
+date: 2018-10-30 15:16:50
 tags: [统计的一般理论和方法, 统计假设检验, Eviews]
 category: 数据分析服务
 toc: true

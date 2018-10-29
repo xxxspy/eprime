@@ -1,7 +1,7 @@
 
 ---
-title: SPSS有界变量代做数据分析
-date: 2018-09-17 17:31:33
+title: 有界变量-SPSS实证分析
+date: 2018-11-01 15:16:50
 tags: [数学分析, 变量与函数, SPSS]
 category: 数据分析服务
 toc: true

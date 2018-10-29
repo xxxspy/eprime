@@ -1,7 +1,7 @@
 
 ---
-title: STATA数据分析案例:反三角函数的第一类关系
-date: 2018-09-17 20:31:33
+title: STATA反三角函数的第一类关系代做数据分析
+date: 2018-10-30 07:16:50
 tags: [平面三角, 反三角函数, STATA]
 category: 数据分析服务
 toc: true

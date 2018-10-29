@@ -1,7 +1,7 @@
 
 ---
-title: 交互效应-STATA实证分析
-date: 2018-09-19 06:31:33
+title: STATA数据分析案例:交互效应
+date: 2018-10-30 09:16:50
 tags: [统计的一般理论和方法, 方差分析·多重比较·试验设计, STATA]
 category: 数据分析服务
 toc: true

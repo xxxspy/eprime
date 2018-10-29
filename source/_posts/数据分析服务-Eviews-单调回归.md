@@ -1,7 +1,7 @@
 
 ---
-title: 单调回归-Eviews论文数据分析代做
-date: 2018-09-19 03:31:33
+title: 单调回归-Eviews实证分析
+date: 2018-11-01 13:16:50
 tags: [统计的一般理论和方法, 相关·相联与回归, Eviews]
 category: 数据分析服务
 toc: true

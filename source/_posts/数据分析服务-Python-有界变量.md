@@ -1,7 +1,7 @@
 
 ---
-title: 有界变量-Python实证分析
-date: 2018-09-17 15:31:33
+title: Python数据分析案例:有界变量
+date: 2018-10-31 19:16:50
 tags: [数学分析, 变量与函数, Python]
 category: 数据分析服务
 toc: true
