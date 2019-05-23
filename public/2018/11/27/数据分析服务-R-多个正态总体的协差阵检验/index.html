@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    R数据分析案例:多个正态总体的协差阵检验 | EPRIME工作室
+  </title>
+  <meta name="description" content="天下没有难做的科研">
+  
+  <meta name="keywords" content="
+  R
+  ">
+  
+  <meta name="author" content="数据分析服务">
+
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+  <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<script>
+  var _hmt = _hmt || [];
+  (function(){var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?1dc589ea02621bcd82bea559aa46ece9";
+    var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();
+</script>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+</head>
+
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-container">
+  <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 585 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 78 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">EPRIME工作室</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1543301747000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1543301747000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/R/">
+          R
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>R数据分析案例:多个正态总体的协差阵检验</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="R数据分析服务"><a href="#R数据分析服务" class="headerlink" title="R数据分析服务:"></a><a href="/tags/R/">R</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://eprime.cn/">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://eprime.cn/2018/08/18/EPRIME工作室R代做服务详情/">R技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://eprime.cn/2018/08/17/关于EPRIME工作室/">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+<h3 id="多个正态总体的协差阵检验"><a href="#多个正态总体的协差阵检验" class="headerlink" title="多个正态总体的协差阵检验:"></a>多个正态总体的协差阵检验:</h3>
+<div class="p1">设有k个正态总体<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.77%5B42a6eb1f403d%5D.gif">分别从它们中抽取N<sub>i</sub>个样品X<sub>ij</sub>，j=1，2，…N<sub>i</sub>，欲检验H<sub>0</sub>：∑<sub>1</sub>＝∑<sub>2</sub>＝…=∑<sub>k</sub>，H<sub>1</sub>：至少有一对不相等，似然比统计量<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.81%5B46c7b62ec063%5D.gif">其中：<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.84%5B469820323079%5D.gif"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.85%5B42c89f230062%5D.gif">然而用这一统计量作检验也是有偏的，需要加以修正，即将其中的N<sub>i</sub>换成n<sub>i</sub>，修正后的统计量为<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.88%5B4b2977251064%5D.gif">其中<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.90%5B4819e2092063%5D.gif">对于大的<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.92%5B5b9a011d4038%5D.gif">-mlnλ就服从自由度为f的χ<sup>2</sup>分布，其中<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.94%5B6f0a520a0049%5D.gif">-1)p(p+1)，m=2n<sup>-1</sup>(n-2α)，α=(<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0205.2.1.bmp">r<sub>j</sub><sup>-1</sup>-1)(2p<sup>2</sup>+3p-1)/12(p+1)(k-1)，r<sub>i</sub>＝n<sub>i</sub>/n，当k=2，即比较两个协差阵是否相等时，修正后的似然比统计量<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0205.4.6.bmp"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0205.5.0.bmp">，-mlnλ服从自由度为f的χ<sup>2</sup>分布。其中f=1/2p(p+1)，m=2n<sup>-1</sup>(n-2α)，n=n<sub>1</sub>+n<sub>2</sub>，α=(n<sup>2</sup>-n<sub>1</sub>n<sub>2</sub>) (2p<sup>2</sup>+3p-1) /12 (p+1) n<sub>1</sub>n<sub>2</sub>。</div>
+
+<h3 id="R中相关概念"><a href="#R中相关概念" class="headerlink" title="R中相关概念"></a><a href="/tags/R/">R</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>多个正态总体的协差阵检验</strong>: 设有k个正态总体分别从它们中抽取Ni个样品Xij,j=1,2,…Ni,欲检验H0:∑1=∑2=…=∑k,H1:至少有一对不相等,似然……</li>
+</ul>
+
+  </article>
+</div>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/11/27/数据分析服务-R-多个正态总体的协差阵检验/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+</div>
+
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://eprime.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://eprime.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://eprime.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>
