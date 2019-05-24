@@ -1,6 +1,6 @@
 
 ---
-title: EPRIME工作室Python代做服务详情
+title: Eprime工作室Python代做服务详情
 date: 2018-08-18 12:09:10
 tags: [Python, 服务内容]
 category: 数据分析服务

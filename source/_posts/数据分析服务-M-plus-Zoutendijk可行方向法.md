@@ -18,34 +18,59 @@ toc: true
 ### Zoutendijk可行方向法:
 
 {% raw %}
-<div class="p1">适用于线性约束和非线性不等式约束的非线性规划的两种算法。
-<p>1. 线性约束的情形：
-</p><p></p><p align="center">minf(X)</p>
-满足<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.21%5B4935d0084059%5D.gif"></p>
-其中A和E分别是m×n和l×n阶矩阵，b和e分别是m和l维列向量。Zoutendijk可行方向法的迭代步骤：
-<p>(1) 给定初始可行点X°，允许误差ε&gt;0，令k=0。
-</p><p>(2) 令<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.24%5B4c871b147055%5D.gif">使A<sub>1</sub>X<sup>k</sup>＝b<sub>1</sub>，A<sub>2</sub>X<sup>k</sup>&gt;b<sub>2</sub>。
-</p><p>(3) 求解线性规划问题</p><p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.27%5B40c7ec26b0d5%5D.gif"></p>
-这里P= (p<sub>1</sub>，p<sub>2</sub>，…，p<sub>n</sub>)<sup>T</sup>，得最优解P<sup>k</sup>。
-<p>(4) 若|▽f (X<sup>k</sup>)<sup>T</sup>P<sup>k</sup>|≤ε，则迭代停止，得X<sup>k</sup>为K-T点。否则，转 (5)。
-</p><p>(5) 令μ<sup>k</sup>＝A<sub>2</sub>X<sup>k</sup>-b<sub>2</sub>，<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.68.36.bmp"><sup>k</sup>＝-A<sub>2</sub>P<sup>k</sup>。
-</p><p>(6) 若<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.69.5.bmp"><sup>k</sup>≤0，则从X<sup>k</sup>出发，沿P<sup>k</sup>进行一维搜索</p><p align="center">minf(X<sup>k</sup>+λP<sup>k</sup>)=f(X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>)</p>
-令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>确定在点X<sup>k+1</sup>的起作用约束 (见“库恩-塔克条件”)，修改A<sub>1</sub>，A<sub>2</sub>及b<sub>1</sub>，b<sub>2</sub>，并令k=k+1，返回 (2)。否则转 (7)。
-<p>(7) 计算<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1346.1%5B17d0ea173056%5D.gif">求解</p><p align="center">minf(X<sup>k</sup>+λP<sup>k</sup>)，0≤λ≤λ<sub>max</sub></p>
-得最优解λ<sub>k</sub>。令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>，确定在点X<sup>k+1</sup>的起作用约束，修改A<sub>1</sub>，A<sub>2</sub>及b<sub>1</sub>，b<sub>2</sub>，并令k=k+1，返回 (2)。
-<p>2. 非线性不等式约束情形：
-</p><p>minf(X)，满足g<sub>i</sub>(X)≥0，i=1，…，m. 其迭代步骤：
-</p><p>(1)给定初始可行点X°，允许误差ε&gt;0，令k= 0。
-</p><p>(2)设I (X<sup>k</sup>)={i|g<sub>i</sub>(X<sup>k</sup>)=0}。求解线性规划问题
-</p><p></p><p align="center">min Z</p>
-<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1346.4%5B12f3ee22d09d%5D.gif"></p>
-得最优解 (Z<sup>k</sup>，P<sup>k</sup>)。
-<p>(3)若|Z<sup>k</sup>|≤ε，则X<sup>k</sup>是Fritz John点，迭代停止;否则转 (4)。
-</p><p>(4) 解一维搜索问题
-</p><p></p><p align="center">minf(X<sup>k</sup>+λP<sup>k</sup>)，0≤λ≤λ<sub>max</sub></p>
+<div class="p1">适用于线性约束和非线性不等式约束的非线性规划的两种算法。
+
+<p>1. 线性约束的情形：
+
+</p><p></p><p align="center">minf(X)</p>
+
+满足<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.21%5B4935d0084059%5D.gif"></p>
+
+其中A和E分别是m×n和l×n阶矩阵，b和e分别是m和l维列向量。Zoutendijk可行方向法的迭代步骤：
+
+<p>(1) 给定初始可行点X°，允许误差ε&gt;0，令k=0。
+
+</p><p>(2) 令<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.24%5B4c871b147055%5D.gif">使A<sub>1</sub>X<sup>k</sup>＝b<sub>1</sub>，A<sub>2</sub>X<sup>k</sup>&gt;b<sub>2</sub>。
+
+</p><p>(3) 求解线性规划问题</p><p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.27%5B40c7ec26b0d5%5D.gif"></p>
+
+这里P= (p<sub>1</sub>，p<sub>2</sub>，…，p<sub>n</sub>)<sup>T</sup>，得最优解P<sup>k</sup>。
+
+<p>(4) 若|▽f (X<sup>k</sup>)<sup>T</sup>P<sup>k</sup>|≤ε，则迭代停止，得X<sup>k</sup>为K-T点。否则，转 (5)。
+
+</p><p>(5) 令μ<sup>k</sup>＝A<sub>2</sub>X<sup>k</sup>-b<sub>2</sub>，<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.68.36.bmp"><sup>k</sup>＝-A<sub>2</sub>P<sup>k</sup>。
+
+</p><p>(6) 若<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.69.5.bmp"><sup>k</sup>≤0，则从X<sup>k</sup>出发，沿P<sup>k</sup>进行一维搜索</p><p align="center">minf(X<sup>k</sup>+λP<sup>k</sup>)=f(X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>)</p>
+
+令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>确定在点X<sup>k+1</sup>的起作用约束 (见“库恩-塔克条件”)，修改A<sub>1</sub>，A<sub>2</sub>及b<sub>1</sub>，b<sub>2</sub>，并令k=k+1，返回 (2)。否则转 (7)。
+
+<p>(7) 计算<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1346.1%5B17d0ea173056%5D.gif">求解</p><p align="center">minf(X<sup>k</sup>+λP<sup>k</sup>)，0≤λ≤λ<sub>max</sub></p>
+
+得最优解λ<sub>k</sub>。令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>，确定在点X<sup>k+1</sup>的起作用约束，修改A<sub>1</sub>，A<sub>2</sub>及b<sub>1</sub>，b<sub>2</sub>，并令k=k+1，返回 (2)。
+
+<p>2. 非线性不等式约束情形：
+
+</p><p>minf(X)，满足g<sub>i</sub>(X)≥0，i=1，…，m. 其迭代步骤：
+
+</p><p>(1)给定初始可行点X°，允许误差ε&gt;0，令k= 0。
+
+</p><p>(2)设I (X<sup>k</sup>)={i|g<sub>i</sub>(X<sup>k</sup>)=0}。求解线性规划问题
+
+</p><p></p><p align="center">min Z</p>
+
+<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1346.4%5B12f3ee22d09d%5D.gif"></p>
+
+得最优解 (Z<sup>k</sup>，P<sup>k</sup>)。
+
+<p>(3)若|Z<sup>k</sup>|≤ε，则X<sup>k</sup>是Fritz John点，迭代停止;否则转 (4)。
+
+<Eprime(4) 解一维搜索问题Eprime
+EprimeEprime
+</p><p></p><p align="ceEprimeminf(X<sup>k</supEprimeup>k</sup>)，0≤λ≤λ<sub>max</sub></p>
+
 其中λ<sub>max</sub>＝max{λ|g<sub>i</sub>(X<sup>k</sup>+λP<sup>k</sup>)≥0}，得最优解λ<sub>k</sub>。令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>，k=k+1返回 (2)。</div>
 {% endraw %}
-
+Eprime
 
 
 ### [M-plus](/tags/M-plus/)中[相关概念](/categories/数据分析服务)

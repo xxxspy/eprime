@@ -1,7 +1,7 @@
 ---
 title: 瑞文推理测验Eprime实现(下载链接)
 date: 2018-05-05 10:48:13
-tags: [瑞文推理, eprime]
+tags: [瑞文推理, Eprime]
 category: 测验
 ---
 
@@ -11,15 +11,15 @@ category: 测验
 
 > 以下每个题目都有一定的主题，但是每张大的主题图中都缺少一部分，主题图以下有6—8张小图片，若填补在主题图的缺失部分，可以使整个图案合理与完整，请从每题下面所给出的小图片中找出适合大图案的一张。
 
-该eprime程序瑞文测验有60题, 可以记录反应时. 程序经过测试, 可以完美运行在windows系统. 下面是运行过程的截图:
+该Eprime程序瑞文测验有60题, 可以记录反应时. 程序经过测试, 可以完美运行在windows系统. 下面是运行过程的截图:
 
-<image src="eg01.png" alt="eprime 推文测验 下载" title="eprime推文推理测验 反应时">
+<image src="eg01.png" alt="Eprime 推文测验 下载" title="Eprime推文推理测验 反应时">
 
-<image src="eg02.png"  alt="eprime 推文测验 下载" title="eprime推文推理测验 反应时">
+<image src="eg02.png"  alt="Eprime 推文测验 下载" title="Eprime推文推理测验 反应时">
 
 认为该程序对你的研究有用的话, 扫码付款20元, 然后留邮箱到下面, 不愿意公布自己的邮箱, 可以直接给我发邮件`675495787[at]qq.com`.
 
-<image src="/images/付款码.jpg" width="350"  title="eprime推文推理测验 反应时">
+<image src="/images/付款码.jpg" width="350"  title="Eprime推文推理测验 反应时">
 
 ***
 

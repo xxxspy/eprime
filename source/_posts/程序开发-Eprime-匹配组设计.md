@@ -37,12 +37,12 @@ toc: true
 
 
 ### [Eprime](/tags/Eprime/)[程序开发](/categories/程序开发/):
-[EPRIME工作室](http://eprime.cn/)专注于程序开发。
-为科研人员提供[Eprime技术支持](http://eprime.cn/2018/08/17/关于EPRIME工作室/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
+[Eprime工作室](http://Eprime.cn/)专注于程序开发。
+为科研人员提供[Eprime技术支持](http://Eprime.cn/2018/08/17/关于Eprime工作室/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://Eprime.cn/2018/08/17/关于Eprime工作室/)。
 
 QQ: 3597392976
 
-Email: eprime[at]163.com
+Email: Eprime[at]163.com
 
 

@@ -14,20 +14,30 @@ toc: true
 <!-- more -->
 
 ### [M-plus](/tags/M-plus/)[数据分析服务](/categories/数据分析服务/):
-[EPRIME工作室](http://eprime.cn/)专注于数据分析服务。
-为科研人员提供[M-plus技术支持](http://eprime.cn/2018/08/18/EPRIME工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
+[Eprime工作室](http://Eprime.cn/)专注于数据分析服务。
+为科研人员提供[M-plus技术支持](http://Eprime.cn/2018/08/18/Eprime工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://Eprime.cn/2018/08/17/关于Eprime工作室/)。
 
 QQ: 3597392976
 
-Email: eprime[at]163.com
+Email: Eprime[at]163.com
 
 
 
 ### 林德伯格-莱维中心极限定理:
 
 {% raw %}
-<div class="p1">亦称独立同分布随机变量的中心极限定理.它是大样本统计推断理论依据之一.该定理断言：若ξ<sub>1</sub>，ξ<sub>2</sub>，…，ξ<sub>n</sub>，…是独立同分布的随机变量序列，并且有(有限的)数学期望Eξ<sub>i</sub>＝a和方差Dξ<sub>i</sub>＝σ<sup>2</sup>(i=1，2，…)，则有<p></p><p align="center"><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="20" src="/CRFDPIC/R200607288/MATH1X_1998.JPG" width="21"></span> P<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_1999.JPG" width="15"></span>(ξ<sub>i</sub>-a)<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="16" src="/CRFDPIC/R200607288/MATH0X_6211.JPG" width="19"></span>σ≤x=<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="33" src="/CRFDPIC/R200607288/MATH0X_6212.JPG" width="31"></span>∫<sup>x</sup><sub>-∞</sub>e<sup>-<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="28" src="/CRFDPIC/R200607288/MATH0X_6213.JPG" width="14"></span></sup>dt.</p><p>由随机变量的和<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_2000.JPG" width="22"></span>ξ<sub>i</sub>标准化以后所得的随机变量</p><p></p><p align="center">η<sub>n</sub>＝<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="33" src="/CRFDPIC/R200607288/MATH0X_6214.JPG" width="25"></span><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_2001.JPG" width="15"></span>(ξ<sub>i</sub>-a)</p>的分布函数，当n→∞时的极限为标准正态分布，因而当n很大时可以把独立同分布随机变量ξ<sub>i</sub>(i=1，2，…，n)之和<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_2002.JPG" width="22"></span>ξ<sub>i</sub>近似地当做正态变量.这在统计学中很有用，使得这个定理成为处理大样本的重要工具.由它还可推出棣莫弗一拉普拉斯定理.</div>
+<div class="p1">亦称独立同分布随机变量的中心极限定理.它是大样本统计推断理论依据之一.该定理断言：若ξ<sub>1</sub>，ξ<sub>2</sub>，…，ξ<sub>n</sub>，…是独立同分布的随机变量序列，并且有(有限的)数学期望Eξ<sub>i</sub>＝a和方差Dξ<sub>i</sub>＝σ<sup>2</sup>(i=1，2，…)，则有
+
+
+<p></p><p align="center"><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="20" src="/CRFDPIC/R200607288/MATH1X_1998.JPG" width="21"></span> P<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_1999.JPG" width="15"></span>(ξ<sub>i</sub>-a)<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="16" src="/CRFDPIC/R200607288/MATH0X_6211.JPG" width="19"></span>σ≤x=<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="33" src="/CRFDPIC/R200607288/MATH0X_6212.JPG" width="31"></span>∫<sup>x</sup><sub>-∞</sub>e<sup>-<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="28" src="/CRFDPIC/R200607288/MATH0X_6213.JPG" width="14"></span></sup>dt.</p>
+
+<p>由随机变量的和<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_2000.JPG" width="22"></span>ξ<sub>i</sub>标准化以后所得的随机变量
+
+
+</p><p></p><p align="center">η<sub>n</sub>＝<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="33" src="/CRFDPIC/R200607288/MATH0X_6214.JPG" width="25"></span><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_2001.JPG" width="15"></span>(ξ<sub>i</sub>-a)</p>
+
+的分布函数，当n→∞时的极限为标准正态分布，因而当n很大时可以把独立同分布随机变量ξ<sub>i</sub>(i=1，2，…，n)之和<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_2002.JPG" width="22"></span>ξ<sub>i</sub>近似地当做正态变量.这在统计学中很有用，使得这个定理成为处理大样本的重要工具.由它还可推出棣莫弗一拉普拉斯定理.</div>
 {% endraw %}
 
 

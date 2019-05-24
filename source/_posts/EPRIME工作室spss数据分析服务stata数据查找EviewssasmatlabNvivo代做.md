@@ -1,6 +1,6 @@
 
 ---
-title: EPRIME工作室spss数据分析服务stata数据查找Eviews sas matlab Nvivo代做
+title: Eprime工作室spss数据分析服务stata数据查找Eviews sas matlab Nvivo代做
 date: 2018-09-28 12:09:10
 tags: [stata, 服务内容]
 category: 数据分析服务

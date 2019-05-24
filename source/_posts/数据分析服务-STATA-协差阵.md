@@ -14,20 +14,23 @@ toc: true
 <!-- more -->
 
 ### [STATA](/tags/STATA/)[数据分析服务](/categories/数据分析服务/):
-[EPRIME工作室](http://eprime.cn/)专注于数据分析服务。
-为科研人员提供[STATA技术支持](http://eprime.cn/2018/08/18/EPRIME工作室STATA代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
+[Eprime工作室](http://Eprime.cn/)专注于数据分析服务。
+为科研人员提供[STATA技术支持](http://Eprime.cn/2018/08/18/Eprime工作室STATA代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://Eprime.cn/2018/08/17/关于Eprime工作室/)。
 
 QQ: 3597392976
 
-Email: eprime[at]163.com
+Email: Eprime[at]163.com
 
 
 
 ### 协差阵:
 
 {% raw %}
-<div class="p1">设随机向量X= (X<sub>1</sub>，X<sub>2</sub>，…，X<sub>p</sub>)′若E(X)=μ则称<p align="center">E(X-μ)(X-μ)′=</p><p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0203.1%5B4070e033d09b%5D.gif"></p>≜(σ<sub>ij</sub>)<sub>p×p</sub>为随机向量X的协差阵，简记为Σ。当总体的协差阵未知时，可用样本的协差阵作为估计量，即设X<sub>(1)</sub>，X<sub>(2)</sub>，…，X<sub>(n)</sub>是从总体中抽取的容量为n的样本，其中X(α)=(X<sub>α1</sub>，X<sub>α2</sub>，…X<sub>αp</sub>)′，α=1，2，…，n用最大似然法求出的S<sub>n-1</sub>＝1/(n-1)<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0203.45.27.bmp">(X<sub>α</sub>-<span class="PUC01_E7"></span>)(X<sub>α</sub>-<span class="PUC01_E7"></span>)′为样本的协差阵。 设随机向量Y=(Y<sub>1</sub>，Y<sub>2</sub>， …Y<sub>q</sub>)′则随机向量X与Y的协差阵定义为<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0203.3%5B4463452c10d3%5D.gif"></p></div>
+<div class="p1">设随机向量X= (X<sub>1</sub>，X<sub>2</sub>，…，X<sub>p</sub>)′若E(X)=μ则称
+<p align="center">E(X-μ)(X-μ)′=</p>
+<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0203.1%5B4070e033d09b%5D.gif"></p>
+≜(σ<sub>ij</sub>)<sub>p×p</sub>为随机向量X的协差阵，简记为Σ。当总体的协差阵未知时，可用样本的协差阵作为估计量，即设X<sub>(1)</sub>，X<sub>(2)</sub>，…，X<sub>(n)</sub>是从总体中抽取的容量为n的样本，其中X(α)=(X<sub>α1</sub>，X<sub>α2</sub>，…X<sub>αp</sub>)′，α=1，2，…，n用最大似然法求出的S<sub>n-1</sub>＝1/(n-1)<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0203.45.27.bmp">(X<sub>α</sub>-<span class="PUC01_E7"></span>)(X<sub>α</sub>-<span class="PUC01_E7"></span>)′为样本的协差阵。 设随机向量Y=(Y<sub>1</sub>，Y<sub>2</sub>， …Y<sub>q</sub>)′则随机向量X与Y的协差阵定义为<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0203.3%5B4463452c10d3%5D.gif"></p></div>
 {% endraw %}
 
 

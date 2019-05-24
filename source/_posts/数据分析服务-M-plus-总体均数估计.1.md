@@ -14,42 +14,65 @@ toc: true
 <!-- more -->
 
 ### [M-plus](/tags/M-plus/)[数据分析服务](/categories/数据分析服务/):
-[EPRIME工作室](http://eprime.cn/)专注于数据分析服务。
-为科研人员提供[M-plus技术支持](http://eprime.cn/2018/08/18/EPRIME工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
+[Eprime工作室](http://Eprime.cn/)专注于数据分析服务。
+为科研人员提供[M-plus技术支持](http://Eprime.cn/2018/08/18/Eprime工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://Eprime.cn/2018/08/17/关于Eprime工作室/)。
 
 QQ: 3597392976
 
-Email: eprime[at]163.com
+Email: Eprime[at]163.com
 
 
 
 ### 总体均数估计:
 
 {% raw %}
-<div class="p1">总体均数的估计有点估计和区间估计。点估计是用样本均数来估计总体均数; 区间估计是求出总体均数的可能范围，方法随总体标准差是否已知而异： 总体标准差未知时按t分布原理计算; 总体标准差已知时按正态分布原理计算。此外，亦可用平方根纸图解求总体均数的可信区间。
-<p><strong>总体均数的可信区间</strong>
-</p><p>(1)总体标准差未知时，一般按式(1)或式(2)计算可信区间。当样本含量n较大时，比如n&gt;50，亦可按式(3)作近似计算，n越大，近似程度越好。因为根据统计量t的抽样分布原理：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0084.11.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0084.11.gif"></p>
-<p>式中μ为总体均数，<span class="PUC03_e0"></span>为样本均数， s为样本标准差，n为样本含量。t的抽样分布曲线表明： 在界值-tα，v和tα，v以外的面积为α，如t≤-t0.05，v和t≥t0.05，v的概率为 α=0.05; 而在此两界值以内的面积为1-α，如-t0.05，v&lt;t&lt;t0.05，v的概率为1-0.05=0.95，即</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0084.13.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0084.13.gif"></p>
-于是得可信度为1-α 时计算总体均数的可信区间的通式为<p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0084.15.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0084.15.gif"></p>
-<p>或写成</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.0.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.0.gif"></p>
-式中tα，<sub>v</sub>是按自由度v=n-1由t界值表查得，如95%可信区间最为常用，即取α=0.05。
-<p>当v为无限大时，t分布呈正态分布，实用上当样本含量足够大时，式(2)可近似地用式(3)来代替，即</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.2.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.2.gif"></p>
-式中u<sub>α</sub>。为可信度是1-α的标准正态(离)差，可由u界值表查得。如计算95%可信区间，u<sub>0.05</sub> =1.96;计算99%可信区间，u<sub>0.01</sub> =2.58。
-<p>(2)总体标准差已知时，按式(4)计算可信区间。由于实际工作中，总体标准差常为未知，故本法少用。
-</p><p>若从正态总体作随机抽样，当总体标准差σ已知时，统<img imgpath="/CRFDPIC/R200612059/R200612059.0085.4.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.4.gif">为标准正态分布，故总体均数的1-α可信区间为</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.7.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.7.gif"></p>
-式中uα的意义同式(3)。式(4)和式(3)的区别仅在式(4)中用σ，式(3)中用s。
-<p>例1 某矿对11名无矽肺矿工测血清铜蓝蛋白含量(活性单位/dl)，算得均数为6.5，标准差为1.36，试估计无矽肺矿工血清铜蓝蛋白的总体均数。
-</p><p>本例n=11， <span class="PUC03_e0"></span>＝6.5， s=1.36，自由度v=11-1=10。若取95%可信区间，则α=0.05，查t界值表t0.05，10=2.228，按式(2)：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.9.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.9.gif"></p>
-<p>故无矽肺矿工血清铜蓝蛋白的点估计为6.5活性单位/dl，其95%可信区间为5.59～7.41活性单位/dl。
-</p><p>例2 某地500名健康成人末梢血液白细胞均数为7291个/mm<sup>3</sup>，标准差为1695个/mm<sup>3</sup>，试估计该地健康成人白细胞均数。
-</p><p>本例n=500， <span class="PUC03_e0"></span>＝7291，s=1695，若取95%可信区间， u0.05=1.96，按式(3)：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.11.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.11.gif"></p>
-<p>故该地健康成人末梢血液白细胞均数的点估计为7291个/mm<sup>3</sup>，其95%可信区间为7142～7440个/mm<sup>3</sup>。
-</p><p><strong>两总体均数差值的可信区间</strong> 经假设检验，已知两样本均数X<sub>1</sub>与<span class="PUC03_e0"></span><sub>2</sub>有差别，而两样本方差s21与s22的差别无显著性时，须进一步估计两总体均数差值的大小。则以两样本均数之差|<span class="PUC03_e0"></span><sub>1-</sub><span class="PUC03_e0"></span><sub>2</sub>|作为点估计。 用式(5)作区间估计。</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.13.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.13.gif"></p>
-<p>式中n<sub>1</sub>、n<sub>2</sub>分别为两样本含量，s1、s2分别为两样本标准差，s<span class="PUC03_e0"></span>1-<span class="PUC03_e0"></span>2为两样本均数之差的标准误。
-</p><p>例3 分别用甲、乙两药治疗某病患者，甲药治40人，乙药治38人。测得患者某指标的均数<span class="PUC03_e0"></span>与标准差s， 甲药<span class="PUC03_e0"></span><sub>1</sub>＝4.0，s<sub>1</sub>＝0.6;乙药<span class="PUC03_e0"></span><sub>2</sub>＝5.4， s<sub>2</sub>＝0.8。 试估计两总体均数的差值。本例 n<sub>1</sub>＝40， n2=38; <span class="PUC03_e0"></span><sub>1</sub>＝4.0， <span class="PUC03_e0"></span><sub>2</sub>＝5.4; s<sub>1</sub>＝0.6，s<sub>2</sub> =0.8。</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.15.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.15.gif"></p>
-<p>查t界值表，t0.05，76=1.99，
-</p><p>(1.4-1.99×0.16，1.4+1.99×0.16)=(1.1，1.7)。
+<div class="p1">总体均数的估计有点估计和区间估计。点估计是用样本均数来估计总体均数; 区间估计是求出总体均数的可能范围，方法随总体标准差是否已知而异： 总体标准差未知时按t分布原理计算; 总体标准差已知时按正态分布原理计算。此外，亦可用平方根纸图解求总体均数的可信区间。
+
+<p><strong>总体均数的可信区间</strong>
+
+</p><p>(1)总体标准差未知时，一般按式(1)或式(2)计算可信区间。当样本含量n较大时，比如n&gt;50，亦可按式(3)作近似计算，n越大，近似程度越好。因为根据统计量t的抽样分布原理：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0084.11.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0084.11.gif"></p>
+
+<p>式中μ为总体均数，<span class="PUC03_e0"></span>为样本均数， s为样本标准差，n为样本含量。t的抽样分布曲线表明： 在界值-tα，v和tα，v以外的面积为α，如t≤-t0.05，v和t≥t0.05，v的概率为 α=0.05; 而在此两界值以内的面积为1-α，如-t0.05，v&lt;t&lt;t0.05，v的概率为1-0.05=0.95，即</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0084.13.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0084.13.gif"></p>
+
+于是得可信度为1-α 时计算总体均数的可信区间的通式为<p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0084.15.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0084.15.gif"></p>
+
+<p>或写成</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.0.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.0.gif"></p>
+
+式中tα，<sub>v</sub>是按自由度v=n-1由t界值表查得，如95%可信区间最为常用，即取α=0.05。
+
+<p>当v为无限大时，t分布呈正态分布，实用上当样本含量足够大时，式(2)可近似地用式(3)来代替，即</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.2.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.2.gif"></p>
+
+式中u<sub>α</sub>。为可信度是1-α的标准正态(离)差，可由u界值表查得。如计算95%可信区间，u<sub>0.05</sub> =1.96;计算99%可信区间，u<sub>0.01</sub> =2.58。
+
+<p>(2)总体标准差已知时，按式(4)计算可信区间。由于实际工作中，总体标准差常为未知，故本法少用。
+
+</p><p>若从正态总体作随机抽样，当总体标准差σ已知时，统<img imgpath="/CRFDPIC/R200612059/R200612059.0085.4.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.4.gif">为标准正态分布，故总体均数的1-α可信区间为</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.7.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.7.gif"></p>
+
+式中uα的意义同式(3)。式(4)和式(3)的区别仅在式(4)中用σ，式(3)中用s。
+
+<p>例1 某矿对11名无矽肺矿工测血清铜蓝蛋白含量(活性单位/dl)，算得均数为6.5，标准差为1.36，试估计无矽肺矿工血清铜蓝蛋白的总体均数。
+
+</p><p>本例n=11， <span class="PUC03_e0"></span>＝6.5， s=1.36，自由度v=11-1=10。若取95%可信区间，则α=0.05，查t界值表t0.05，10=2.228，按式(2)：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.9.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.9.gif"></p>
+
+<p>故无矽肺矿工血清铜蓝蛋白的点估计为6.5活性单位/dl，其95%可信区间为5.59～7.41活性单位/dl。
+
+</p><p>例2 某地500名健康成人末梢血液白细胞均数为7291个/mm<sup>3</sup>，标准差为1695个/mm<sup>3</sup>，试估计该地健康成人白细胞均数。
+
+</p><p>本例n=500， <span class="PUC03_e0"></span>＝7291，s=1695，若取95%可信区间， u0.05=1.96，按式(3)：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.11.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.11.gif"></p>
+
+<p>故该地健康成人末梢血液白细胞均数的点估计为7291个/mm<sup>3</sup>，其95%可信区间为7142～7440个/mm<sup>3</sup>。
+
+</p><p><strong>两总体均数差值的可信区间</strong> 经假设检验，已知两样本均数X<sub>1</sub>与<span class="PUC03_e0"></span><sub>2</sub>有差别，而两样本方差s21与s22的差别无显著性时，须进一步估计两总体均数差值的大小。则以两样本均数之差|<span class="PUC03_e0"></span><sub>1-</sub><span class="PUC03_e0"></span><sub>2</sub>|作为点估计。 用式(5)作区间估计。</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.13.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.13.gif"></p>
+
+<p>式中n<sub>1</sub>、n<sub>2</sub>分别为两样本含量，s1、s2分别为两样本标准差，s<span class="PUC03_e0"></span>1-<span class="PUC03_e0"></span>2为两样本均数之差的标准误。
+
+</p><p>例3 分别用甲、乙两药治疗某病患者，甲药治40人，乙药治38人。测得患者某指标的均数<span class="PUC03_e0"></span>与标准差s， 甲药<span class="PUC03_e0"></span><sub>1</sub>＝4.0，s<sub>1</sub>＝0.6;乙药<span class="PUC03_e0"></span><sub>2</sub>＝5.4， s<sub>2</sub>＝0.8。 试估计两总体均数的差值。本例 n<sub>1</sub>＝40， n2=38; <span class="PUC03_e0"></span><sub>1</sub>＝4.0， <span class="PUC03_e0"></span><sub>2</sub>＝5.4; s<sub>1</sub>＝0.6，s<sub>2</sub> =0.8。</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0085.15.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0085.15.gif"></p>
+
+<p>查t界值表，t0.05，76=1.99，
+
+</p><p>(1.4-1.99×0.16，1.4+1.99×0.16)=(1.1，1.7)。
+
 </p><p>两总体均数差值的点估计为1.4，95%可信区间为1.1～1.7。</p></div>
 {% endraw %}
 

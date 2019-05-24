@@ -14,20 +14,31 @@ toc: true
 <!-- more -->
 
 ### [M-plus](/tags/M-plus/)[数据分析服务](/categories/数据分析服务/):
-[EPRIME工作室](http://eprime.cn/)专注于数据分析服务。
-为科研人员提供[M-plus技术支持](http://eprime.cn/2018/08/18/EPRIME工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
+[Eprime工作室](http://Eprime.cn/)专注于数据分析服务。
+为科研人员提供[M-plus技术支持](http://Eprime.cn/2018/08/18/Eprime工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://Eprime.cn/2018/08/17/关于Eprime工作室/)。
 
 QQ: 3597392976
 
-Email: eprime[at]163.com
+Email: Eprime[at]163.com
 
 
 
 ### 中心极限定理:
 
 {% raw %}
-<div class="p1">概率论的重要定理之一.指概率论中讨论随机变量序列部分和的分布，如何能近似于正态分布的一类定理的总称.它是概率论的重要内容，也是统计学的基石之一.若相互独立的随机变量序列ξ<sub>1</sub>，ξ<sub>2</sub>，…，ξ<sub>n</sub>，…有有限期望a<sub>i</sub>＝Eξ<sub>i</sub>和方差b<sup>2</sup><sub>i</sub>＝Dξ<sub>i</sub> (i=1，2，…)，记<p></p><p align="center">B<sup>2</sup><sub>n</sub>＝<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_1986.JPG" width="15"></span>b<sup>2</sup><sub>i</sub>和η<sub>n</sub>＝<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_1987.JPG" width="15"></span><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="29" src="/CRFDPIC/R200607288/MATH0X_6198.JPG" width="35"></span> (n=1，2，…)</p><p>凡在各种条件下证明序列｛η<sub>n</sub>｝对每个x有</p><p></p><p align="center"><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="20" src="/CRFDPIC/R200607288/MATH1X_1988.JPG" width="21"></span> P(η<sub>n</sub>≤x)=<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="33" src="/CRFDPIC/R200607288/MATH0X_6199.JPG" width="31"></span>∫<sup>x</sup><sub>-∞</sub>e<sup>-<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="28" src="/CRFDPIC/R200607288/MATH0X_6200.JPG" width="14"></span></sup>du，</p>即证明η<sub>n</sub>的分布收敛于标准正态分布的定理，都称为中心极限定理.这是1920年由波利亚(Polya，G.)首先提出并使用的.中心极限定理从理论上证明了某个量受到大量互相独立的随机因素的影响，而每个因素在总影响中又都很微小，则这个量必服从或近似地服从正态分布.中心极限定理有广泛的实用性，例如，测量误差可看成一个随机变量，它们共同影响着测量的结果，而每一个影响测量结果的因素作用又都是微小的，则这个变量是服从正态分布的.</div>
+<div class="p1">概率论的重要定理之一.指概率论中讨论随机变量序列部分和的分布，如何能近似于正态分布的一类定理的总称.它是概率论的重要内容，也是统计学的基石之一.若相互独立的随机变量序列ξ<sub>1</sub>，ξ<sub>2</sub>，…，ξ<sub>n</sub>，…有有限期望a<sub>i</sub>＝Eξ<sub>i</sub>和方差b<sup>2</sup><sub>i</sub>＝Dξ<sub>i</sub> (i=1，2，…)，记
+
+
+<p></p><p align="center">B<sup>2</sup><sub>n</sub>＝<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_1986.JPG" width="15"></span>b<sup>2</sup><sub>i</sub>和η<sub>n</sub>＝<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="26" src="/CRFDPIC/R200607288/MATH1X_1987.JPG" width="15"></span><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="29" src="/CRFDPIC/R200607288/MATH0X_6198.JPG" width="35"></span> (n=1，2，…)</p>
+
+
+<p>凡在各种条件下证明序列｛η<sub>n</sub>｝对每个x有
+
+
+</p><p></p><p align="center"><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="20" src="/CRFDPIC/R200607288/MATH1X_1988.JPG" width="21"></span> P(η<sub>n</sub>≤x)=<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="33" src="/CRFDPIC/R200607288/MATH0X_6199.JPG" width="31"></span>∫<sup>x</sup><sub>-∞</sub>e<sup>-<span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" height="28" src="/CRFDPIC/R200607288/MATH0X_6200.JPG" width="14"></span></sup>du，</p>
+
+即证明η<sub>n</sub>的分布收敛于标准正态分布的定理，都称为中心极限定理.这是1920年由波利亚(Polya，G.)首先提出并使用的.中心极限定理从理论上证明了某个量受到大量互相独立的随机因素的影响，而每个因素在总影响中又都很微小，则这个量必服从或近似地服从正态分布.中心极限定理有广泛的实用性，例如，测量误差可看成一个随机变量，它们共同影响着测量的结果，而每一个影响测量结果的因素作用又都是微小的，则这个变量是服从正态分布的.</div>
 {% endraw %}
 
 

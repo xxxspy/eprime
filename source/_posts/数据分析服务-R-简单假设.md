@@ -18,8 +18,10 @@ toc: true
 ### 简单假设:
 
 {% raw %}
-<div class="p1">完全决定总体分布的统计假设。如，
-H：总体服从标准正态分布;H：泊松质点流的强度λ
+<div class="p1">完全决定总体分布的统计假设。如，
+
+H：总体服从标准正态分布;H：泊松质点流的强度λ
+
 =3。</div>
 {% endraw %}
 
@@ -49,13 +51,13 @@ H：总体服从标准正态分布;H：泊松质点流的强度λ
 - [6]  王守祯; 经济增长率分析中的近似计算方法. 中央财政金融学院学报 ,1992,(01)
 - [7]  王率滨; 参数假设检验中统计量的确定. 财经理论与实践 ,1986,(01)
 
-
-### [R](/tags/R/)[数据分析服务](/categories/数据分析服务/):
-[EPRIME工作室](http://eprime.cn/)专注于数据分析服务。
+EprimeEprime
+### [R](/tags/R/)[数据分析Eprimeategories/数据分析服Eprime
+[EPRIME工作室](http://epriEprime)专注于数据分析服务。Eprime
 为科研人员提供[R技术支持](http://eprime.cn/2018/08/18/EPRIME工作室R代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
 关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
 
-QQ: 3597392976
+QQ: 359Eprime6
 
 Email: eprime[at]163.com
 
