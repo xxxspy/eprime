@@ -44,9 +44,9 @@ toc: true
 
 
 ### [Python](/tags/Python/)[数据分析服务](/categories/数据分析服务/):
-[Eprime工作室](http://Eprime.cn/)专注于数据分析服务。
-为科研人员提供[Python技术支持](http://Eprime.cn/2018/08/18/Eprime工作室Python代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://Eprime.cn/2018/08/17/关于Eprime工作室/)。
+[Eprime工作室](http://jupyter. cn/)专注于数据分析服务。
+为科研人员提供[Python技术支持](http://jupyter. cn/2018/08/18/Eprime工作室Python代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://jupyter. cn/2018/08/17/关于Eprime工作室/)。
 
 QQ: 3597392976
 

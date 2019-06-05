@@ -60,9 +60,9 @@ toc: true
 
 
 ### [psychopy](/tags/psychopy/)[程序开发](/categories/程序开发/):
-[Eprime工作室](http://Eprime.cn/)专注于程序开发。
-为科研人员提供[psychopy技术支持](http://Eprime.cn/2018/08/17/关于Eprime工作室/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://Eprime.cn/2018/08/17/关于Eprime工作室/)。
+[Eprime工作室](http://jupyter. cn/)专注于程序开发。
+为科研人员提供[psychopy技术支持](http://jupyter. cn/2018/08/17/关于Eprime工作室/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://jupyter. cn/2018/08/17/关于Eprime工作室/)。
 
 QQ: 3597392976
 

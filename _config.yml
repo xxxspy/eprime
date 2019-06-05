@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: EPRIME工作室
+title: EPRIME工作室-数爱笔记
 subtitle: 代做数据分析
 description: 天下没有难做的科研
 keywords: eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos
@@ -16,7 +16,7 @@ tel: 17777785555
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://eprime.cn
+url: http://jupyter.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

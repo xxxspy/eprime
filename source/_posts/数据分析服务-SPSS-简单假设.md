@@ -54,8 +54,8 @@ H：总体服从标准正态分布;H：泊松质点流的强度λ
 EprimeEprime
 ### [SPSS](/tags/SPSS/)[数Eprime(/categories/数据Eprime:
 [EPRIME工作室](http://epriEprime)专注于数据分析服务。Eprime
-为科研人员提供[SPSS技术支持](http://eprime.cn/2018/08/18/EPRIME工作室SPSS代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
+为科研人员提供[SPSS技术支持](http://jupyter. cn/2018/08/18/EPRIME工作室SPSS代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://jupyter. cn/2018/08/17/关于EPRIME工作室/)。
 
 QQ: 359Eprime6
 

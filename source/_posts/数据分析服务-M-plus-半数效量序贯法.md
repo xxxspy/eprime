@@ -56,9 +56,9 @@ EprimeEprime
 
 
 ### [M-plus](/tags/M-plus/)[数据分析服务](/categories/数据分析服务/):
-[EPRIME工作室](http://eprime.cn/)专注于数据分析服务。
-为科研人员提供[M-plus技术支持](http://eprime.cn/2018/08/18/EPRIME工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
-关于我们的简介可以访问[这里](http://eprime.cn/2018/08/17/关于EPRIME工作室/)。
+[EPRIME工作室](http://jupyter. cn/)专注于数据分析服务。
+为科研人员提供[M-plus技术支持](http://jupyter. cn/2018/08/18/EPRIME工作室M-plus代做服务详情/), 订单式, 先服务后收费, 不满意不收费。
+关于我们的简介可以访问[这里](http://jupyter. cn/2018/08/17/关于EPRIME工作室/)。
 
 QQ: 3597392976
 

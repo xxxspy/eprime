@@ -2,7 +2,7 @@
 title: e-prime2.0视频教程下载
 date: 2018-05-04 10:56:44
 tags: [Eprime, 服务内容]
-author: Eprime.cn
+author: jupyter. cn
 category: Eprime
 top: true
 ---
@@ -20,4 +20,4 @@ top: true
 
 本文会持续更新, 有问题请在下方留言.
 
-请持续关注我们的网站(Eprime.cn). 如果您想通过开发程序赚点小钱, 可以加入我们的Eprime技术群799240394.
+请持续关注我们的网站(jupyter. cn). 如果您想通过开发程序赚点小钱, 可以加入我们的Eprime技术群799240394.
