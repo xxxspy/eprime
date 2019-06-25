@@ -11,14 +11,16 @@ var tags = page.tags ? page.tags.data : '';
     <%= (page.title || config.title) + (page.title ? ' | ' + config.title : '') %>
   </title>
   <meta name="description" content="<%= config.description %>">
-  <%
-  if(tags){ %>
+  <meta name="keywords" content="<%= config.keywords %>">
+  <% if(tags){ %>
   <meta name="keywords" content="
   <%= tags.map(function(tag) {
     return tag.name
   }).join(',') %>
   ">
+  <% }else{ %>
   <% } %>
+
   <meta name="author" content="<%= config.author %>">
 
   <meta http-equiv="Cache-Control" content="no-transform"/>

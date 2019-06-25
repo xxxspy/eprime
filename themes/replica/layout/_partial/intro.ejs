@@ -16,23 +16,33 @@ var avatar = config.avatar || theme.avatar || 'https://octodex.github.com/images
     <div class="user-name">
       <div class="blog-title"><a href="<%= config.service_url %>"><%= theme.title %></a></div>
       <div class="blog-author"><a href="<%= config.service_url %>"><%= theme.author %></a></div>
-        <ul class="user-detail mobile-only">
-    <% if(location){ %>
-    <li>
-      <i class="fa fa-map-marker"></i>
-      <%= location %>
-    </li>
-    <% }if(email){ %>
-    <li>
-      <i class="fa fa-envelope-o"></i>
-      <a href="mailto:<%= email %>"><%= email %></a>
-    </li>
-    <% } %>
-    <li>
-      <i class="fa fa-home"></i>
-      <a href="<%= url %>"><%= url %></a>
-    </li>
-  </ul>
+
+      <div class="blog-description left-box">
+        <%= theme.description %>
+      </div>
+
+      <div class="left-box mobile-only">
+          大学生互填问卷群-不诚信互填立即踢出
+          <img src="/images/问卷互填群二维码.png" style="width:100%">
+      </div>
+    
+      <ul class="user-detail mobile-only">
+        <% if(location){ %>
+        <li>
+          <i class="fa fa-map-marker"></i>
+          <%= location %>
+        </li>
+        <% }if(email){ %>
+        <li>
+          <i class="fa fa-envelope-o"></i>
+          <a href="mailto:<%= email %>"><%= email %></a>
+        </li>
+        <% } %>
+        <li>
+          <i class="fa fa-home"></i>
+          <a href="<%= url %>"><%= url %></a>
+        </li>
+      </ul>
     </div>
     <div class="blog-description left-box">
       <%= theme.description %>
@@ -65,9 +75,7 @@ var avatar = config.avatar || theme.avatar || 'https://octodex.github.com/images
   <div class="desktop-only left-box">
     <%- tagcloud() %>
   </div>
-  <div class="desktop-only left-box">
-    <img src="/images/EPRIME工作室群二维码.png" style="width:100%">
-  </div>
+
   <div class="social-media desktop-only">
     <h4>Social Media</h4>
     <ul>
