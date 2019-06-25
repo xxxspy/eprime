@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: EPRIME工作室-数爱笔记
-subtitle: 代做数据分析
+title: 数爱笔记
+subtitle: 代做数据分析,问卷设计,问卷数据分析,问卷互填,问卷调查填写与发放
 description: 天下没有难做的科研
-keywords: eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos
+keywords: 问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos
 author: 数据分析服务
 language: zh-CN
 timezone: Asia/Shanghai
@@ -90,6 +90,8 @@ links:
   DataScience: http://mlln.cn
   猪皮特爱笔记: http://jupyter.cn
   PsychoTech: http://eprime.cn
+  问卷网: https://www.wenjuan.com/
+  问卷星: https://www.wjx.cn/
 
 
 gitalk:
