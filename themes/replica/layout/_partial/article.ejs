@@ -24,7 +24,11 @@ var publishTimestamp = page.date.valueOf();
     <h1><%= page.title || 'Untitle' %></h1>
     <%- page.content %>
   </article>
+  <%- partial('_partial/post-right-side', {item: page}) %>
 </div>
+
+
+
 
 <% if (config.gitalk ) { %>
     <%- partial('_widget/gitalk') %>

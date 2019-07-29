@@ -1,6 +1,6 @@
 <%
 var posts = page.posts.data;
-var recentPosts = page.posts.data.slice(0, 30);
+var recentPosts = page.posts.data.slice(0, 100);
 %>
 
 <div class="container-lg">
@@ -42,7 +42,10 @@ var recentPosts = page.posts.data.slice(0, 30);
         </li>
         <% }) %>
       </ul>
+      <%- partial('_partial/pagination') %>
+
       <%- partial('_partial/calendar') %>
+
     </div>
   </div>
 </div>
