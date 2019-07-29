@@ -110,6 +110,12 @@ a:hover {
     display: none;
   }
 }
+.wrap-pagination {
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: #d7ecff;
+}
 .navbar-wrapper {
   position: relative;
 }
@@ -580,6 +586,9 @@ pre {
   -moz-border-radius: 3px;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #959da5;
+}
+.related-posts {
+  padding: 50px;
 }
 .footer {
   position: relative;
