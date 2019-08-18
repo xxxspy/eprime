@@ -1,5 +1,5 @@
 ---
-title: Analysis of the Impact of Brand Image on Customer Loyalty: A case study of Starbucks UK(问卷内容)
+title: Analysis of the Impact of Brand Image on Customer Loyalty(A case study of Starbucks UK)
 date: 2019-08-15 08:18:26
 tags: [问卷模板, 问卷大全, 问卷调查填写, 刷问卷, 问卷收集]
 ---
