@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            R数据分析案例:先验概率 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+先验概率:
+见“贝叶斯公式”.
+
+R中相关概念
+先验概率: 信息理论基本概念之一.在一个通信系统中">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  R,概率论与统计学初步,随机事件与概率
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 2233 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 84 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1535650304000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1535650304000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/R/">
+          R
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/概率论与统计学初步/">
+          概率论与统计学初步
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/随机事件与概率/">
+          随机事件与概率
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>R数据分析案例:先验概率</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="先验概率"><a href="#先验概率" class="headerlink" title="先验概率:"></a>先验概率:</h3>
+<div class="p1">见“贝叶斯公式”.</div>
+
+<h3 id="R中相关概念"><a href="#R中相关概念" class="headerlink" title="R中相关概念"></a><a href="/tags/R/">R</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>先验概率</strong>: 信息理论基本概念之一.在一个通信系统中,在收到任何消息之前,接收端所了解到的某消息发送的概率,称为先验概率.通过该系统所获得的信息量,随先验概率的增加而减少.即定义为…</li>
+<li><strong>先验概率</strong>: 见“贝叶斯公式”….</li>
+<li><strong>先验概率</strong>: 在试验进行以前已经知道的,试验结果的各种“原因”所发生的概率。它通过对事件出现的假设(例如等可能性等),或对过去的试验所得到的信息进行分析来确定。见逆概率*。…</li>
+<li><strong>先验概率</strong>: prior probability…</li>
+<li><strong>先验概率</strong>: prior probability…</li>
+<li><strong>先验概率</strong>: prior probability…</li>
+<li><strong>先验概率</strong>: priori probability,probability a prior…</li>
+<li><strong>先验概率</strong>: probabilité a priori…</li>
+<li><strong>先验概率</strong>: prior probability…</li>
+<li><strong>先验概率</strong>: prior probability | probability a priori…</li>
+</ul>
+<h3 id="R参考文献"><a href="#R参考文献" class="headerlink" title="R参考文献"></a><a href="/tags/R/">R</a><a href="/categories/数据分析服务/">参考文献</a></h3><ul>
+<li>[1]  范聪;李建增;张岩; 基于采样优化的随机抽取一致性算法. 电光与控制 ,2018,(07)</li>
+<li>[2]  宁勇;唐颖;杨思佳;陈健; 贝叶斯决策分析法在某电厂输煤系统煤尘及噪声接触评估中的应用. 环境与职业医学 ,2018,(02)</li>
+<li>[3]  齐会敏;刘群;戴大祥; 面向兴趣主题的个性化好友推荐. 计算机工程与科学 ,2018,(02)</li>
+<li>[4]  杨棣;王元美;李军刚; 贝叶斯频率估计中频率的先验分布对有色噪声作用的影响. 物理学报 ,2018,(06)</li>
+<li>[5]  李拴虎;高立新;丁风和;陈立峰;杨红樱; 用于地震参数估算的两种贝叶斯概率算法分析. 地震学报 ,2016,(06)</li>
+<li>[6]  田猛;路成;周健;施汉琴;陶亮; 联合模板先验概率和稀疏表示的目标跟踪. 中国图象图形学报 ,2016,(11)</li>
+<li>[7]  张卓;尹晓丽; 借一斑以窥全豹——贝叶斯公式教学研探. 太原学院学报(自然科学版) ,2016,(04)</li>
+<li>[8]  陈强强;陈志平;李春光;唐艳同;黄超亮; 贝叶斯网络故障诊断的先验概率评估研究. 电子机械工程 ,2017,(02)</li>
+<li>[9]  王禹;毛坤云;陈嘉佳;郝兴龙;贾润; STR分型的民族推断. 中国刑警学院学报 ,2017,(02)</li>
+<li>[10]  陶志;何丹峰;潘丽平; 条件先验概率优势关系粗糙集模型. 中国民航大学学报 ,2017,(03)</li>
+<li>[1]  程凯; QE里的赌局. 华夏时报 ,2013</li>
+<li>[1]  何丹峰; 不完备系统中先验概率优势关系粗集模型及其数据挖掘方法研究. 中国民航大学 ,2017</li>
+<li>[2]  卢娇娇; 基于交易成本和学习机制的MAS工程争端谈判研究. 华北水利水电大学 ,2017</li>
+<li>[3]  田猛; 基于稀疏表示和非负矩阵分解理论的目标跟踪算法研究. 安徽大学 ,2017</li>
+<li>[4]  刘云美; 认知风格、先验概率和结果效价对大学生控制错觉的影响. 天津师范大学 ,2016</li>
+<li>[5]  刘彩平; 不完备系统粗糙集拓展模型及其数据挖掘算法研究. 中国民航大学 ,2014</li>
+<li>[6]  贾丰蔓; 基于优化条件抽样一致性的稳健影像匹配方法研究. 中国地质大学(北京) ,2015</li>
+<li>[7]  景少彩; 基于Bayes判别分析的四川省泥石流预报模型研究. 电子科技大学 ,2013</li>
+<li>[8]  胡勇; 多时相遥感影像土地覆盖自动分类研究. 西安科技大学 ,2011</li>
+<li>[9]  何勇; 多元Bayes决策中的Minimax方法. 四川大学 ,2007</li>
+<li>[10]  于国全; 模糊贝叶斯决策方法. 吉林大学 ,2008</li>
+<li>[1]  刘健; 实体检索的理论与关键技术研究. 国防科学技术大学 ,2014</li>
+<li>[2]  杨春宇; 数据流上的聚类与分类算法. 清华大学 ,2009</li>
+<li>[1]  王丽;张震;张鹏远;颜永红; 基于先验概率线性插值的声学模型自适应方法. 第十四届全国人机语音通讯学术会议（NCMMSC’2017）论文集 ,2017</li>
+<li>[2]  林杰华;张斌;李冬森;宋华茂;余志强;王浩; 支持向量机在电力客户信用评级中的应用. 全国第21届计算机技术与应用学术会议（CACIS·2010）暨全国第2届安全关键技术与应用学术会议论文集 ,2010</li>
+<li>[3]  冯翠莲; 先验及后验概率下最优决策的选择. 中国现场统计研究会第12届学术年会论文集 ,2005</li>
+</ul>
+<h3 id="R数据分析服务"><a href="#R数据分析服务" class="headerlink" title="R数据分析服务:"></a><a href="/tags/R/">R</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">Eprime工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/Eprime工作室R代做服务详情/" target="_blank" rel="noopener">R技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于Eprime工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: Eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/R/">
+            R
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-非线性回归.1/">
+                    非线性回归-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-频域分析.1/">
+                    频域分析-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-中心极限定理/">
+                    中心极限定理-R实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-一元非线性回归.1/">
+                    一元非线性回归-R论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-初轧热锭率/">
+                    R初轧热锭率代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-林德伯格-莱维中心极限定理/">
+                    林德伯格-莱维中心极限定理-R实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-概率分布密度/">
+                    概率分布密度-R论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-一个正态总体的协差阵检验/">
+                    R数据分析案例:一个正态总体的协差阵检验
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-勾股形/">
+                    勾股形-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-季节回归模型.1/">
+                    R数据分析案例:季节回归模型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-样本点/">
+                    样本点-R论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-协差阵/">
+                    协差阵-R实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-R-耶茨连续性修正/">
+                    耶茨连续性修正-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-R-几何滞后模型估计.1/">
+                    几何滞后模型估计-R实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-R-共轭大圆弧.1/">
+                    共轭大圆弧-R数据可视化代做
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/概率论与统计学初步/">
+            概率论与统计学初步
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-概率分布密度/">
+                    Python概率分布密度代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Eviews-非线性回归.1/">
+                    非线性回归-Eviews数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-非线性回归.1/">
+                    非线性回归-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-二阶混合中心矩/">
+                    SAS二阶混合中心矩代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-中心极限定理/">
+                    中心极限定理-R实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-二阶混合中心矩/">
+                    二阶混合中心矩-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-样本点/">
+                    STATA样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-二阶混合中心矩/">
+                    二阶混合中心矩-SPSS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-二阶混合中心矩/">
+                    二阶混合中心矩-STATA数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-概率分布密度/">
+                    概率分布密度-R论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-Eviews-中心极限定理/">
+                    中心极限定理-Eviews论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-样本点/">
+                    样本点-SPSS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-概率分布密度/">
+                    概率分布密度-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-概率分布密度/">
+                    概率分布密度-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-Eviews-二阶混合中心矩/">
+                    Eviews数据分析案例:二阶混合中心矩
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/随机事件与概率/">
+            随机事件与概率
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-样本点/">
+                    STATA样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-样本点/">
+                    样本点-SPSS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-样本点/">
+                    SAS样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-样本点/">
+                    样本点-R论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-Eviews-样本点/">
+                    Eviews数据分析案例:样本点
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-样本点/">
+                    M-plus样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-Python-样本点/">
+                    Python样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/09/02/数据分析服务-Eviews-先验概率/">
+                    Eviews先验概率代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/09/01/数据分析服务-SAS-先验概率/">
+                    先验概率-SAS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/09/01/数据分析服务-M-plus-先验概率/">
+                    先验概率-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/09/01/数据分析服务-Python-先验概率/">
+                    先验概率-Python数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/数据分析服务-SPSS-先验概率/">
+                    先验概率-SPSS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/数据分析服务-STATA-先验概率/">
+                    STATA数据分析案例:先验概率
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/数据分析服务-R-先验概率/">
+                    R数据分析案例:先验概率
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/31/数据分析服务-R-先验概率/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>

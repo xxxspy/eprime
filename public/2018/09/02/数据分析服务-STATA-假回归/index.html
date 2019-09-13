@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            STATA数据分析案例:假回归 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+假回归:
+把毫无联系的一些变量进行回归，而求得的回归系数却能通过统计显著性检验，即拒绝回归系数为零">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  STATA,计量经济学
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 2233 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 84 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1535830305000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1535830305000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/STATA/">
+          STATA
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/计量经济学/">
+          计量经济学
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>STATA数据分析案例:假回归</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="假回归"><a href="#假回归" class="headerlink" title="假回归:"></a>假回归:</h3><p>
+<div class="p1">把毫无联系的一些变量进行回归，而求得的回归系数却能通过统计显著性检验，即拒绝回归系数为零的零假设; 算出的可决系数R<sup>2</sup>值又比较高。这种回归就是著名的假回归。把变量间原本不存在的联系却分析成具有统计上的因果关系，这是毫无意义的。
+
+<p>出现这种假回归，是与非平稳过程有关。格兰杰和纽博尔德模拟了对独立随机游动和单整移动平均过程这些非平稳过程进行的回归，出现假回归的机会达到64至96%，同时这些假回归中的DW (DubinWatson)统计量都很低，即有很高的自相关，而对上述随机游动和单整移动平均过程都经过一次差分而成为平稳过程后进行的回归，则出现假回归的机会就只有2至12%，而且自相关很低。
+
+</p><p>菲利普斯对上述非平稳过程的结果作出了理论阐述。他取下列回归模型
+
+</p><p></p><p align="center">y<sub>t</sub>＝β<sub>0</sub>+β<sub>1</sub>x<sub>t</sub>+u<sub>t</sub>，t=1，2，…，n (1)</p>
+
+式中y<sub>t</sub>和x<sub>t</sub>两者是互不联系的独立随机游动：
+
+<p></p><p align="center">y<sub>t</sub>＝y<sub>t-1</sub>+v<sub>t</sub> (2)</p>
+
+<p align="center">x<sub>t</sub>＝x<sub>t-1</sub>+ω<sub>t</sub> (3)</p>
+
+菲利普斯用渐近理论证明了与 (1)式相联系的 “学
+
+生”t值当样本容量n→∞时，实际上是发散的。因此
+
+当采用t检验时，样本容量越大，零假设被拒绝的概率
+
+越大。他同时又证明了DW统计量d依概率收敛于
+
+零;而可决系数R<sup>2</sup>具有非退化极限分布。因此，在假
+
+回归中会见到很小的d值和适当大的R<sup>2</sup>值。
+
+<p>为避免出现假回归，须把非平稳过程转化为平稳
+
+过程。例如取差分、取对数以及把一些单整序列通过某
+
+种Eprime成协整序列。</p>EprimeEprime</div></p>
+<h3 id="STATA中相关概念"><a href="#STATA中相关概念" class="headerlink" title="STATA中相关概念"></a><a href="/tags/STATA/">STATA</a>中<a href="/categories/数据分析服务">相关概念</a></h3><p>Eprime</p>
+<ul>
+<li><strong>假回归</strong>: 把毫无联系的一些变量进行回归,而求得的回归系数却能通过统计显著性检验,即拒绝回归系数为零的零假设; 算出的可决系数R2值又比较高。这种回归就是著名的假回归。把变量间原本不存在的联系却分析成具有统计上的因果关系,这是毫无意义的。出现这种假回归,是与…</li>
+<li><strong>达生</strong>: (解题)本篇以首句“达生之情者”的首二字为题。但达生并非其全部内容,此外还讲到达命。主旨在于讲求养生之道,以弃事遗生来达成之。做到形全精复,与天为一。其所以亏于形精者去之。神全无物。…</li>
+<li><strong>格兰杰，C.</strong>: 1934年生于英国威尔士斯旺西,1955年在诺丁汉大学获文学士,1959年获哲学(统计学)博士学位,1965年至1974年任诺丁汉大学应用统计学和经济计量学教授,现在美国加利福尼亚大学任经济学教授,是经济计量学会研究员。其主要贡献是经济计量学中时间序列方法的使用和…</li>
+</ul>
+<h3 id="STATA数据分析服务"><a href="#STATA数据分析服务" class="headerlink" title="STATA数据分析服务:"></a><a href="/tags/STATA/">STATA</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/EPRIME工作室STATA代做服务详情/" target="_blank" rel="noopener">STATA技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于EPRIME工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/STATA/">
+            STATA
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-简单线性回归模型.1/">
+                    简单线性回归模型-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-勾股形/">
+                    STATA数据分析案例:勾股形
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-线性规划典范型.1/">
+                    STATA数据分析案例:线性规划典范型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-总体均数估计.1/">
+                    总体均数估计-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-初轧热锭率/">
+                    初轧热锭率-STATA数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-样本点/">
+                    STATA样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-几何滞后模型估计.1/">
+                    STATA数据分析案例:几何滞后模型估计
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-林德伯格-莱维中心极限定理/">
+                    林德伯格-莱维中心极限定理-STATA实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-二阶混合中心矩/">
+                    二阶混合中心矩-STATA数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-概率分布密度/">
+                    概率分布密度-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-多个正态总体的协差阵检验/">
+                    多个正态总体的协差阵检验-STATA实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-耶茨连续性修正/">
+                    STATA耶茨连续性修正代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-季节回归模型.1/">
+                    季节回归模型-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-一元非线性回归.1/">
+                    一元非线性回归-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-样本差异系数/">
+                    样本差异系数-STATA论文数据分析代做
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/计量经济学/">
+            计量经济学
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-几何滞后模型估计.1/">
+                    SPSS数据分析案例:几何滞后模型估计
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-简单线性回归模型.1/">
+                    简单线性回归模型-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Eviews-几何滞后模型估计.1/">
+                    几何滞后模型估计-Eviews数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-简单线性回归模型.1/">
+                    简单线性回归模型-Python论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-几何滞后模型估计.1/">
+                    STATA数据分析案例:几何滞后模型估计
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-季节回归模型.1/">
+                    R数据分析案例:季节回归模型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-简单线性回归模型.1/">
+                    SPSS数据分析案例:简单线性回归模型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-几何滞后模型估计.1/">
+                    几何滞后模型估计-SAS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-季节回归模型.1/">
+                    季节回归模型-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-Eviews-简单线性回归模型.1/">
+                    简单线性回归模型-Eviews数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-季节回归模型.1/">
+                    SPSS季节回归模型代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-R-几何滞后模型估计.1/">
+                    几何滞后模型估计-R实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-Python-几何滞后模型估计.1/">
+                    几何滞后模型估计-Python实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-Eviews-季节回归模型.1/">
+                    Eviews数据分析案例:季节回归模型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-Python-季节回归模型.1/">
+                    季节回归模型-Python论文数据分析代做
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/09/02/数据分析服务-STATA-假回归/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>

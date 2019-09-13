@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            多阶段抽样-SPSS实证分析 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+多阶段抽样:
+亦称多级抽样。分两个或两个以上
+
+阶段实现的抽样。第一阶段，将总体分成若干一级抽样
+">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  SPSS,统计的一般理论和方法,抽样技术
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 2233 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 84 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1534852466000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1534852466000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/SPSS/">
+          SPSS
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/统计的一般理论和方法/">
+          统计的一般理论和方法
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/抽样技术/">
+          抽样技术
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>多阶段抽样-SPSS实证分析</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="多阶段抽样"><a href="#多阶段抽样" class="headerlink" title="多阶段抽样:"></a>多阶段抽样:</h3>
+<div class="p1">亦称多级抽样。分两个或两个以上
+
+阶段实现的抽样。第一阶段，将总体分成若干一级抽样
+
+单位，抽选若干一级抽样单位入样;第二阶段，将入样
+
+的每个一级单位分成若干二级抽样单位，从入样的每
+
+个一级单位中各抽选若干二级单位入样……依此类
+
+推，直到获得最终样本。例如，某城市住户的抽样调查，
+
+调查单位是户，具体实施时，第一阶段，将城市居民委
+
+员会作为一级抽样单位，抽选若干居民委员会入样;第
+
+二阶段，在入样的居委会中再抽若干住户构成样本，这
+
+种抽样方式称为二阶段抽样或二级抽样。</div>
+
+<h3 id="SPSS中相关概念"><a href="#SPSS中相关概念" class="headerlink" title="SPSS中相关概念"></a><a href="/tags/SPSS/">SPSS</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>多阶段抽样</strong>: 在现场调查中,往往面临的总体非常庞大,情况复杂,观察单位很多,而且分布面广,很难通过一次抽样产生完整的样本,而是根据实际情况将整个抽样过程分为若干阶段来进行,这叫多阶段抽样。…</li>
+<li><strong>多阶段抽样</strong>: 亦称为多级抽样。把抽选样本单位的过程,分为两个或两个以上阶段来进行,直到最后抽选出样本单位的一种较复杂的抽样组织方式。在抽样实践中,当全及总体较大或总体单位分布很广时,要从总体中一次抽取样本单位是比较困难的,而且效果也不好,在这种情况下,就需要采用多阶段抽…</li>
+<li><strong>多阶段抽样</strong>: 也称多级抽样,是从总体中抽取样本单位的过程分为几个阶段来进行的方法。即在总体中先抽大的样本单位作为第一阶段样本单位,再从第一阶段样本单位中抽取第二阶段样本单位,直到抽取最终阶段样本单位。在实际工作中,所要调查的对象往往包含成千上万的单位,而…</li>
+<li><strong>多阶段抽样</strong>: 亦称多级抽样。指从被调查事物总体中抽取样本单位的过程分为几个阶段进行的抽样方法。即在总体中先抽大单位,再在大单位中抽小单位,小单位中再抽更小的单位,而不是一次就直接抽取基层的单位。如我国职工家庭收支情况调查: (1) 先抽取要调查的城市; (2) 在抽中的…</li>
+<li><strong>多阶段抽样</strong>: 亦称多级抽样。分两个或两个以上阶段实现的抽样。第一阶段,将总体分成若干一级抽样单位,抽选若干一级抽样单位入样;第二阶段,将入样的每个一级单位分成若干二级抽样单位,从入样的每个一级单位中各抽选若干二级单位入样……依此类推,直到获得最终样本。例如,某城市住…</li>
+<li><strong>多阶段抽样</strong>: 把从总体中抽取样本单位的过程分为几个阶段进行的抽样方法。它综合运用抽样调查的各种方法(如纯随机抽样、类型抽样、整群抽样等),首先抽取大的样本单位作为第一阶段样本单位,然后再从第一阶段样本单位中抽取第二阶段样本单位,直至抽取最终阶段样本单位。采用多…</li>
+<li><strong>多阶段抽样</strong>: multistage sampling…</li>
+<li><strong>多阶段抽样</strong>: 亦称“多级抽样”。分两个或两个以上阶段实现的抽样。第一阶段,将总体分成若干一级抽样单位,抽选若干一级抽样单位入样; 第二阶段,将入样的每个一级单位分成若干二级抽样单位,从入样的每个一级单位中各抽选若干二级单位入样,等等,依此类推,直到获得最终样本。…</li>
+<li><strong>多阶段抽样</strong>: sondage à plusieurs degrés…</li>
+<li><strong>多阶段抽样</strong>: 亦称多级抽样。将抽样过程分阶段进行,每个阶段使用的抽样方法往往不同,即将各种抽样方法结合使用。常用于大型营养流行病学调查。实施时先从总体中抽取范围较大的单元,称为一级抽样单元,再从每个抽得的一级单元中抽取范围较小的二级单元,依此类推,最后抽取其中范围更小的单元…</li>
+</ul>
+<h3 id="SPSS参考文献"><a href="#SPSS参考文献" class="headerlink" title="SPSS参考文献"></a><a href="/tags/SPSS/">SPSS</a><a href="/categories/数据分析服务/">参考文献</a></h3><ul>
+<li>[1]  聂鑫;贺超;朱永凯;贾英男;高俊岭; 上海市大学生社交媒体的使用对线上社会资本和心理健康的影响. 中国健康教育 ,2018,(07)</li>
+<li>[2]  马杰;唐靖一;任泽涛; 上海市老年人群对中医医养结合养老机构需求的影响因素分析. 中医药管理杂志 ,2018,(13)</li>
+<li>[3]  张寒冰;李建涛;李俊峰; 山西省医师职称现状及对职称评审态度的调查. 中国药物与临床 ,2016,(12)</li>
+<li>[4]  宁桂军;王旭霞;刘世文;朱玉英;张秉玲;张晓曙;李艺星;尹遵栋;杨维中; 2015-2016年甘肃省白银市5岁以下儿童社区获得性肺炎疾病负担回顾性调查. 中国疫苗和免疫 ,2017,(01)</li>
+<li>[5]  谭锦权;姚梓坚; 2015年肇庆市城市部分居民健康素养状况调查. 预防医学论坛 ,2016,(10)</li>
+<li>[6]  谢志平;韩云峰;葛杰;祁艳波;白丽;娄峰阁;贾月辉; 齐齐哈尔市居民健康信息素养现状及影响因素分析. 中国卫生产业 ,2016,(36)</li>
+<li>[7]  任胜男;马颖;张冬梅;高健;陈任;秦侠;韦丽;胡志;陈若陵; 我国五省(市)老年人心绞痛患病率及影响因素研究. 中华疾病控制杂志 ,2017,(02)</li>
+<li>[8]  王璐;魏万宏;陈参参;刘真亚;尤家河;崔慧珍; 河南省临床护士工作满意度及健康现状调查. 齐鲁护理杂志 ,2017,(07)</li>
+<li>[9]  巫亮;吕金伟;甘跃;朱君君;崔晓娟;鲍慧芬;王力炜;程周祥; 芜湖市65岁以上人群血清总胆固醇水平及影响因素调查分析. 安徽预防医学杂志 ,2017,(01)</li>
+<li>[10]  刘玉梅;吴玲;王基鸿;黄海溶;田冶; 大学生突发公共卫生事件应对认知及教学需求调查. 中国卫生产业 ,2017,(12)</li>
+<li>[1]  李泱; 兰州市高血压患病情况的调查分析及模型选择. 兰州大学 ,2016</li>
+<li>[2]  董杉; 广东省残疾人对突发事件的危机意识、应对能力和特殊需求的调查研究. 暨南大学 ,2013</li>
+<li>[3]  姜薇; 承德某县一般人群19种全血微量元素调查研究. 河北医科大学 ,2013</li>
+<li>[4]  李皓敏; 样本轮换及在我国农村住户调查中的应用. 山东财经大学 ,2012</li>
+<li>[5]  张鹏程; 抽样设计的调查费用比较研究. 兰州商学院 ,2009</li>
+<li>[6]  刘升学; 连续调查的抽样设计及应用. 苏州大学 ,2008</li>
+<li>[7]  易想和; 城市高龄老人的社会支持研究. 湖南师范大学 ,2005</li>
+<li>[8]  左小川; 农村“留守妻子”的问题研究. 湖南师范大学 ,2006</li>
+<li>[1]  熊祥玲;胡兰芬;赵江;陈宏伟;张春宏; 2011-2013年青少年高尿酸血症流行现况调查. 中国转化医学和整合医学研讨会（广州站）论文综合刊 ,2015<br>-Eprime陈文金;林明南;潘宝骏;Eprime区域规模疾病流行病学调查自加权分层多阶段抽样设计. 华东地区第十次流行病学学术会议暨华东地区流行病学学术会议20周年庆典论文汇编 ,2010</li>
+<li>[3]  庄润森;曹黎;朱敏贞;邹思梅; 深圳Eprime素养状况及其影响因素研究. 2Eprime国健康传播大会优秀论文集 ,2011</li>
+<li>[4]  庄润森;曹黎;朱敏贞;邹思梅; Eprime健康素养状况及其影响因素调查. 2Eprime预防医学会学术研讨会论文汇编 ,2012</li>
+<li>[5]  吴敏;朱明; 昆明市可避免盲症的快速评估. 中华医学会第十二届全国眼科学术大会论文汇编 ,2007</li>
+<li>[6]  史文海;李正农;李秋胜;宫博; 多阶段抽样技术在随机减量法中的应用. 随机振动理论与应用新进展——第六届全国随机振动理论与应用学术会议论文摘要集 ,2008</li>
+<li>[7]  张莉;林焕彩;涂家珍; 广州市老年人根面龋的患病情况及影响因素研究. 中华口腔医学会老年口腔医学专业委员会换届选举暨第四届全国老年口腔医学学术研讨会论文汇编 ,2008<br>Eprime</li>
+</ul>
+<h3 id="SPSS数据分析服务"><a href="#SPSS数据分析服务" class="headerlink" title="SPSS数据分析服务:"></a><a href="/tags/SPSS/">SPSS</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/EPRIME工作室SPSS代做服务详情/" target="_blank" rel="noopener">SPSS技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于EPRIME工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/SPSS/">
+            SPSS
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-几何滞后模型估计.1/">
+                    SPSS数据分析案例:几何滞后模型估计
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-一个正态总体的协差阵检验/">
+                    SPSS数据分析案例:一个正态总体的协差阵检验
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-二阶混合中心矩/">
+                    二阶混合中心矩-SPSS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-一元非线性回归.1/">
+                    SPSS一元非线性回归代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-样本点/">
+                    样本点-SPSS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-共轭大圆弧.1/">
+                    SPSS数据分析案例:共轭大圆弧
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-耶茨连续性修正/">
+                    耶茨连续性修正-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-简单线性回归模型.1/">
+                    SPSS数据分析案例:简单线性回归模型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-季节回归模型.1/">
+                    SPSS季节回归模型代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-勾股形/">
+                    勾股形-SPSS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-离势分析.1/">
+                    离势分析-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SPSS-中心极限定理/">
+                    中心极限定理-SPSS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SPSS-概率分布密度/">
+                    SPSS数据分析案例:概率分布密度
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SPSS-多个正态总体的协差阵检验/">
+                    SPSS数据分析案例:多个正态总体的协差阵检验
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/统计的一般理论和方法/">
+            统计的一般理论和方法
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SAS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-频域分析.1/">
+                    频域分析-Python数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-样本差异系数/">
+                    样本差异系数-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-频域分析.1/">
+                    频域分析-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-Python实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Eviews-样本差异系数/">
+                    Eviews样本差异系数代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Eviews-频域分析.1/">
+                    Eviews频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-耶茨连续性修正/">
+                    耶茨连续性修正-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-耶茨连续性修正/">
+                    STATA耶茨连续性修正代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-频域分析.1/">
+                    M-plus频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-Python-协差阵/">
+                    Python数据分析案例:协差阵
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-协差阵/">
+                    协差阵-SAS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-协差阵/">
+                    STATA数据分析案例:协差阵
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-协差阵/">
+                    协差阵-R实证分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/抽样技术/">
+            抽样技术
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/09/02/数据分析服务-R-直线等距抽样/">
+                    R直线等距抽样代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/09/01/数据分析服务-SAS-直线等距抽样/">
+                    SAS数据分析案例:直线等距抽样
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/09/01/数据分析服务-M-plus-直线等距抽样/">
+                    M-plus数据分析案例:直线等距抽样
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/数据分析服务-Eviews-直线等距抽样/">
+                    直线等距抽样-Eviews实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/数据分析服务-STATA-直线等距抽样/">
+                    直线等距抽样-STATA实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/数据分析服务-SPSS-直线等距抽样/">
+                    SPSS数据分析案例:直线等距抽样
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/数据分析服务-Python-直线等距抽样/">
+                    直线等距抽样-Python实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/21/数据分析服务-R-多阶段抽样/">
+                    R多阶段抽样代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/21/数据分析服务-M-plus-多阶段抽样/">
+                    多阶段抽样-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/21/数据分析服务-SAS-多阶段抽样/">
+                    多阶段抽样-SAS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/21/数据分析服务-Python-多阶段抽样/">
+                    多阶段抽样-Python实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/21/数据分析服务-STATA-多阶段抽样/">
+                    多阶段抽样-STATA毕业论文代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/21/数据分析服务-Eviews-多阶段抽样/">
+                    Eviews数据分析案例:多阶段抽样
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/21/数据分析服务-SPSS-多阶段抽样/">
+                    多阶段抽样-SPSS实证分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/21/数据分析服务-SPSS-多阶段抽样/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>
