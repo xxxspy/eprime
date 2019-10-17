@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            问卷介绍-问卷调查 | 数爱笔记
+        </title>
+
+        <meta name="description" content="该问卷没有指导语，如果你打算使用这个问卷, 建议你自己添加一些指导语, 帮助用户正确填答问卷!
+该问">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  问卷星,问卷收集,人工填问卷,样本收集,问卷下载
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 2622 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 89 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1571286891000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1571286891000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/问卷星/">
+          问卷星
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/问卷收集/">
+          问卷收集
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/人工填问卷/">
+          人工填问卷
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/样本收集/">
+          样本收集
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/问卷下载/">
+          问卷下载
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>问卷介绍-问卷调查</h1>
+    <h3 id="问卷指导语"><a href="#问卷指导语" class="headerlink" title="问卷指导语"></a>问卷指导语</h3><p>该问卷没有指导语，如果你打算使用这个问卷, 建议你自己添加一些指导语, 帮助用户正确填答问卷!</p>
+<p>该问卷主要用于统计学、行为经济学、教育学、心理学、计量经济学专业的样本收集。</p>
+<a id="more"></a>
+<h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><p>为了帮助毕业生和高效科研人员快速收集网络问卷的数据, 并且保证信效度, 收集高质量的数据, 我组织了一批人专门进行问卷的填写。<br>目前QQ群有21个, 每个群都是千人大群。 可以快速搜集大量样本数据，并且如果客户有要求, 可以对客户的数据进行初审,<br>主动删除一些填写不认真的数据, 这样就可以保证研究人员收集的数据的信效度了。</p>
+<h3 id="快速添加问卷题目"><a href="#快速添加问卷题目" class="headerlink" title="快速添加问卷题目"></a>快速添加问卷题目</h3><p>我已经把这个问卷编辑成了特殊的格式, 可以批量导入到问卷星, 面得你自己创建题目了。</p>
+<p>你只需要将下面的题目复制到问卷星的题目编辑页面即可, 想知道如何快速导入问卷星题目, 可以看这篇文章: <a href="https://mlln.cn/2019/06/01/%E9%97%AE%E5%8D%B7%E6%98%9F%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E6%89%B9%E9%87%8F%E9%A2%98%E7%9B%AE/index.html" target="_blank" rel="noopener">问卷星如何快速批量添加题目</a>。</p>
+
+<textarea rows="40" style="width: 100%;">1. 您对以下观点的看法是？*[单选题]
+非常不同意
+不同意
+一般
+同意
+非常同意
+
+2. 您对以下观点的态度为？*[单选题]
+非常不同意
+不同意
+一般
+同意
+非常同意
+
+3. 您如何看待以下观点？*[单选题]
+非常不同意
+不同意
+一般
+同意
+非常同意
+
+4. 您对以下观点的看法为？*[单选题]
+是
+否
+
+5. 您对本次调查有何看法？*[填空题]
+</textarea>
+
+<h3 id="问卷调查的主要内容"><a href="#问卷调查的主要内容" class="headerlink" title="问卷调查的主要内容"></a>问卷调查的主要内容</h3><p>以下是所有的问卷题目及其选项, 建议大家尽量使用”问卷星”作为网络问卷平台, 支持的题型更多, 更好用, 数据分析更方便。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>需要快速收集问卷数据请看下面</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+<div class="qitem">
+<h4>第1题:您对以下观点的看法是？*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>非常不同意</td></tr>
+<tr><td>2</td><td>不同意</td></tr>
+<tr><td>3</td><td>一般</td></tr>
+<tr><td>4</td><td>同意</td></tr>
+<tr><td>5</td><td>非常同意</td></tr>
+</tbody>
+</table>
+
+</div>
+
+
+<div class="qitem">
+<h4>第2题:您对以下观点的态度为？*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>非常不同意</td></tr>
+<tr><td>2</td><td>不同意</td></tr>
+<tr><td>3</td><td>一般</td></tr>
+<tr><td>4</td><td>同意</td></tr>
+<tr><td>5</td><td>非常同意</td></tr>
+</tbody>
+</table>
+
+</div>
+
+
+<div class="qitem">
+<h4>第3题:您如何看待以下观点？*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>非常不同意</td></tr>
+<tr><td>2</td><td>不同意</td></tr>
+<tr><td>3</td><td>一般</td></tr>
+<tr><td>4</td><td>同意</td></tr>
+<tr><td>5</td><td>非常同意</td></tr>
+</tbody>
+</table>
+
+</div>
+
+
+<div class="qitem">
+<h4>第4题:您对以下观点的看法为？*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+
+
+<div class="qitem">
+<h4>第5题:您对本次调查有何看法？*[填空题][不能为空]</h4>
+
+</div>
+
+<!-- ---
+title: 心理教育医学的问卷免费下载
+date: 2019-05-23 08:59:15
+tags: [问卷星, 问卷网, 问卷下载, 问卷互填, 问卷设计, 问卷模板, 毕业问卷, 问卷数据分析, 问卷代填, ]
+--- -->
+<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><p>如果你有以下需求都可以联系我们:</p>
+<ul>
+<li>问卷代填(大概0.1元一份问卷)</li>
+<li>问卷设计(帮你针对论文设计问卷)</li>
+<li>问卷互填(大学生问卷诚信互填群)</li>
+<li>有淘宝运营经验想跟我们合作</li>
+<li>有数据分析经验想跟我们合作</li>
+<li>问卷数据分析(文字结论和三线表格)</li>
+</ul>
+<p>你都可以联系我们, 加我们的扣扣(1-5-6-4-7-9-9-5-6-6(请自觉忽略”-“))</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/问卷星/">
+            问卷星
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47609800/">
+                    问卷介绍-大学生虚拟社区知识共享行为的影响因素问卷调查[复制]
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47550077/">
+                    问卷介绍-问卷调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47578076/">
+                    关于星巴克在大学生群体中口碑营销的的调查问卷(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47534360/">
+                    梦体验及其影响因素调查问卷-3.1【复制】(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47566568/">
+                    大学生阅读需求调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47287160/">
+                    问卷介绍-*大学生网络信息态度调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-46072761/">
+                    问卷介绍-对于博物馆文创产品的看法
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47587307/">
+                    医院自助服务系统需求Kano模型问卷调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47042945/">
+                    问卷介绍-大学生游戏充值情况调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47499145/">
+                    问卷介绍-垃圾分类相关调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47490559/">
+                    问卷介绍-大学生减肥情况问卷调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/13/questionaire-47178342/">
+                    问卷介绍-依恋与心理弹性【复制】
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/13/questionaire-47321911/">
+                    师范大学生道德资本问卷的编制及其现状调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/13/questionaire-47311607/">
+                    肯德基用户满意度调查问卷(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/13/questionaire-46795732/">
+                    大学生服装消费情况调查问卷(问卷内容)
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/问卷收集/">
+            问卷收集
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47532772/">
+                    问卷介绍-淘宝购物体验
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47151821/">
+                    问卷介绍-住院患者健康教育知晓率评价调查表
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47171051/">
+                    问卷介绍-沛县龙东煤矿工业旅游调查问卷
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47321001/">
+                    针对盒马生鲜的客户体验意见调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47351817/">
+                    师范大学生道德成熟度问卷的编制及其现状调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47333354/">
+                    师范大学生道德承诺问卷的编制及其现状调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47332090/">
+                    师范大学生道德满意度问卷的编制及其现状调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47388779/">
+                    师范大学生导师道德领导问卷的编制及其现状研究(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47642946/">
+                    关于O2O外卖服务品质（以服务满意度和消费者信赖为媒介效应）对再使用意图的影响(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47450278/">
+                    Survey of Competitive Advantages of Chinese Shared Enterprises/中国共享企业的竞争优势调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47632148/">
+                    问卷介绍-关于手机游戏中氪金用户回归后对于游戏依赖性的研究
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47451478/">
+                    视频观看偏好调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47609800/">
+                    问卷介绍-大学生虚拟社区知识共享行为的影响因素问卷调查[复制]
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47584765/">
+                    医院自助服务系统需求满意度调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47611517/">
+                    关于盒马鲜生的一些调查(问卷内容)
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/人工填问卷/">
+            人工填问卷
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47584765/">
+                    医院自助服务系统需求满意度调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47583402/">
+                    问卷介绍-网络口碑对自驾游者决策行为影响的研究1
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47491689/">
+                    问卷介绍-三亚市历史文化旅游资源价值评价调查问卷[复制]
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47550077/">
+                    问卷介绍-问卷调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47332090/">
+                    师范大学生道德满意度问卷的编制及其现状调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47321001/">
+                    针对盒马生鲜的客户体验意见调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47171051/">
+                    问卷介绍-沛县龙东煤矿工业旅游调查问卷
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47388779/">
+                    师范大学生导师道德领导问卷的编制及其现状研究(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-46376707/">
+                    问卷介绍-人们对文化的需求
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47587307/">
+                    医院自助服务系统需求Kano模型问卷调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-45405411/">
+                    关于郑州大学（新校区）师生文印情况的调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47287160/">
+                    问卷介绍-*大学生网络信息态度调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47557861/">
+                    问卷介绍-农产品网购行为习惯调查021015
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47564626/">
+                    1254(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47506079/">
+                    功能性饮料市场调研(问卷内容)
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/样本收集/">
+            样本收集
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47550077/">
+                    问卷介绍-问卷调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47297422/">
+                    Feasibility of new service concept on improving teenagers&#39; confidence(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47332090/">
+                    师范大学生道德满意度问卷的编制及其现状调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47451478/">
+                    视频观看偏好调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47489977/">
+                    黑色旅游地游客动机对其体验与满意度影响调查问卷(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47583402/">
+                    问卷介绍-网络口碑对自驾游者决策行为影响的研究1
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47611517/">
+                    关于盒马鲜生的一些调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47642946/">
+                    关于O2O外卖服务品质（以服务满意度和消费者信赖为媒介效应）对再使用意图的影响(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-45704465/">
+                    关于消费者对国潮老字号品牌认知度的调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47533792/">
+                    黑龙江职业学院大学生上网情况调查表(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-45405411/">
+                    关于郑州大学（新校区）师生文印情况的调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47380644/">
+                    问卷介绍-高校科研人员科学数据共享意愿与共享行为差异研究
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47587307/">
+                    医院自助服务系统需求Kano模型问卷调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-46113425/">
+                    问卷介绍-心理契约违背在绿色消费行为中的影响研究：自我效能的调节作用的调查问卷
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47287160/">
+                    问卷介绍-*大学生网络信息态度调查
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/问卷下载/">
+            问卷下载
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47333354/">
+                    师范大学生道德承诺问卷的编制及其现状调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47642946/">
+                    关于O2O外卖服务品质（以服务满意度和消费者信赖为媒介效应）对再使用意图的影响(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47584765/">
+                    医院自助服务系统需求满意度调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47583602/">
+                    医院自助服务系统需求重要度调研(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47550077/">
+                    问卷介绍-问卷调查
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47562275/">
+                    关于手机使用体验的调查问卷(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47502066/">
+                    大学生对宿舍装修的意向调查问卷(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-47450278/">
+                    Survey of Competitive Advantages of Chinese Shared Enterprises/中国共享企业的竞争优势调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/17/questionaire-46929373/">
+                    大学生国庆出行消费问卷调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-FjmyUrd/">
+                    大学生适应性调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47566568/">
+                    大学生阅读需求调查(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47380644/">
+                    问卷介绍-高校科研人员科学数据共享意愿与共享行为差异研究
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47564626/">
+                    1254(问卷内容)
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47518558/">
+                    问卷介绍-梦体验及其影响因素调查问卷-3.1
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2019/10/16/questionaire-47495390/">
+                    网络自媒体影响下大学生旅游行为调查问卷(问卷内容)
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2019/10/17/questionaire-47550077/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>
