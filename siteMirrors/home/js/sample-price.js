@@ -34,14 +34,14 @@ function initPriceForm(){
     let conditions = getSamplePrices()
     Object.keys(conditions).forEach(cond=>{
         let options = ''
-        conditions[cond].forEach(opt_price=>{
-            options += `<option>${opt_price[0]}(${opt_price[1]}元)</option>`
+        conditions[cond].forEach((opt_price, index)=>{
+            options += `<option value="${index}" data-price="${opt_price[1]}">${opt_price[0]}(${opt_price[1]}元)</option>`
         })
         container.append(`<div class="form-group">
         <div class="row">
           <label class="col-sm-2 col-sm-offset-2 control-label" style="margin-top: 10px;">${cond}</label>
           <div class="col-sm-8">
-            <select class="form-control">
+            <select class="form-control sample-condition">
               ${options}
             </select>
           </div>
@@ -50,5 +50,40 @@ function initPriceForm(){
     })
 }
 
+function samplePrice(){
+    let price = 0
+    $('.sample-condition').each((index, sel)=>{
+        console.log(sel)
+        let opt = $(sel.options[sel.value])
+        price += opt.data('price')
+    })
+    return price
+}
+
+function calculatePrice(){
+    let url = $('input[name="queUrl"]').val()
+    if(!url || url.length==0){
+        alert('请输入问卷网址')
+        return
+    }
+    let number = $('input[name="queN"]').val()
+    if(number == undefined || number<50){
+        alert('问卷数量不能低于10')
+        return
+    }
+    function callback(res){
+        console.log(res)
+        if(res.status == 'err'){
+            alert('不支持该网站,无法解析内容和估计价格!')
+        }else{
+            let price = res.price;
+            let sp = samplePrice()
+            let report = `问卷价格:${price}元; <br>样本价格:${sp}元; <br>需要问卷数量:${number}个; <br>总价:${parseInt((price + sp) * number)}元;`
+            $('#price-report').empty().append(report)
+            $('#priceReport').modal()
+        }
+    }
+    quePrice(url, callback)
+}
 
 $(initPriceForm())

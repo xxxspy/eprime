@@ -32,6 +32,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+- 'siteMirrors/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -101,3 +102,6 @@ gitalk:
   owner: xxxspy
 
 baidutongji: 1dc589ea02621bcd82bea559aa46ece9
+
+# copy files
+static_dir: siteMirrors
