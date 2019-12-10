@@ -61,6 +61,8 @@ function samplePrice(){
 }
 
 function calculatePrice(){
+    $('#qqimg').hide()
+    $('#wximg').hide()
     let url = $('input[name="queUrl"]').val()
     if(!url || url.length==0){
         alert('请输入问卷网址')

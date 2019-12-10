@@ -5,8 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="网络问卷样本服务/问卷代填/问卷星代填/问卷网代填/QQ问卷代填/网络问卷收集/问卷数据收集/问卷调查">
 
   <title>网络问卷样本服务</title>
 
@@ -30,7 +29,7 @@
         问卷代发服务
       </a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
+        导航
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -48,8 +47,11 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">关于我们</a>
             </li>
           <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">联系我们</a>
-            </li>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">联系我们</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#wenjuanhutian">问卷互填</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -386,6 +388,39 @@
     </div>
   </section>
 
+  <!-- 问卷互填 -->
+  <section class="page-section bg-primary text-white" id="wenjuanhutian">
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">问卷互填群</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+        <!-- Contact Section Form -->
+        <div class="row">
+            <!-- QQ群 -->
+            <div class="col-md-6 col-lg-4 text-center">
+              <h4>QQ群一:984324790(满)</h4>
+              <img class="img-fluid img-thumbnail" src="https://jupyter.cn/images/%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png" style="width:350px;height:334px;" alt="">
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+              <h4>QQ群二:585101068</h4>
+              <img class="img-fluid img-thumbnail" src="img/QQGroup2.png" style="width:350px;height:334px;" alt="">
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+              <h4>微信:shujufenxidaizuo</h4>
+              <img class="img-fluid img-thumbnail" src="https://jupyter.cn/images/%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E5%BE%AE%E4%BF%A1%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" style="width:350px;height:334px;" alt="">
+            </div>
+        </div>
+      </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
@@ -587,10 +622,16 @@
                   <!-- <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt=""> -->
                   <!-- Portfolio Modal - Text -->
                   <p class="mb-5" id="price-report"></p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    我知道了
-                  </button>
+                  <a class="btn btn-primary contactbtn" href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1564799566&website=www.oicqzone.com">
+                    QQ客服
+                  </a>
+                  <a class="btn btn-warning contactbtn" href="weixin://contacts/profile/shujufenxidaizuo">
+                    微信客服
+                  </a>
+                </div>
+                <div class="col-lg-8">
+                  <img id="qqimg" class="img-thumbnail" style="width:80%" src="img/QQ.jpg">
+                  <img id="wximg" class="img-thumbnail" style="width:80%" src="https://jupyter.cn/images/%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E5%BE%AE%E4%BF%A1%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">
                 </div>
               </div>
             </div>
@@ -614,7 +655,20 @@
   <script src="js/freelancer.min.js"></script>
   <script src="http://wenjuan.wicp.top/static/js/que-price.js"></script>
   <script src="js/sample-price.js"></script>
-
+  <script>
+    $(function(){
+      $('.contactbtn').on('click', function(evn){
+        let btn = $(evn.target)
+        if(btn.text().indexOf('微信') >= 0){
+          $('#wximg').show()
+          $('#qqimg').hide()
+        }else{
+          $('#wximg').hide()
+          $('#qqimg').show()
+        }
+      })
+    })
+  </script>
 </body>
 
 </html>
