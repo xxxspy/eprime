@@ -80,7 +80,7 @@ function calculatePrice(){
         }else{
             let price = res.price;
             let sp = samplePrice()
-            let report = `问卷价格:${price}元; <br>样本价格:${sp}元; <br>需要问卷数量:${number}个; <br>总价:${parseInt((price + sp) * number)}元;`
+            let report = `问卷价格:${price}元(主观题不填); <br>样本价格:${sp}元; <br>需要问卷数量:${number}个; <br>总价:${parseInt((price + sp) * number)}元;`
             $('#price-report').empty().append(report)
             $('#priceReport').modal()
         }
