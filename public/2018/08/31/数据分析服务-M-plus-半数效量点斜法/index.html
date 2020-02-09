@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            半数效量点斜法-M-plus实证分析 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+半数效量点斜法:
+半数效量(或半数致死量)的点斜法(孙瑞元，1963)是一种计算半数效量的简捷而比">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  M-plus
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 1150 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 90 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1535661105000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1535661105000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/M-plus/">
+          M-plus
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>半数效量点斜法-M-plus实证分析</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="半数效量点斜法"><a href="#半数效量点斜法" class="headerlink" title="半数效量点斜法:"></a>半数效量点斜法:</h3>
+<div class="p1">半数效量(或半数致死量)的点斜法(孙瑞元，1963)是一种计算半数效量的简捷而比较精确的近似方法。它根据点斜式直线方程，综合了面积法及概率单位法的优点。本法可用于计算LD<sub>50</sub>与任何死亡率k%时的致死剂量LD<sub>k</sub>，以及它们的95%可信区间，还可计算剂量(对数)反应(概率单位)回归方程。
+
+<p>本法要求： ①剂量必须为等比级数; ②各组动物数相等或相近;③反应情况符合或接近正态，不要求最低死亡率必须为0%，最高死亡率必须为100%，但二者之和最好在80～120%范围内。
+
+</p><p><font color="#0A0A6C"><small>方法</small></font> 以半数致死量为例。
+
+</p><p>(1)求LD<sub>50</sub>及其可信区间。当死亡率包括或接近0%及100%时，按式(1)计算lgLD<sub>50</sub>，取反对数即得LD<sub>50</sub>。
+
+</p><p></p><p align="center">lgLD<sub>50</sub>＝xm-d(∑p-0.5)，(1)</p>
+
+式中x<sub>m</sub>为最高剂量的对数，d为相邻两剂量对数的差值，p为各剂量组死亡率。当最高死亡率pm≠100%，或最低死亡率pn≠0%时，可改用式(2)的校正公式计算<p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0204.0.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.0.gif"></p>按式(3)求lgLD<sub>50</sub>的标准误slgLD5<sub>0</sub>，<p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0204.2.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.2.gif"></p>
+
+式中n为每组的动物数，其余符号同式(1)。
+
+<p>上面求出的LD<sub>50</sub>是总体LD<sub>50</sub>的点估计，按正态近似原理，总体LD<sub>50</sub>的95%可信区间的对数值按式(4)计算，
+
+</p><p>(lgLD<sub>50</sub>-1.96slgLD5<sub>0</sub>， lgLD<sub>50</sub>+1.96slgLD<img imgpath align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.6.37.bmp"><img imgpath align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.6.38.bmp">)， (4)取反对数即得真数值。
+
+</p><p>(2) 求剂量(对数)反应(概率单位)回归方程。按式(5)及式(6)计算：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0204.4.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.4.gif"></p>
+
+式中ŷ为概率单位的估计值，x为剂量对数，b为回归系数，k为组数，H为等于或略小于组数之半的正整数(k为双数时， H=k/2; k为单数时，H=(k-1)/2)，<img imgpath align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.12.30.bmp">U为剂量较高的H组中各概率单位的均数，<img imgpath align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.13.17.bmp">L为剂量较低的H组中各概率单位的均数。
+
+<p>(3) 求LDk。按式(7)可求任何死亡率k%时的致死剂量对数lgLD<sub>k</sub>，按式(8)求其标准误slgLD<sub>k</sub>。</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0204.6.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.6.gif"></p>
+
+式中y<sub>k</sub>是死亡率为k%时的概率单位，其余符号同上。求总体LD<sub>k</sub>的95%可信区间的对数值按式(9)，
+
+<p>(lgLD<sub>k</sub>-1.96slgLD<sub>k</sub>，lgLDk+1.96s<sub>lgLDk</sub>)，(9)取反对数即得真数值。
+
+</p><p>例 用下表第(1)、(2)栏资料计算LD5<sub>0</sub>、LD<sub>5</sub>及二者的95%可信区间，并求剂量反应回归方程。
+
+</p><p></p><p align="center">LD<sub>50</sub>、LD<sub>5</sub>及回归方程的计算</p><p align="center"><span class="imgdiv" style="text-align:center;"><img onclick="zoomPic(this);" align="absmiddle" width="425" height="315" src="/CRFDPIC/R200612059/R200612059.0204.8.png"></span></p>
+
+<p>每组20只动物
+
+</p><p>列上表。其中第(4)栏按第(2)栏由“百分数p与概率单位对照表”查得。而p=1时，是按p=1-0.25/20=0.9875校正后由详表查出。本例n=20，k=5(单数)，H=(5-1)/2=2，xm=lg550=2.7404，d=0.0700。
+
+<eprime(1)求ld<sub>5Eprime>及其95%可信区间。按式(2)～(4)：</eprime(1)求ld<sub></p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0204.11.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.11.gif"></p>
+EprimeEprime
+<p>取反对数得(344，384)。EprimeEprime
+
+</p><p>(2)求剂量反应回归方程。按式(6)及式(5)</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0204.13.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.13.gif"></p>
+
+<p>(3)求Eprime>5及其95%可信区间。查“百分数p与概率单位对照表”得p=5%时，y5=3.3551。按式(7)～(9)：</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0204.15.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0204.15.gif"></p>
+
+<p>取反对数得(238，296)。
+
+</p><p>所求LD<sub>50</sub>为363mg/kg，其95%可信区间为344～384mg/kg;LD<sub>5</sub>为266mg/kg，其95%可信区间为238～296mg/kg;剂量(对数)反应(概率单位)回归方程为ŷ=12.1043x-25.9888。</p></div>
+
+<h3 id="M-plus中相关概念"><a href="#M-plus中相关概念" class="headerlink" title="M-plus中相关概念"></a><a href="/tags/M-plus/">M-plus</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>半数效量点斜法</strong>: 半数效量(或半数致死量)的点斜法(孙瑞元,1963)是一种计算半数效量的简捷而比较精确的近似方法。它根据点斜式直线方程,综合了面积法及概率单位法的优点。本法可用于计算LD50与任何死亡率k%时的致死剂量LDk,以及它们的95%可信区间,还可计算剂量(对数)反…</li>
+</ul>
+<h3 id="M-plus数据分析服务"><a href="#M-plus数据分析服务" class="headerlink" title="M-plus数据分析服务:"></a><a href="/tags/M-plus/">M-plus</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/EPRIME工作室M-plus代做服务详情/" target="_blank" rel="noopener">M-plus技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于EPRIME工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/M-plus/">
+            M-plus
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-线性规划典范型.1/">
+                    线性规划典范型-M-plus论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-样本差异系数/">
+                    样本差异系数-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-二阶混合中心矩/">
+                    二阶混合中心矩-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-林德伯格-莱维中心极限定理/">
+                    林德伯格-莱维中心极限定理-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-共轭大圆弧.1/">
+                    共轭大圆弧-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-多个正态总体的协差阵检验/">
+                    M-plus数据分析案例:多个正态总体的协差阵检验
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-概率分布密度/">
+                    概率分布密度-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-一个正态总体的协差阵检验/">
+                    M-plus一个正态总体的协差阵检验代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-频域分析.1/">
+                    M-plus频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-初轧热锭率/">
+                    初轧热锭率-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-勾股形/">
+                    M-plus勾股形代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-离势分析.1/">
+                    离势分析-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-耶茨连续性修正/">
+                    耶茨连续性修正-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-非线性回归.1/">
+                    非线性回归-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-样本点/">
+                    M-plus样本点代做数据分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/31/数据分析服务-M-plus-半数效量点斜法/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            Eprime直接分析实验程序 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+直接分析:
+由罗森(Rosen，J.N.)所提出的一种适于精神病人的精神分析方法。由于精神病人的压">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  Eprime,心理咨询的原理与基础,咨询心理
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 1150 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 90 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1535641172000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1535641172000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/Eprime/">
+          Eprime
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/心理咨询的原理与基础/">
+          心理咨询的原理与基础
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/咨询心理/">
+          咨询心理
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>Eprime直接分析实验程序</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="直接分析"><a href="#直接分析" class="headerlink" title="直接分析:"></a>直接分析:</h3>
+<div class="p1">由罗森(Rosen，J.N.)所提出的一种适于精神病人的精神分析方法。由于精神病人的压抑作用消失，故其意识为潜意识的产物所淹没;病人的潜意识是开放的，治疗者便可以直接地进行工作。在治疗中分析者一般不会遇到病人的抵抗作用，故阐释是直接的。治疗者要同病人建立起积极的关系和移情，以便对抗病人的由童年期的消极经历和缺陷所造成的损害。目前在美国宾夕法尼亚州有一个“直接分析研究所”，在罗森的指导下教授并实施直接分析治疗。</div>
+
+<h3 id="Eprime中相关概念"><a href="#Eprime中相关概念" class="headerlink" title="Eprime中相关概念"></a><a href="/tags/Eprime/">Eprime</a>中<a href="/categories/程序开发">相关概念</a></h3><ul>
+<li><strong>直接分析</strong>: 由罗森(Rosen,J.N.)所提出的一种适于精神病人的精神分析方法。由于精神病人的压抑作用消失,故其意识为潜意识的产物所淹没;病人的潜意识是开放的,治疗者便可以直接地进行工作。在治疗中分析者一般不会遇到病人的抵抗作用,故阐释是直接的。治疗者要同病人建立起积极的关系和移…</li>
+<li><strong>甘蔗直接分析法</strong>: direct analysis ofcane method (DAC method)…</li>
+<li><strong>南非法[甘蔗直接分析]</strong>: South Africa DAC method…</li>
+<li><strong>图像文献分析</strong>: 图像文献分析是指直接分析造型艺术作品、电影和照相文献的内容,以及通过研究被调查者和鉴定人的意见和评价、观众对这一内容的理解而获得情报的一种方法。图像文献分析方法有:1)传统(定性)分析方法,2)结构——内容(定量)分析方法。这是两种不同的内容分析方法(见“文献分析”…</li>
+<li><strong>费伦茨，山多尔</strong>: 匈牙利医生和心理分析学家。1873年出生于米什科尔茨(Miskolcz),1933年在布达佩斯去世。他作为卓越的临床医生和理论家,给予了心理分析家,特别是英国学派以深刻的影响。费伦茨在维也纳学医毕业后,即居住在布达佩斯,1897年曾在这个城市的圣—罗希(Saint-Roch)医院任助理医…</li>
+<li><strong>气体色谱</strong>: 又称气相色谱。气体色谱有流动相和固定相。流动相是不活泼气体,常用的有氮或氦等。色谱柱可用玻璃管或金属管,其中用硅藻土填充,使成为固定相。气体试样或挥发性液体试样引入色谱柱后,随流动相通过色谱柱,试样中各种成分即互相分离,并在不同区域富集。当富集区移至热导池鉴定…</li>
+<li><strong>唐弢</strong>: 一、潮流冲击唐弢这个名字,作为著名的杂文作家和鲁迅研究专家,早已为公众所熟悉。唐弢同时又是风格鲜明的散文作家和著名的文学史家,他的富于独创性的文学批评和书话,给他带来了文体家的声誉。唐弢一生的活动是多方面的,而连接浩瀚生命各个方面的…</li>
+<li><strong>结构主义</strong>: 在文学批评中,结构主义是在结构主义语言学和结构主义人类学发展的鼓舞下产生的一种分析方法和文学理论。20世纪60年代,结构主义语言学和结构主义人类学在法国达到了顶峰。虽然结构主义已被其他国家的学者所吸收和发展,但就其最具特色、最有代表性的形式而言,它仍然是一场法国…</li>
+<li><strong>煤焦油全分析</strong>: 应用物理方法、化学方法和仪器分析方法,对煤焦油的理化性质、组分及其含量所进行的全面测定过程。煤焦油全分析可为煤焦油质量评价、煤焦油加工工艺设计、产品方案、炼焦和煤焦油车间的生产操作提供基础技术数据。发展简…</li>
+<li><strong>模型</strong>: 现实客观事物的一种表示和体现.它可以是文字、图表、公式,也可以是计算机程序或其他实体模型,具有以下三个特点:1.是现实世界一部分的模仿或抽象;2.由那些与分析问题有关的因素构成;3.体现了有关因素之间的关系.模型与现实客观事物相比,其优点是简单…</li>
+</ul>
+<h3 id="Eprime参考文献"><a href="#Eprime参考文献" class="headerlink" title="Eprime参考文献"></a><a href="/tags/Eprime/">Eprime</a><a href="/categories/程序开发/">参考文献</a></h3><ul>
+<li>[1]  万军;杜二峰;张欣欣;胡尚文; 基于性能的门式刚架抗火性能研究. 钢结构 ,2017,(06)</li>
+<li>[2]  宋爱东; 论现金流量表的财务分析. 化学工业 ,2007,(05)</li>
+<li>[3]  郭红梅;宋岩; 利用现金流量表进行财务状况的综合分析. 商业经济 ,2006,(05)</li>
+<li>[1]  张梦然; 1亿年前的“古海水”什么样. 科技日报 ,2013</li>
+<li>[1]  郝丽; 微流动注射—等离子体质谱直接测定酒中金属元素的研究. 杭州师范大学 ,2012</li>
+<li>[2]  闫福生; 循环载荷下高副接触安定状态应力的数值分析. 西北工业大学 ,2003</li>
+<li>[1]  杜二峰; 基于实际火灾全过程的大空间钢结构抗火性能试验研究及理论分析. 东南大学 ,2016</li>
+<li>[1]  李云;王志豪;顾海巍;陈焕文; 内部萃取电喷雾电离质谱直接分析肺组织样品化学组分. 中国化学会第30届学术年会摘要集-第四十三分会：质谱分析 ,2016</li>
+<li>[2]  李先江;王欣;李林楠;白玉;刘虎威; 实时直接分析质谱(DART-MS)快速分析新进展. 第二十届全国色谱学术报告会及仪器展览会论文集（第三分册） ,2015</li>
+<li>[3]  黄光明;朱洪影; 感应纳升电喷雾质谱直接分析单细胞. 中国化学会第二届全国质谱分析学术报告会会议摘要集 ,2015</li>
+<li>[4]  刘淑莹;刘文龙;于擎; 实时直接分析质谱法分析寡糖和皂苷类化合物. 中国化学会第二届全国质谱分析学术报告会会议摘要集 ,2015</li>
+<li>[5]  李先江;栗则;王欣;聂洪港;张一丁;白玉;刘虎威; 双功能进样器用于苏丹红染料的高效富集和实时直接分析. 中国化学会第二届全国质谱分析学术报告会会议摘要集 ,2015</li>
+<li>[6]  季宝成;马风伟;夏兵;周燕; 针尖电喷雾质谱方法用于软膏剂药物的直接分析. 中国化学会第二届全国质谱分析学术报告会会议摘要集 ,2015</li>
+<li>[7]  刘成园;朱亚楠;潘洋; 超声雾化萃取/低压光电离质谱技术直接分析复杂基质样品成分. 中国化学会第二届全国质谱分析学术报告会会议摘要集 ,2015</li>
+<li>[8]  周峰;刘舒;邢俊鹏;刘志强;宋凤瑞; 用于液相色谱-实时直接分析质谱在线联用的热辅助气化进样装置的研制及应用. 中国化学会第二届全国质谱分析学术报告会会议摘要集 ,2015</li>
+<li>[9]  张一丁;聂洪港;李先江;白玉;刘虎威; 基于实时直接分析离子源的表面等离子体共振-质谱联用接口. 中国化学会第二届全国质谱分析学术报告会会议摘要集 ,2015</li>
+<li>[10]  姚钟平;温汉辉;查庆民;何维德;赵善楷; 快原子轰击质谱直接分析纸样上样品及其他与之层析、薄层析的联用. 中国分析测试协会科学技术奖发展回顾 ,2015</li>
+</ul>
+<h3 id="Eprime程序开发"><a href="#Eprime程序开发" class="headerlink" title="Eprime程序开发:"></a><a href="/tags/Eprime/">Eprime</a><a href="/categories/程序开发/">程序开发</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">Eprime工作室</a>专注于程序开发。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/17/关于Eprime工作室/" target="_blank" rel="noopener">Eprime技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于Eprime工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: Eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/Eprime/">
+            Eprime
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/09/01/程序开发-Eprime-心理健康/">
+                    心理健康-Eprime数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-逃入健康/">
+                    Eprime逃入健康实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-网状结构/">
+                    网状结构-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-健康心理学/">
+                    Eprime健康心理学实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-社会情境/">
+                    Eprime社会情境实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-健康/">
+                    健康-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-健康夫妇关系/">
+                    健康夫妇关系-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-直接分析/">
+                    Eprime直接分析实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-双重心理健康标准/">
+                    双重心理健康标准-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-情绪助长作用/">
+                    情绪助长作用-Eprime数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-军人心理健康标准/">
+                    军人心理健康标准-Eprime数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-虚无假设/">
+                    虚无假设-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-Eprime-越轨行为/">
+                    Eprime越轨行为实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-Eprime-位置编码/">
+                    Eprime位置编码实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-Eprime-儿童健康评价/">
+                    儿童健康评价-Eprime实证分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/心理咨询的原理与基础/">
+            心理咨询的原理与基础
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/09/01/程序开发-psychopy-位置编码/">
+                    psychopy位置编码实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-网状结构/">
+                    网状结构-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-psychopy-虚无假设/">
+                    psychopy虚无假设实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-psychopy-网状结构/">
+                    网状结构-psychopy实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-健康/">
+                    健康-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-直接分析/">
+                    Eprime直接分析实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-psychopy-健康/">
+                    健康-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-情绪助长作用/">
+                    情绪助长作用-Eprime数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-psychopy-直接分析/">
+                    直接分析-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-虚无假设/">
+                    虚无假设-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-Eprime-位置编码/">
+                    Eprime位置编码实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-psychopy-情绪助长作用/">
+                    情绪助长作用-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/25/程序开发-Eprime-匹配组设计/">
+                    匹配组设计-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/25/程序开发-Eprime-交往动机/">
+                    交往动机-Eprime数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/24/程序开发-Eprime-认知行为矫正/">
+                    Eprime认知行为矫正实验程序
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/咨询心理/">
+            咨询心理
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-健康/">
+                    健康-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-直接分析/">
+                    Eprime直接分析实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-psychopy-健康/">
+                    健康-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-psychopy-直接分析/">
+                    直接分析-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/24/程序开发-Eprime-认知行为矫正/">
+                    Eprime认知行为矫正实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/22/程序开发-psychopy-认知行为矫正/">
+                    认知行为矫正-psychopy实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/22/程序开发--认知行为矫正/">
+                    认知行为矫正代做数据分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/30/程序开发-Eprime-直接分析/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>

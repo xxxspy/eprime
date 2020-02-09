@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            平稳序列的矢量递推预报-STATA数据可视化代做 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+STATA数据分析服务:Eprime工作室专注于数据分析服务。为科研人员提供STATA技术支持, ">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  STATA,统计的一般理论和方法,时间序列
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 1150 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 90 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1540830852000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1540830852000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/STATA/">
+          STATA
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/统计的一般理论和方法/">
+          统计的一般理论和方法
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/时间序列/">
+          时间序列
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>平稳序列的矢量递推预报-STATA数据可视化代做</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="STATA数据分析服务"><a href="#STATA数据分析服务" class="headerlink" title="STATA数据分析服务:"></a><a href="/tags/STATA/">STATA</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">Eprime工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/Eprime工作室STATA代做服务详情/" target="_blank" rel="noopener">STATA技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于Eprime工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: Eprime[at]163.com</p>
+<h3 id="平稳序列的矢量递推预报"><a href="#平稳序列的矢量递推预报" class="headerlink" title="平稳序列的矢量递推预报:"></a>平稳序列的矢量递推预报:</h3>
+<div class="p1">设平稳序列{x<sub>t</sub>}适合ARMA (p， q) 模型，<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0169.49.15.bmp"><sub>t</sub>(l) 为在时刻t对t+l所作线性最小方差预报。定义预报矢量<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0169.50.15.bmp"><sub>t</sub>(q)=<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0169.50.26.bmp"><sub>t</sub>(1)，<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0169.50.37.bmp"><sub>t</sub>(2)， …，<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0169.51.7.bmp"><sub>t</sub>(q)。 通过递推关系可得<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0169.51.27.bmp"><sub>t+1</sub>(l) =<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0169.51.41.bmp"><sub>t</sub>(l+1) +G<sub>l</sub>e<sub>t</sub>(1)，其中G<sub>l</sub>是ARMA模型的格林函数，表明新的预报值是在旧预报值的基础上加一修正项，这个修正项正比于旧的一步预报误差。这意味着如果已经有了旧的预报结果，则在重新预报时，只需要对旧预报值加以修正而不必对全部历史数据进行计算，因为旧的预报已利用了过去积累的全部历史信息，新的预报只要根据新的观察数据所带来的新信息加以修正即可。递推预报大大减少了对计算机存贮量的要求，同时也提高了计算速度，特别是对于需要对大量历史数据加权求和的MA和ARMA序列的预报来说更具有意义。</div>
+
+<h3 id="STATA中相关概念"><a href="#STATA中相关概念" class="headerlink" title="STATA中相关概念"></a><a href="/tags/STATA/">STATA</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>平稳序列的矢量递推预报</strong>: 设平稳序列{xt}适合ARMA (p, q) 模型,t(l) 为在时刻t对t+l所作线性最小方差预报。定义预报矢量…</li>
+</ul>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/STATA/">
+            STATA
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-简单线性回归模型.1/">
+                    简单线性回归模型-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-勾股形/">
+                    STATA数据分析案例:勾股形
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-线性规划典范型.1/">
+                    STATA数据分析案例:线性规划典范型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-总体均数估计.1/">
+                    总体均数估计-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-初轧热锭率/">
+                    初轧热锭率-STATA数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-样本点/">
+                    STATA样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-几何滞后模型估计.1/">
+                    STATA数据分析案例:几何滞后模型估计
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-林德伯格-莱维中心极限定理/">
+                    林德伯格-莱维中心极限定理-STATA实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-STATA-二阶混合中心矩/">
+                    二阶混合中心矩-STATA数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-多个正态总体的协差阵检验/">
+                    多个正态总体的协差阵检验-STATA实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-概率分布密度/">
+                    概率分布密度-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-耶茨连续性修正/">
+                    STATA耶茨连续性修正代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-季节回归模型.1/">
+                    季节回归模型-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-一元非线性回归.1/">
+                    一元非线性回归-STATA论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-协差阵/">
+                    STATA数据分析案例:协差阵
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/统计的一般理论和方法/">
+            统计的一般理论和方法
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SAS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-频域分析.1/">
+                    频域分析-Python数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-M-plus-样本差异系数/">
+                    样本差异系数-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-频域分析.1/">
+                    频域分析-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-Python实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Eviews-样本差异系数/">
+                    Eviews样本差异系数代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Eviews-频域分析.1/">
+                    Eviews频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SPSS-耶茨连续性修正/">
+                    耶茨连续性修正-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-耶茨连续性修正/">
+                    STATA耶茨连续性修正代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-频域分析.1/">
+                    M-plus频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-协差阵/">
+                    协差阵-SAS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-Python-协差阵/">
+                    Python数据分析案例:协差阵
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-STATA-协差阵/">
+                    STATA数据分析案例:协差阵
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-R-协差阵/">
+                    协差阵-R实证分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/时间序列/">
+            时间序列
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SAS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-频域分析.1/">
+                    频域分析-Python数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-R-频域分析.1/">
+                    频域分析-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Python-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-Python实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-Eviews-频域分析.1/">
+                    Eviews频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SPSS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SPSS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-M-plus-频域分析.1/">
+                    M-plus频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-STATA-平稳序列的矢量递推预报.1/">
+                    STATA数据分析案例:平稳序列的矢量递推预报
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SPSS-频域分析.1/">
+                    频域分析-SPSS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-Eviews-平稳序列的矢量递推预报.1/">
+                    Eviews平稳序列的矢量递推预报代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-R-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-R数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-STATA-频域分析.1/">
+                    STATA频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-M-plus-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SAS-频域分析.1/">
+                    频域分析-SAS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/01/数据分析服务-Eviews-平稳序列的矢量递推预报/">
+                    Eviews数据分析案例:平稳序列的矢量递推预报
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/10/30/数据分析服务-STATA-平稳序列的矢量递推预报/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>

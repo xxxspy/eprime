@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            SAS一个正态总体的协差阵检验代做数据分析 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+SAS数据分析服务:Eprime工作室专注于数据分析服务。为科研人员提供SAS技术支持, 订单式,">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  SAS
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 1150 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 90 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1543316147000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1543316147000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/SAS/">
+          SAS
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>SAS一个正态总体的协差阵检验代做数据分析</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="SAS数据分析服务"><a href="#SAS数据分析服务" class="headerlink" title="SAS数据分析服务:"></a><a href="/tags/SAS/">SAS</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">Eprime工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/Eprime工作室SAS代做服务详情/" target="_blank" rel="noopener">SAS技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于Eprime工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: Eprime[at]163.com</p>
+<h3 id="一个正态总体的协差阵检验"><a href="#一个正态总体的协差阵检验" class="headerlink" title="一个正态总体的协差阵检验:"></a>一个正态总体的协差阵检验:</h3>
+<div class="p1">设<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.58%5B6891b40fc025%5D.gif"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.59%5B42a1fd16a029%5D.gif">N是来自总体N<sub>p</sub>(μ，∑)的样本，μ是未知的，欲检验H<sub>0</sub>：∑=∑<sub>0</sub>，H<sub>1</sub>：∑≠∑<sub>0</sub>∑<sub>0</sub>&gt;0为已知的协差阵。似然比统计量为λ′<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.62%5B42c2cd35d04e%5D.gif">其中<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.64%5B47e32530d063%5D.gif">为样本容量，etr(A)表示e的tr(A)次幂，tr(A)为矩阵A的迹。但根据λ′作的检验是有偏的、需要作一简单的修正，即将上述统计量中的N改为n，即：λ<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.66%5B42d4322dd04d%5D.gif">称作修正的似然比统计量，可以证明这一检验是无偏的，当样本容量N较大时，-21nλ近似于自由度为f的χ<sup>2</sup>分布，其中<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.70%5B4cb4f411b04a%5D.gif">因此拒绝域为<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.72%5B6df5060ad028%5D.gif">(f)。若欲计算p值时，可用下面的公式<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.74%5B6c154a0ca026%5D.gif"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.0204.75%5B429580365128%5D.gif"></div>
+
+<h3 id="SAS中相关概念"><a href="#SAS中相关概念" class="headerlink" title="SAS中相关概念"></a><a href="/tags/SAS/">SAS</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>一个正态总体的协差阵检验</strong>: 设N是来自总体Np(μ,∑)的样本,μ是未知的,欲检验H0:∑=∑0,H1:∑≠∑0∑0……</li>
+</ul>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/SAS/">
+            SAS
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-平稳序列的矢量递推预报.1/">
+                    平稳序列的矢量递推预报-SAS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-共轭大圆弧.1/">
+                    共轭大圆弧-SAS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-多个正态总体的协差阵检验/">
+                    SAS多个正态总体的协差阵检验代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-二阶混合中心矩/">
+                    SAS二阶混合中心矩代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/数据分析服务-SAS-勾股形/">
+                    SAS勾股形代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-一元非线性回归.1/">
+                    SAS一元非线性回归代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-样本点/">
+                    SAS样本点代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-几何滞后模型估计.1/">
+                    几何滞后模型估计-SAS实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/数据分析服务-SAS-协差阵/">
+                    协差阵-SAS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SAS-耶茨连续性修正/">
+                    SAS耶茨连续性修正代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SAS-初轧热锭率/">
+                    初轧热锭率-SAS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SAS-一个正态总体的协差阵检验/">
+                    SAS一个正态总体的协差阵检验代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SAS-样本差异系数/">
+                    样本差异系数-SAS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SAS-总体均数估计.1/">
+                    总体均数估计-SAS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/数据分析服务-SAS-离势分析.1/">
+                    SAS离势分析代做数据分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/11/27/数据分析服务-SAS-一个正态总体的协差阵检验/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head><meta name="generator" content="Hexo 3.8.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            递增系列-实证分析 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+递增系列:
+用心理物理法中的最小变化法测定阈限时，按从小到大的顺序以最小的相等间距逐个增强的呈现刺">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  心理咨询的原理与基础,基础心理
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform">
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    </head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/archives">Archives</a></li>
+        
+        
+        <li><a href="/categories">Categories</a></li>
+        
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives" class="header-toolbar-right"> 1150 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i class="fa fa-tags"></i> Tags </a>
+        <a href="/tags" class="header-toolbar-right"> 90 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories" class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1534899595000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1534899595000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/心理咨询的原理与基础/">
+          心理咨询的原理与基础
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/基础心理/">
+          基础心理
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>递增系列-实证分析</h1>
+    <p><span></span><br><a id="more"></a></p>
+<h3 id="递增系列"><a href="#递增系列" class="headerlink" title="递增系列:"></a>递增系列:</h3>
+<div class="p1">用心理物理法中的最小变化法测定阈限时，按从小到大的顺序以最小的相等间距逐个增强的呈现刺激系列。</div>
+
+<h3 id="中相关概念"><a href="#中相关概念" class="headerlink" title="中相关概念"></a><a href="/tags//"></a>中<a href="/categories/程序开发">相关概念</a></h3><ul>
+<li><strong>递增系列</strong>: 用心理物理法中的最小变化法测定阈限时,按从小到大的顺序以最小的相等间距逐个增强的呈现刺激系列。…</li>
+<li><strong>递增系列</strong>: ascending series…</li>
+<li><strong>期望误差</strong>: 期待心理引起判断标准变化而使实验结果产生的偏向误差。在以最小变化法测定感觉阈限的实验中,刺激是按一定系列,以小步梯级变化的,这就易使被试预先估计将要呈现的刺激,产生一种希望和期待改变反应的心理准备状态。用递增法测定时, 期望误差表现为有提前作出正反应的倾向,使阈…</li>
+<li><strong>期望误差</strong>: 在最小变化法中,被试期望刺激强度的变化早些达到阈限水平所产生的判断上的误差。用递增法呈现刺激时,如果被试期望刺激阈早些到来,以至刺激强度还未增到阈限水平,被试就报告感觉到了,结果提前报告的阈限值就小于实际的阈限值;用递减法呈现刺激时,如果被试期望刺激阈早点到来,…</li>
+<li><strong>期望误差</strong>: 心理实验中应用最小变化法时,被试期望刺激强度的变化早些达到阈限水平所产生的刺激上的误差。要予以消除,在用最小变化法测量阈限时,须并用递增系列和递减系列,且二者的次数应相等。…</li>
+<li><strong>大肠菌群MPN计数</strong>: (一)大肠菌群的检验程序大肠菌群MPN计数的检验程序见图5-3-2。…</li>
+<li><strong>大肠埃希氏菌MPN计数</strong>: (一)检验程序检验程序如图5-3-4所示。图5-3-4大肠埃希氏菌MPN…</li>
+<li><strong>ascending series</strong>: 递增系列…</li>
+</ul>
+<h3 id="程序开发"><a href="#程序开发" class="headerlink" title="程序开发:"></a><a href="/tags//"></a><a href="/categories/程序开发/">程序开发</a>:</h3><p><a href="http://jupyter. cn/" target="_blank" rel="noopener">Eprime工作室</a>专注于程序开发。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/17/关于Eprime工作室/" target="_blank" rel="noopener">技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于Eprime工作室/" target="_blank" rel="noopener">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: Eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/心理咨询的原理与基础/">
+            心理咨询的原理与基础
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/09/01/程序开发-psychopy-位置编码/">
+                    psychopy位置编码实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-网状结构/">
+                    网状结构-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-psychopy-虚无假设/">
+                    psychopy虚无假设实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-psychopy-网状结构/">
+                    网状结构-psychopy实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-Eprime-健康/">
+                    健康-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-直接分析/">
+                    Eprime直接分析实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-psychopy-健康/">
+                    健康-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-情绪助长作用/">
+                    情绪助长作用-Eprime数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-psychopy-直接分析/">
+                    直接分析-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-虚无假设/">
+                    虚无假设-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-Eprime-位置编码/">
+                    Eprime位置编码实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-psychopy-情绪助长作用/">
+                    情绪助长作用-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/25/程序开发-Eprime-匹配组设计/">
+                    匹配组设计-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/25/程序开发-Eprime-交往动机/">
+                    交往动机-Eprime数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/24/程序开发-Eprime-认知行为矫正/">
+                    Eprime认知行为矫正实验程序
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/基础心理/">
+            基础心理
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/09/01/程序开发-psychopy-位置编码/">
+                    psychopy位置编码实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/31/程序开发-psychopy-虚无假设/">
+                    psychopy虚无假设实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/30/程序开发-Eprime-虚无假设/">
+                    虚无假设-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/29/程序开发-Eprime-位置编码/">
+                    Eprime位置编码实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/25/程序开发-Eprime-匹配组设计/">
+                    匹配组设计-Eprime实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/24/程序开发-psychopy-动作思维/">
+                    动作思维-psychopy实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/24/程序开发-psychopy-击中/">
+                    psychopy击中实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/24/程序开发-Eprime-递增系列/">
+                    递增系列-Eprime实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/24/程序开发-psychopy-触点/">
+                    触点-psychopy实验程序代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/23/程序开发-psychopy-递增系列/">
+                    递增系列-psychopy数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/23/程序开发-Eprime-触点/">
+                    Eprime触点实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/23/程序开发-Eprime-击中/">
+                    Eprime击中实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/23/程序开发-Eprime-动作思维/">
+                    Eprime动作思维实验程序
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/22/程序开发-psychopy-匹配组设计/">
+                    匹配组设计-psychopy数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/08/22/程序开发--动作思维/">
+                    动作思维代做数据分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class="container" id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/22/程序开发--递增系列/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="#">Replica</a>
+      by <a href="#">Hiitea</a> ❤ Powered by Hexo
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>
