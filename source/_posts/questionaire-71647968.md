@@ -1,0 +1,3451 @@
+---
+title: "大学生同辈压力和网络学习满意度情况调查问卷(问卷内容)"
+date: 2020-04-20 10:43:47
+tags: [问卷设计, 问卷代填, 问卷星, 问卷大全, 问卷收集]
+---
+
+### 问卷指导语
+
+尊敬的同学： 您好！这是一项关于您对同辈压力感受程度以及通过网络学习的满意程度的调查问卷。您所填写的信息仅供研究者研究使用，请放心填写。问卷不记名，选项没有对错之分，请您根据您的真实情况填写。感谢您的配合！
+
+该问卷主要用于行为经济学、计量经济学、教育学、心理学、统计学专业的样本收集。
+
+<!-- more -->
+
+
+### 自我介绍
+
+为了帮助毕业生和高效科研人员快速收集网络问卷的数据, 并且保证信效度, 收集高质量的数据, 我组织了一批人专门进行问卷的填写。
+目前QQ群有21个, 每个群都是千人大群。 可以快速搜集大量样本数据，并且如果客户有要求, 可以对客户的数据进行初审, 
+主动删除一些填写不认真的数据, 这样就可以保证研究人员收集的数据的信效度了。
+
+
+
+### 快速添加问卷题目
+
+我已经把这个问卷编辑成了特殊的格式, 可以批量导入到问卷星, 面得你自己创建题目了。
+
+你只需要将下面的题目复制到问卷星的题目编辑页面即可, 想知道如何快速导入问卷星题目, 可以看这篇文章: [问卷星如何快速批量添加题目](https://mlln.cn/2019/06/01/%E9%97%AE%E5%8D%B7%E6%98%9F%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E6%89%B9%E9%87%8F%E9%A2%98%E7%9B%AE/index.html)。
+
+{% raw %}
+
+<textarea rows="40" style="width: 100%;">
+1. 您所在的年级*[单选题]
+大一
+大二
+大三
+
+2. 您的性别：*[单选题]
+男
+女
+
+3. 1.不喜欢所学专业[单选题]
+是
+否
+
+4. 2.学习方式发生变化（新的学习方法）*[单选题]
+是
+否
+
+5. 3.学习时间紧张*[单选题]
+是
+否
+
+6. 4.考试失败*[单选题]
+是
+否
+
+7. 5.面临重修或重考*[单选题]
+是
+否
+
+8. 6.转专业*[单选题]
+是
+否
+
+9. 7.准备期末考试*[单选题]
+是
+否
+
+10. 8.边学习边打工*[单选题]
+是
+否
+
+11. 9.每天需要按时上课*[单选题]
+是
+否
+
+12. 10.学习内容加深*[单选题]
+是
+否
+
+13. 11.学习环境改变*[单选题]
+是
+否
+
+14. 12.准备考研*[单选题]
+是
+否
+
+15. 12.准备出国外语考试或考证*[单选题]
+是
+否
+
+16. 14.学习内容单调或陈旧*[单选题]
+是
+否
+
+17. 15.学习困难*[单选题]
+是
+否
+
+18. 16.考试作弊被发现*[单选题]
+是
+否
+
+19. 例：我的朋友鼓励我做这些事,且受到鼓励后感到压力程度[单选题]
+抽烟
+不抽烟
+
+20. [单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+21. 1.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我做与朋友不同风格的发型或打扮
+2.朋友鼓励我做与朋友相似风格的发型或打扮
+
+22. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+23. 2.*[单选题]
+1.朋友鼓励我借钱或借出心爱的东西
+2.朋友鼓励我不随意借钱或者心爱的东西
+
+24. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+25. 3.*[单选题]
+1.朋友鼓励我与朋友穿相同风格的服装
+2.朋友鼓励我与朋友穿不同风格的服装
+
+26. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+27. 4.*[单选题]
+1.朋友鼓励我退学
+2.朋友鼓励我完成大学或研究生学业
+
+28. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+29. 5.*[单选题]
+1.朋友鼓励我和朋友保持一致的观点和想法
+2.朋友鼓励我和朋友保持不同的观点和想法
+
+30. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+31. 6.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.尽量不与受欢迎的同学交朋友
+2.努力成为受欢迎的同学的朋友
+
+32. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+33. 7.*[单选题]
+1.朋友鼓励我真正擅长某件事（如运动，学业等）
+2.朋友鼓励我尽量不表现得比任何一位朋友更优秀
+
+34. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+35. 8.*[单选题]
+1.朋友鼓励我帮朋友们跑腿（如买东西，取快递）
+2.朋友鼓励我尽量不麻烦他人
+
+36. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+37. 9.*[单选题]
+1.朋友鼓励我不破坏公物
+2.朋友鼓励我破坏公物
+
+38. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+39. 10.*[单选题]
+1.朋友鼓励我违反校纪校规
+2.朋友鼓励我遵守校纪校规
+
+40. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+41. 11.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我吸烟
+2.朋友鼓励我不吸烟
+
+42. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+43. 12.*[单选题]
+1.朋友鼓励我节食减肥
+2.朋友鼓励我正常饮食
+
+44. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+45. 13.*[单选题]
+1.朋友鼓励我不服用致瘾药物
+2.朋友鼓励我服用致瘾药物
+
+46. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+47. 14.*[单选题]
+1.朋友鼓励我对父母言听计从
+2.朋友鼓励我违背父母的意愿
+
+48. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+49. 15.*[单选题]
+1.朋友鼓励我不偷任何东西
+2.朋友鼓励我偷东西
+
+50. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+51. 16.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我参加打架，斗殴
+2.朋友鼓励我远离打架斗殴
+
+52. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+53. 17.*[单选题]
+1.朋友鼓励我恶作剧，胡闹
+2.朋友鼓励我不恶作剧，不胡闹
+
+54. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+55. 18.*[单选题]
+1.朋友鼓励我说谎
+2.朋友鼓励我不说谎
+
+56. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+57. 19.*[单选题]
+1.朋友鼓励我在我父母规定的时间到家
+2.朋友鼓励我不必总按照父母规定的时间到家
+
+58. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+59. 20.*[单选题]
+1.朋友鼓励我回击长辈或对其不礼貌
+2.朋友鼓励我对长辈表现出尊重
+
+60. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+61. 21.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我忽视我父母让我做的事
+2.朋友鼓励我做我父母让我做的事
+
+62. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+63. 22.*[单选题]
+1.朋友鼓励我不让我的父母知道我去哪，要做什么
+2.朋友鼓励我告诉我的父母我去哪，要做什么
+
+64. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+65. 23.*[单选题]
+1.朋友鼓励我喝醉
+2.朋友鼓励我不喝醉
+
+66. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+67. 24.*[单选题]
+1.朋友鼓励我不参与家庭活动
+2.朋友鼓励我参与家庭活动
+
+68. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+69. 25.*[单选题]
+1.朋友鼓励我上课聊天
+2.朋友鼓励我认真听课
+
+70. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+71. 26.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我玩手机游戏
+2.朋友鼓励我不玩手机游戏
+
+72. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+73. 27.*[单选题]
+1.朋友鼓励我去KTV
+2.朋友鼓励我不去KTV
+
+74. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+75. 28.*[单选题]
+1.朋友鼓励我玩电脑游戏
+2.朋友鼓励我不玩电脑游戏
+
+76. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+77. 29.*[单选题]
+1.朋友鼓励我花钱，奢侈的
+2.朋友鼓励我不花钱，节约的
+
+78. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+79. 30.*[单选题]
+1.朋友鼓励我作一个紧跟时尚潮流的人
+2.朋友鼓励我不必作紧跟时尚潮流的人
+
+80. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+81. 31.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我看限制级图书或视频
+2.朋友鼓励我不看限制级图书或视频
+
+82. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+83. 32.*[单选题]
+1.朋友鼓励我要有亲密的异性朋友
+2.朋友鼓励我不交亲密的异性朋友
+
+84. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+85. 33.*[单选题]
+1.朋友鼓励我与异性有亲密行为（如亲吻，拥抱等）
+2.朋友鼓励我不与异性发生亲密行为
+
+86. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+87. 34.*[单选题]
+1.朋友鼓励我与异性一起出去玩
+2.朋友鼓励我不与异性一起出去玩
+
+88. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+89. 35.*[单选题]
+1.朋友鼓励我抄作业
+2.朋友鼓励我独立完成作业
+
+90. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+91. 36.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我做能给异性留下印象的事
+2.朋友鼓励我尽量不吸引异性的注意
+
+92. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+93. 37.*[单选题]
+1.朋友鼓励我捉弄同学（如起绰号等）
+2.朋友鼓励我不捉弄同学
+
+94. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+95. 38.*[单选题]
+1.朋友不过问我应该和谁出去
+2.朋友鼓励我只与那些他赞同的人出去
+
+96. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+97. 39.*[单选题]
+1.朋友鼓励我欺负同学
+2.朋友鼓励我帮助同学
+
+98. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+99. 40.*[单选题]
+1.朋友鼓励我共同排挤不喜欢的人
+2.朋友鼓励我不排挤任何人
+
+100. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+101. 41.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我尽量和朋友们一起行动
+2.朋友鼓励我享受孤独
+
+102. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+103. 42.*[单选题]
+1.朋友鼓励我不参与学校或班级的集体活动
+2.朋友鼓励我积极参加学校班级的集体活动
+
+104. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+105. 43.*[单选题]
+1.朋友鼓励我谈恋爱
+2.朋友鼓励我不谈恋爱
+
+106. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+107. 44.*[单选题]
+1.朋友鼓励我去网吧
+2.朋友鼓励我不去网吧
+
+108. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+109. 45.*[单选题]
+1.朋友鼓励我参与作弊
+2.朋友鼓励我不参与作弊
+
+110. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+111. 46.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我让老师反感
+2.朋友鼓励我讨老师喜欢
+
+112. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+113. 47.*[单选题]
+1.朋友鼓励我尽全力备考
+2.朋友鼓励我随意备考
+
+114. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+115. 48.*[单选题]
+1.朋友鼓励我不争取荣誉
+2.朋友鼓励我争取荣誉
+
+116. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+117. 49.*[单选题]
+1.朋友鼓励我不学习
+2.朋友鼓励我努力学习
+
+118. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+119. 50.*[单选题]
+1.朋友鼓励我尽量考高分
+2.朋友鼓励我尽量不要考得太高
+
+120. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+121. 51.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题]
+1.朋友鼓励我敞开心扉，甚至隐私
+2.朋友鼓励我拥有各自的隐私
+
+122. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+123. 52.*[单选题]
+1.朋友鼓励我旷课或逃课
+2.朋友鼓励我不旷课或逃课
+
+124. *[单选题]
+没有压力
+很少压力
+一些压力
+许多压力
+
+125. 1.我很满意学院老师与学生的互动*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+126. 2.我很满意同学之间合作和互动*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+127. 3.我很满意学校通过网络进行考评的方式*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+128. 4.我很满意网络作业的缴交方式*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+129. 5.我很满意成绩考核方式*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+130. 6.我很满意网络学习弹性和自主性*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+131. 7.我很满意学院课件学习资源的分享*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+132. 8.我很满意学院提供各种信息的及时明确性*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+133. 9.我很满意网络教学方式*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+134. 10.我很满意教材课件的呈现方式*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+135. 11.使用教学平台使我感觉很满意*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+136. 12.我很满意教师教学方式与态度*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+137. 13.我很满意整体网络学习成效*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+138. 14.我很满意网络教学品质*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+139. 15.我很满意网络教学环境*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+
+140. 16.我很满意课程的内容*[单选题]
+A非常同意
+B同意
+C一般
+D不同意
+E非常不同意
+</textarea>
+
+{% endraw %}
+
+### 大学生同辈压力和网络学习满意度情况调查问卷的主要内容
+
+以下是所有的问卷题目及其选项, 建议大家尽量使用"问卷星"作为网络问卷平台, 支持的题型更多, 更好用, 数据分析更方便。
+
+>>> 需要快速收集问卷数据请看下面
+
+
+{% raw %}
+<div class="qitem">
+<h4>第1题:您所在的年级*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>大一</td></tr>
+<tr><td>2</td><td>大二</td></tr>
+<tr><td>3</td><td>大三</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第2题:您的性别：*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>男</td></tr>
+<tr><td>2</td><td>女</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第3题:1.不喜欢所学专业[单选题][非必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第4题:2.学习方式发生变化（新的学习方法）*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第5题:3.学习时间紧张*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第6题:4.考试失败*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第7题:5.面临重修或重考*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第8题:6.转专业*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第9题:7.准备期末考试*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第10题:8.边学习边打工*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第11题:9.每天需要按时上课*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第12题:10.学习内容加深*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第13题:11.学习环境改变*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第14题:12.准备考研*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第15题:12.准备出国外语考试或考证*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第16题:14.学习内容单调或陈旧*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第17题:15.学习困难*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第18题:16.考试作弊被发现*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>是</td></tr>
+<tr><td>2</td><td>否</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第19题:例：我的朋友鼓励我做这些事,且受到鼓励后感到压力程度[单选题][选填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>抽烟</td></tr>
+<tr><td>2</td><td>不抽烟</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第20题:[单选题][选填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第21题:1.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我做与朋友不同风格的发型或打扮</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我做与朋友相似风格的发型或打扮</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第22题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第23题:2.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我借钱或借出心爱的东西</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不随意借钱或者心爱的东西</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第24题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第25题:3.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我与朋友穿相同风格的服装</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我与朋友穿不同风格的服装</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第26题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第27题:4.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我退学</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我完成大学或研究生学业</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第28题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第29题:5.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我和朋友保持一致的观点和想法</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我和朋友保持不同的观点和想法</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第30题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第31题:6.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.尽量不与受欢迎的同学交朋友</td></tr>
+<tr><td>2</td><td>2.努力成为受欢迎的同学的朋友</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第32题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第33题:7.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我真正擅长某件事（如运动，学业等）</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我尽量不表现得比任何一位朋友更优秀</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第34题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第35题:8.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我帮朋友们跑腿（如买东西，取快递）</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我尽量不麻烦他人</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第36题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第37题:9.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不破坏公物</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我破坏公物</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第38题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第39题:10.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我违反校纪校规</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我遵守校纪校规</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第40题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第41题:11.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我吸烟</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不吸烟</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第42题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第43题:12.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我节食减肥</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我正常饮食</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第44题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第45题:13.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不服用致瘾药物</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我服用致瘾药物</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第46题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第47题:14.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我对父母言听计从</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我违背父母的意愿</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第48题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第49题:15.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不偷任何东西</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我偷东西</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第50题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第51题:16.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我参加打架，斗殴</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我远离打架斗殴</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第52题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第53题:17.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我恶作剧，胡闹</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不恶作剧，不胡闹</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第54题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第55题:18.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我说谎</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不说谎</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第56题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第57题:19.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我在我父母规定的时间到家</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不必总按照父母规定的时间到家</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第58题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第59题:20.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我回击长辈或对其不礼貌</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我对长辈表现出尊重</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第60题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第61题:21.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我忽视我父母让我做的事</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我做我父母让我做的事</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第62题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第63题:22.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不让我的父母知道我去哪，要做什么</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我告诉我的父母我去哪，要做什么</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第64题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第65题:23.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我喝醉</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不喝醉</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第66题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第67题:24.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不参与家庭活动</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我参与家庭活动</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第68题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第69题:25.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我上课聊天</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我认真听课</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第70题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第71题:26.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我玩手机游戏</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不玩手机游戏</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第72题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第73题:27.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我去KTV</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不去KTV</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第74题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第75题:28.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我玩电脑游戏</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不玩电脑游戏</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第76题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第77题:29.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我花钱，奢侈的</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不花钱，节约的</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第78题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第79题:30.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我作一个紧跟时尚潮流的人</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不必作紧跟时尚潮流的人</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第80题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第81题:31.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我看限制级图书或视频</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不看限制级图书或视频</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第82题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第83题:32.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我要有亲密的异性朋友</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不交亲密的异性朋友</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第84题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第85题:33.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我与异性有亲密行为（如亲吻，拥抱等）</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不与异性发生亲密行为</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第86题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第87题:34.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我与异性一起出去玩</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不与异性一起出去玩</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第88题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第89题:35.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我抄作业</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我独立完成作业</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第90题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第91题:36.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我做能给异性留下印象的事</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我尽量不吸引异性的注意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第92题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第93题:37.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我捉弄同学（如起绰号等）</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不捉弄同学</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第94题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第95题:38.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友不过问我应该和谁出去</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我只与那些他赞同的人出去</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第96题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第97题:39.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我欺负同学</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我帮助同学</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第98题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第99题:40.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我共同排挤不喜欢的人</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不排挤任何人</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第100题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第101题:41.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我尽量和朋友们一起行动</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我享受孤独</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第102题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第103题:42.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不参与学校或班级的集体活动</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我积极参加学校班级的集体活动</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第104题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第105题:43.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我谈恋爱</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不谈恋爱</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第106题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第107题:44.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我去网吧</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不去网吧</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第108题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第109题:45.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我参与作弊</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不参与作弊</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第110题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第111题:46.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我让老师反感</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我讨老师喜欢</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第112题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第113题:47.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我尽全力备考</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我随意备考</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第114题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第115题:48.*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不争取荣誉</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我争取荣誉</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第116题:*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第117题:49.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我不学习</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我努力学习</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第118题:*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第119题:50.*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我尽量考高分</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我尽量不要考得太高</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第120题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第121题:51.我的朋友鼓励我做这些事,且受到鼓励后感到压力程度*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我敞开心扉，甚至隐私</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我拥有各自的隐私</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第122题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第123题:52.*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1.朋友鼓励我旷课或逃课</td></tr>
+<tr><td>2</td><td>2.朋友鼓励我不旷课或逃课</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第124题:*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>没有压力</td></tr>
+<tr><td>2</td><td>很少压力</td></tr>
+<tr><td>3</td><td>一些压力</td></tr>
+<tr><td>4</td><td>许多压力</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第125题:1.我很满意学院老师与学生的互动*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第126题:2.我很满意同学之间合作和互动*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第127题:3.我很满意学校通过网络进行考评的方式*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第128题:4.我很满意网络作业的缴交方式*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第129题:5.我很满意成绩考核方式*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第130题:6.我很满意网络学习弹性和自主性*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第131题:7.我很满意学院课件学习资源的分享*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第132题:8.我很满意学院提供各种信息的及时明确性*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第133题:9.我很满意网络教学方式*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第134题:10.我很满意教材课件的呈现方式*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第135题:11.使用教学平台使我感觉很满意*[单选题][不能为空]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第136题:12.我很满意教师教学方式与态度*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第137题:13.我很满意整体网络学习成效*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第138题:14.我很满意网络教学品质*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第139题:15.我很满意网络教学环境*[单选题][必答题]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+{% raw %}
+<div class="qitem">
+<h4>第140题:16.我很满意课程的内容*[单选题][必须填]</h4>
+
+<table class="table">
+<thead>
+<tr><td>选项值</td><td>选项标签</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A非常同意</td></tr>
+<tr><td>2</td><td>B同意</td></tr>
+<tr><td>3</td><td>C一般</td></tr>
+<tr><td>4</td><td>D不同意</td></tr>
+<tr><td>5</td><td>E非常不同意</td></tr>
+</tbody>
+</table>
+
+</div>
+{% endraw %}
+
+
+
+<!-- ---
+title: 心理教育医学的问卷免费下载
+date: 2019-05-23 08:59:15
+tags: [问卷星, 问卷网, 问卷下载, 问卷互填, 问卷设计, 问卷模板, 毕业问卷, 问卷数据分析, 问卷代填, ]
+--- -->
+
+### 联系方式
+ 
+如果你有以下需求都可以联系我们:
+
+- 有数据分析经验想跟我们合作
+- 问卷代填(大概0.1元一份问卷)
+- 问卷数据分析(文字结论和三线表格)
+- 有淘宝运营经验想跟我们合作
+- 问卷设计(帮你针对论文设计问卷)
+- 问卷互填(大学生问卷诚信互填群)
+
+你都可以联系我们, 加我们的扣扣(1^5^6^4^7^9^9^5^6^6(请自觉忽略"^"))
