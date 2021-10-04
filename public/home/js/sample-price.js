@@ -61,6 +61,8 @@ function samplePrice(){
 }
 
 function calculatePrice(){
+    $('a[href="#contact"]').click()
+    return
     $('#qqimg').hide()
     $('#wximg').hide()
     let url = $('input[name="queUrl"]').val()
