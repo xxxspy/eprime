@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            M-plus配对计量资料比较代做数据分析 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+配对计量资料比较:
+配对计量资料的比较，包括配对试验中同对(或同一)受试对象分别给予两种不同处理的">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  M-plus
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform" />
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <meta name="generator" content="Hexo 6.3.0"></head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/">Archives</a></li>
+        
+        
+        <li><a href="/">Categories</a></li>
+        
+        
+        <li><a href="/">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/"
+           class="header-toolbar-right"> 1584 </a>
+      </li>
+      <li>
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/"
+           class="header-toolbar-right"> 92 </a>
+      </li>
+      <li>
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/"
+           class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    需要问卷互填的请扫描二维码:
+    <span class="post-date float-right" title="Feb 14, 2020, 10:52:29 AM">
+      <i class="fa fa-pencil-square-o"></i>
+      an hour ago
+    </span>
+  </h3>
+  <li class="recent-post-item" style="height: 290px; text-align: center; padding:6px; width: 318px; border: none;">
+    <h4>
+      <a href="/2019/08/18/%E7%BD%91%E7%BB%9C%E9%97%AE%E5%8D%B7%E4%BB%A3%E5%A1%AB-%E6%A0%B7%E6%9C%AC%E6%94%B6%E9%9B%86-%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%9C%8D%E5%8A%A1/">
+        <img height="100%" width="90%" src="/images/群主QQ二维码.jpg">
+        <p style="align-content: center">加我进问卷互填QQ群</p>
+      </a>
+    </h4>
+  </li>
+  <li class="recent-post-item" style="height: 290px; text-align: center; padding:6px; width: 318px; border: none;">
+    <h4>
+      <a href="/2019/08/18/%E7%BD%91%E7%BB%9C%E9%97%AE%E5%8D%B7%E4%BB%A3%E5%A1%AB-%E6%A0%B7%E6%9C%AC%E6%94%B6%E9%9B%86-%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%9C%8D%E5%8A%A1/">
+        <img height="100%" width="90%" src="/images/微信二维码.jpg">
+        <p style="align-content: center">互填微信群-先加我-再拉进群</p>
+      </a>
+    </h4>
+  </li>
+  <li class="recent-post-item" style="height: 290px; text-align: center; padding:6px; width: 318px; border: none;">
+    <h4>
+      <a href="/2019/08/18/%E7%BD%91%E7%BB%9C%E9%97%AE%E5%8D%B7%E4%BB%A3%E5%A1%AB-%E6%A0%B7%E6%9C%AC%E6%94%B6%E9%9B%86-%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%9C%8D%E5%8A%A1/">
+        <img height="100%" width="90%" src="/2019/08/18/网络问卷代填-样本收集-数据采集服务/问卷数据收集.jpg">
+        <p style="align-content: center">有偿代填问卷</p>
+      </a>
+    </h4>
+  </li>
+</div>
+<div class="post-container container">
+
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1535661105000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1535661105000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/M-plus/">
+          M-plus
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>M-plus配对计量资料比较代做数据分析</h1>
+    <p><span></span><br><span id="more"></span></p>
+<h3 id="配对计量资料比较"><a href="#配对计量资料比较" class="headerlink" title="配对计量资料比较:"></a>配对计量资料比较:</h3>
+<div class="p1">配对计量资料的比较，包括配对试验中同对(或同一)受试对象分别给予两种不同处理的效果比较(如例2)，以及同一受试对象处理前后的比较(如例1)。前者的目的是推断两种处理的效果有无差别，后者的目的是推断某种处理有无作用。常用t检验以检验同对之差或前后之差的总体均数是否为0。若总体均数不为0，说明两种处理有差别，或某种处理有作用;反之，不能否定总体均数为0，则不能认为两种处理有差别，或某种处理有作用。此外，尚可用非参数法作检验，见条目“配对资料的符号秩和检验”。
+
+<p>t检验时统计量t值的计算步骤如下：
+
+</p><p>(1) 计算各对数据之差值d及d2，如表1第 (4)、(5)栏。
+
+</p><p>(2) 按式(1)计算差值的均数d，按式(2)计算差值均数的标准误S<img imgpath="" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0103.50.6.bmp">，</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0103.14.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0103.14.gif"></p>
+
+<p>式中n为样本含量，即对子数。<img imgpath="/CRFDPIC/R200612059/R200612059.0103.16.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0103.16.gif">为差值的标准差。
+
+</p><p>(3) 按式(3)求t值，</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0103.18.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0103.18.gif"></p>
+
+式中v为自由度。
+
+<p>算得t值后，查t界值表得P值，按所取检验水准作出推断结论。
+
+</p><p>例1 10例患者治疗前后的血红蛋白量见表1。问治疗对血红蛋白量有无作用?
+
+</p><p></p><p align="center">表1 矽肺患者经克矽平治疗前后的血红蛋白量(g/dl)</p>
+
+<p>H<sub>0</sub>： μd=0，
+
+</p><p>H<sub>1</sub>： μd≠0。
+
+</p><p>α=0.05。</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0104.1.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0104.1.gif"></p>
+
+查t界值表得0.5&gt;P&gt;0.2，按α=0.05水准不拒绝H<sub>0</sub>。故尚不能认为用克矽平治疗矽肺患者对血红蛋白量有作用。
+
+<p>例2 用大白鼠配成8对，每对分别饲以正常饲料和缺乏维生素E饲料，过一定时期，测得两组大白鼠肝中维生素A的含量见表2，试比较两组维生素A含量有无差别。
+
+</p><p></p><p align="center">表2 不同饲料组大白鼠肝中维生素A含量(iu/g)</p><p align="center"></p><div class="dtable"><table imgpath="/CRFDPIC/R200612059/R200612059.0104.3.png" class="viewtb" border="1"><tr valign="top"><td class="viewtd">
+
+大白鼠对号</td><td class="viewtd">
+
+正常饲料组</td><td class="viewtd">
+
+缺乏维生素E<br>
+
+饲料组</td><td class="viewtd">
+
+差值，d</td><td class="viewtd">
+
+d2</td></tr><tr valign="top"><td class="viewtd">
+
+1<br>
+
+2<br>
+
+3<br>
+
+4<br>
+
+5<br>
+
+6<br>
+
+7<br>
+
+8</td><td class="viewtd">
+
+3550<br>
+
+2000<br>
+
+3000<br>
+
+3950<br>
+
+3800<br>
+
+3750<br>
+
+3450<br>
+
+3050</td><td class="viewtd">
+
+2450<br>
+
+2400<br>
+
+1800<br>
+
+3200<br>
+
+3Eprime>Eprime
+EprimeEprime
+2700<br>EprimeEprime
+
+2500<br>
+
+1750</tEprimeclass="viewtd">
+
+1100<br>
+
+-400<br>
+
+1200<br>
+
+750<br>
+
+550<br>
+
+1050<br>
+
+950<br>
+
+1300</td><td class="viewtd">
+
+1210000<br>
+
+160000<br>
+
+1440000<br>
+
+562500<br>
+
+302500<br>
+
+1102500<br>
+
+902500<br>
+
+1690000</td></tr><tr valign="top"><td class="viewtd">
+
+合 计</td><td class="viewtd">
+
+…</td><td class="viewtd">
+
+…</td><td class="viewtd">
+
+6500</td><td class="viewtd">
+
+7370000</td></tr></table></div>
+
+<p>H<sub>0</sub>： μd=0，
+
+</p><p>H<sub>1</sub>： μd≠0。
+
+</p><p>α=0.05。</p><p align="center"><img imgpath="/CRFDPIC/R200612059/R200612059.0104.5.png" align="absmiddle" src="/CRFDPIC/R200612059/R200612059.0104.5.gif"></p>
+
+<p>查t界值表得0.01&gt;P&gt;0.001，按α=0.05水准拒绝H<sub>0</sub>，接受H<sub>1</sub>。可以认为两组鼠肝中维生素A含量有差别，正常饲料组比维生素E缺乏组的含量高。</p></div>
+
+<h3 id="M-plus中相关概念"><a href="#M-plus中相关概念" class="headerlink" title="M-plus中相关概念"></a><a href="/tags/M-plus/">M-plus</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>配对计量资料比较</strong>: 配对计量资料的比较,包括配对试验中同对(或同一)受试对象分别给予两种不同处理的效果比较(如例2),以及同一受试对象处理前后的比较(如例1)。前者的目的是推断两种处理的效果有无差别,后者的目的是推断某种处理有无作用。常用t检验以检验同对之差或前后之差的总体均数是否为0。…</li>
+<li><strong>样本均数与总体均数比较</strong>: 样本均数与已知某总体均数(一般为理论值、标准值或经大量观察所得的稳定数值等) 比较的目的是推断样本是否为某总体的随机样本,或样本所代表的总体均数与某总体均数是否相等。配对计量资料的比较也是样本均数与总体均数比较的一种形式 (参见 “配对计量资料比较”)。上述比较…</li>
+</ul>
+<h3 id="M-plus数据分析服务"><a href="#M-plus数据分析服务" class="headerlink" title="M-plus数据分析服务:"></a><a href="/tags/M-plus/">M-plus</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/EPRIME工作室M-plus代做服务详情/">M-plus技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于EPRIME工作室/">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/M-plus/">
+            M-plus
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-M-plus论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%A0%B7%E6%9C%AC%E5%B7%AE%E5%BC%82%E7%B3%BB%E6%95%B0/">
+                    样本差异系数-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E4%BA%8C%E9%98%B6%E6%B7%B7%E5%90%88%E4%B8%AD%E5%BF%83%E7%9F%A9/">
+                    二阶混合中心矩-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%9E%97%E5%BE%B7%E4%BC%AF%E6%A0%BC-%E8%8E%B1%E7%BB%B4%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/">
+                    林德伯格-莱维中心极限定理-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%85%B1%E8%BD%AD%E5%A4%A7%E5%9C%86%E5%BC%A7.1/">
+                    共轭大圆弧-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%A4%9A%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E7%9A%84%E5%8D%8F%E5%B7%AE%E9%98%B5%E6%A3%80%E9%AA%8C/">
+                    M-plus数据分析案例:多个正态总体的协差阵检验
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E7%9A%84%E5%8D%8F%E5%B7%AE%E9%98%B5%E6%A3%80%E9%AA%8C/">
+                    M-plus一个正态总体的协差阵检验代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%E5%AF%86%E5%BA%A6/">
+                    概率分布密度-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90.1/">
+                    M-plus频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%88%9D%E8%BD%A7%E7%83%AD%E9%94%AD%E7%8E%87/">
+                    初轧热锭率-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%8B%BE%E8%82%A1%E5%BD%A2/">
+                    M-plus勾股形代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E7%A6%BB%E5%8A%BF%E5%88%86%E6%9E%90.1/">
+                    离势分析-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E8%80%B6%E8%8C%A8%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%BF%AE%E6%AD%A3/">
+                    耶茨连续性修正-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.1/">
+                    非线性回归-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%A0%B7%E6%9C%AC%E7%82%B9/">
+                    M-plus样本点代做数据分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a target="_blank" rel="noopener" href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class='container' id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/31/数据分析服务-M-plus-配对计量资料比较/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      <a target="_blank" rel="noopener" href="http://www.beian.miit.gov.cn">京ICP备16033873号-1</>
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>

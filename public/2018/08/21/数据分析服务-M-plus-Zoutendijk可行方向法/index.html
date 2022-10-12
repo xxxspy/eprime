@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>
+            M-plus数据分析案例:Zoutendijk可行方向法 | 数爱笔记
+        </title>
+
+        <meta name="description" content="
+Zoutendijk可行方向法:
+适用于线性约束和非线性不等式约束的非线性规划的两种算法。
+
+1.">
+        <meta name="keywords" content="问卷互填,问卷互填群,问卷数据分析,问卷设计,问卷调查填写,eprime,e-prime,psychology,psychopy, spss, R, python, sas, amos">
+        
+            <meta name="keywords" content="
+  M-plus,运筹学
+  ">
+            
+
+                    <meta name="author" content="数据分析服务">
+
+                    <meta http-equiv="Cache-Control" content="no-transform" />
+                    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+                    <link rel="icon" type="image/x-icon" href="/images/head_3.png">
+                    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?297fa5f9441b3f1afb889fcf91bf6824";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>    
+
+
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <meta name="generator" content="Hexo 6.3.0"></head>
+
+    <body id="replica-app">
+        
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1 btn" id="search-label">搜索本站</label>
+          <input name="search" placeholder="搜索" id="search-input">
+
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/">Archives</a></li>
+        
+        
+        <li><a href="/">Categories</a></li>
+        
+        
+        <li><a href="/">Tags</a></li>
+        
+        
+        <li><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+        <li><a href="/tags/服务内容/" target="_blank">AboutUs</a></li>
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="/images/head_1.png"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="main-container">
+                <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/"
+           class="header-toolbar-right"> 1584 </a>
+      </li>
+      <li>
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/"
+           class="header-toolbar-right"> 92 </a>
+      </li>
+      <li>
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/"
+           class="header-toolbar-right"> 4 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">数爱笔记</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    需要问卷互填的请扫描二维码:
+    <span class="post-date float-right" title="Feb 14, 2020, 10:52:29 AM">
+      <i class="fa fa-pencil-square-o"></i>
+      an hour ago
+    </span>
+  </h3>
+  <li class="recent-post-item" style="height: 290px; text-align: center; padding:6px; width: 318px; border: none;">
+    <h4>
+      <a href="/2019/08/18/%E7%BD%91%E7%BB%9C%E9%97%AE%E5%8D%B7%E4%BB%A3%E5%A1%AB-%E6%A0%B7%E6%9C%AC%E6%94%B6%E9%9B%86-%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%9C%8D%E5%8A%A1/">
+        <img height="100%" width="90%" src="/images/群主QQ二维码.jpg">
+        <p style="align-content: center">加我进问卷互填QQ群</p>
+      </a>
+    </h4>
+  </li>
+  <li class="recent-post-item" style="height: 290px; text-align: center; padding:6px; width: 318px; border: none;">
+    <h4>
+      <a href="/2019/08/18/%E7%BD%91%E7%BB%9C%E9%97%AE%E5%8D%B7%E4%BB%A3%E5%A1%AB-%E6%A0%B7%E6%9C%AC%E6%94%B6%E9%9B%86-%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%9C%8D%E5%8A%A1/">
+        <img height="100%" width="90%" src="/images/微信二维码.jpg">
+        <p style="align-content: center">互填微信群-先加我-再拉进群</p>
+      </a>
+    </h4>
+  </li>
+  <li class="recent-post-item" style="height: 290px; text-align: center; padding:6px; width: 318px; border: none;">
+    <h4>
+      <a href="/2019/08/18/%E7%BD%91%E7%BB%9C%E9%97%AE%E5%8D%B7%E4%BB%A3%E5%A1%AB-%E6%A0%B7%E6%9C%AC%E6%94%B6%E9%9B%86-%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%9C%8D%E5%8A%A1/">
+        <img height="100%" width="90%" src="/2019/08/18/网络问卷代填-样本收集-数据采集服务/问卷数据收集.jpg">
+        <p style="align-content: center">有偿代填问卷</p>
+      </a>
+    </h4>
+  </li>
+</div>
+<div class="post-container container">
+
+  <h3>
+    <i class="fa fa-user-o"></i>
+    数据分析服务
+
+    <span class="post-date float-right" title="{{moment(1534852467000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1534852467000).fromNow()}}
+    </span>
+  </h3>
+  <ul class="tag-list clearfix">
+    
+      <li class="tag-list-item">
+        <a href="/tags/M-plus/">
+          M-plus
+        </a>
+      </li>
+      
+      <li class="tag-list-item">
+        <a href="/tags/%E8%BF%90%E7%AD%B9%E5%AD%A6/">
+          运筹学
+        </a>
+      </li>
+      
+  </ul>
+  <article class="post-content">
+    <h1>M-plus数据分析案例:Zoutendijk可行方向法</h1>
+    <p><span></span><br><span id="more"></span></p>
+<h3 id="Zoutendijk可行方向法"><a href="#Zoutendijk可行方向法" class="headerlink" title="Zoutendijk可行方向法:"></a>Zoutendijk可行方向法:</h3>
+<div class="p1">适用于线性约束和非线性不等式约束的非线性规划的两种算法。
+
+<p>1. 线性约束的情形：
+
+</p><p></p><p align="center">minf(X)</p>
+
+满足<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.21%5B4935d0084059%5D.gif"></p>
+
+其中A和E分别是m×n和l×n阶矩阵，b和e分别是m和l维列向量。Zoutendijk可行方向法的迭代步骤：
+
+<p>(1) 给定初始可行点X°，允许误差ε&gt;0，令k=0。
+
+</p><p>(2) 令<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.24%5B4c871b147055%5D.gif">使A<sub>1</sub>X<sup>k</sup>＝b<sub>1</sub>，A<sub>2</sub>X<sup>k</sup>&gt;b<sub>2</sub>。
+
+</p><p>(3) 求解线性规划问题</p><p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.27%5B40c7ec26b0d5%5D.gif"></p>
+
+这里P= (p<sub>1</sub>，p<sub>2</sub>，…，p<sub>n</sub>)<sup>T</sup>，得最优解P<sup>k</sup>。
+
+<p>(4) 若|▽f (X<sup>k</sup>)<sup>T</sup>P<sup>k</sup>|≤ε，则迭代停止，得X<sup>k</sup>为K-T点。否则，转 (5)。
+
+</p><p>(5) 令μ<sup>k</sup>＝A<sub>2</sub>X<sup>k</sup>-b<sub>2</sub>，<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.68.36.bmp"><sup>k</sup>＝-A<sub>2</sub>P<sup>k</sup>。
+
+</p><p>(6) 若<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1345.69.5.bmp"><sup>k</sup>≤0，则从X<sup>k</sup>出发，沿P<sup>k</sup>进行一维搜索</p><p align="center">minf(X<sup>k</sup>+λP<sup>k</sup>)=f(X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>)</p>
+
+令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>确定在点X<sup>k+1</sup>的起作用约束 (见“库恩-塔克条件”)，修改A<sub>1</sub>，A<sub>2</sub>及b<sub>1</sub>，b<sub>2</sub>，并令k=k+1，返回 (2)。否则转 (7)。
+
+<p>(7) 计算<img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1346.1%5B17d0ea173056%5D.gif">求解</p><p align="center">minf(X<sup>k</sup>+λP<sup>k</sup>)，0≤λ≤λ<sub>max</sub></p>
+
+得最优解λ<sub>k</sub>。令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>，确定在点X<sup>k+1</sup>的起作用约束，修改A<sub>1</sub>，A<sub>2</sub>及b<sub>1</sub>，b<sub>2</sub>，并令k=k+1，返回 (2)。
+
+<p>2. 非线性不等式约束情形：
+
+</p><p>minf(X)，满足g<sub>i</sub>(X)≥0，i=1，…，m. 其迭代步骤：
+
+</p><p>(1)给定初始可行点X°，允许误差ε&gt;0，令k= 0。
+
+</p><p>(2)设I (X<sup>k</sup>)={i|g<sub>i</sub>(X<sup>k</sup>)=0}。求解线性规划问题
+
+</p><p></p><p align="center">min Z</p>
+
+<p align="center"><img align="absmiddle" src="/CRFDPIC/R200806043/R200806043.1346.4%5B12f3ee22d09d%5D.gif"></p>
+
+得最优解 (Z<sup>k</sup>，P<sup>k</sup>)。
+
+<p>(3)若|Z<sup>k</sup>|≤ε，则X<sup>k</sup>是Fritz John点，迭代停止;否则转 (4)。
+
+<Eprime(4) 解一维搜索问题Eprime
+EprimeEprime
+</p><p></p><p align="ceEprimeminf(X<sup>k</supEprimeup>k</sup>)，0≤λ≤λ<sub>max</sub></p>
+
+其中λ<sub>max</sub>＝max{λ|g<sub>i</sub>(X<sup>k</sup>+λP<sup>k</sup>)≥0}，得最优解λ<sub>k</sub>。令X<sup>k+1</sup>＝X<sup>k</sup>+λ<sub>k</sub>P<sup>k</sup>，k=k+1返回 (2)。</div>
+
+<p>Eprime</p>
+<h3 id="M-plus中相关概念"><a href="#M-plus中相关概念" class="headerlink" title="M-plus中相关概念"></a><a href="/tags/M-plus/">M-plus</a>中<a href="/categories/数据分析服务">相关概念</a></h3><ul>
+<li><strong>Zoutendijk可行方向法</strong>: 适用于线性约束和非线性不等式约束的非线性规划的两种算法。1. 线性约束的情形:minf(X)满足其中A和E分别是m×n和l…</li>
+<li><strong>可行方向法</strong>: 从可行点出发,沿下降可行方向进行一维搜索获得一新的目标函数下降的可行点,如此反复以逐步寻求约束非线性规划问题最优解的一类下降算法。包含卓坦狄克 (Zoutendijk) 可行方向法、梯度投影法、简约梯度法和广义简约梯度法等,常特指卓坦狄克可行方向法。…</li>
+</ul>
+<h3 id="M-plus参考文献"><a href="#M-plus参考文献" class="headerlink" title="M-plus参考文献"></a><a href="/tags/M-plus/">M-plus</a><a href="/categories/数据分析服务/">参考文献</a></h3><ul>
+<li>[1]  王月娇;刘三阳; 生物地理学优化算法中基于Zoutendijk可行方向法的变异算子设计. 浙江大学学报(理学版) ,2018,(01)</li>
+<li>[2]  刘建美; 基于不同线搜索技术的改进Zoutendijk可行方向法及Matlab实现——浅谈在交通配流问题上的应用. 数学的实践与认识 ,2014,(21)</li>
+<li>[3]  李晓;杨虹;高红霞; 浅谈Zoutendijk可行方向法对焊接工字钢的优化设计. 四川建筑 ,2011,(04)</li>
+<li>[4]  王佳佳; 线性约束情形下Zoutendijk可行方向法的改进. 科技信息 ,2009,(05)</li>
+<li>[5]  许宏洲;王全凤; Zoutendijk可行方向法可能失效的原因及其对策. 基建优化 ,2005,(01)</li>
+</ul>
+<h3 id="M-plus数据分析服务"><a href="#M-plus数据分析服务" class="headerlink" title="M-plus数据分析服务:"></a><a href="/tags/M-plus/">M-plus</a><a href="/categories/数据分析服务/">数据分析服务</a>:</h3><p><a href="http://jupyter. cn/">EPRIME工作室</a>专注于数据分析服务。<br>为科研人员提供<a href="http://jupyter. cn/2018/08/18/EPRIME工作室M-plus代做服务详情/">M-plus技术支持</a>, 订单式, 先服务后收费, 不满意不收费。<br>关于我们的简介可以访问<a href="http://jupyter. cn/2018/08/17/关于EPRIME工作室/">这里</a>。</p>
+<p>QQ: 3597392976</p>
+<p>Email: eprime[at]163.com</p>
+
+  </article>
+  
+<div class="related-posts">
+    <h3>
+        <a href="/tags/M-plus/">
+            M-plus
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-M-plus论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%A0%B7%E6%9C%AC%E5%B7%AE%E5%BC%82%E7%B3%BB%E6%95%B0/">
+                    样本差异系数-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E4%BA%8C%E9%98%B6%E6%B7%B7%E5%90%88%E4%B8%AD%E5%BF%83%E7%9F%A9/">
+                    二阶混合中心矩-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%9E%97%E5%BE%B7%E4%BC%AF%E6%A0%BC-%E8%8E%B1%E7%BB%B4%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/">
+                    林德伯格-莱维中心极限定理-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%85%B1%E8%BD%AD%E5%A4%A7%E5%9C%86%E5%BC%A7.1/">
+                    共轭大圆弧-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%A4%9A%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E7%9A%84%E5%8D%8F%E5%B7%AE%E9%98%B5%E6%A3%80%E9%AA%8C/">
+                    M-plus数据分析案例:多个正态总体的协差阵检验
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E7%9A%84%E5%8D%8F%E5%B7%AE%E9%98%B5%E6%A3%80%E9%AA%8C/">
+                    M-plus一个正态总体的协差阵检验代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%E5%AF%86%E5%BA%A6/">
+                    概率分布密度-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90.1/">
+                    M-plus频域分析代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%88%9D%E8%BD%A7%E7%83%AD%E9%94%AD%E7%8E%87/">
+                    初轧热锭率-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E5%8B%BE%E8%82%A1%E5%BD%A2/">
+                    M-plus勾股形代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E7%A6%BB%E5%8A%BF%E5%88%86%E6%9E%90.1/">
+                    离势分析-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E8%80%B6%E8%8C%A8%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%BF%AE%E6%AD%A3/">
+                    耶茨连续性修正-M-plus数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.1/">
+                    非线性回归-M-plus实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E6%A0%B7%E6%9C%AC%E7%82%B9/">
+                    M-plus样本点代做数据分析
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+<div class="related-posts">
+    <h3>
+        <a href="/tags/运筹学/">
+            运筹学
+        </a>
+    </h3>
+    <div class="page_list">
+        
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-M-plus论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-STATA-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    STATA数据分析案例:线性规划典范型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/29/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-Python-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-Python论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-Eviews-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-Eviews实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-R-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-R实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-SPSS-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-SPSS数据可视化代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/27/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-SAS-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B.1/">
+                    线性规划典范型-SAS论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/11/01/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-SAS-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B/">
+                    SAS数据分析案例:线性规划典范型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/10/31/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-M-plus-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B/">
+                    线性规划典范型-M-plus论文数据分析代做
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/10/31/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-Python-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B/">
+                    线性规划典范型-Python实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/10/30/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-STATA-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B/">
+                    线性规划典范型-STATA实证分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/10/30/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-SPSS-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B/">
+                    SPSS数据分析案例:线性规划典范型
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/10/30/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-Eviews-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B/">
+                    Eviews线性规划典范型代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/10/30/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-R-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%B8%E8%8C%83%E5%9E%8B/">
+                    R线性规划典范型代做数据分析
+                </a>
+            </div>
+            
+            <div class="archive-post">
+                <a href="/2018/09/01/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%8D%E5%8A%A1-Python-%E7%A4%BE%E4%BC%9A%E8%AE%A1%E9%87%8F%E5%AD%A6/">
+                    社会计量学-Python论文数据分析代做
+                </a>
+            </div>
+            
+    </div>
+</div>
+
+
+<div class="related-posts hidden-sm-down">
+    <h3>
+        <a href="#">
+            友商赞助
+        </a>
+    </h3>
+    <div class="page_list">
+        <div class="archive-post">
+            <a href="http://jupyter.cn">
+                  问卷大全问卷案例下载
+            </a>
+            <a target="_blank" rel="noopener" href="https://mlln.cn/2019/05/09/2019%E5%B9%B4%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%97%AE%E5%8D%B7%E4%BA%92%E5%A1%AB%E7%BE%A4%E6%8E%A8%E8%8D%90/">
+                大学生互填问卷群推荐
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<div class='container' id="gitalk-container"></div>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '131c92915a8e4a9d4b2b',
+        clientSecret: '52fb195416ac13af146a07a68394ba6a3c538fe4',
+        repo: 'eprime',
+        owner: 'xxxspy',
+        admin: ['xxxspy'],
+        distractionFreeMode: true,
+        id: md5('2018/08/21/数据分析服务-M-plus-Zoutendijk可行方向法/')
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
+            </div>
+            
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <a href="http://jupyter.cn" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li><a href="/tags/服务内容/">© 2018 数据分析服务</a></li>
+      <li><a href="http://jupyter.cn">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      <a target="_blank" rel="noopener" href="http://www.beian.miit.gov.cn">京ICP备16033873号-1</>
+    </div>
+  </footer>
+</div>
+
+                
+<script>
+  (function() {
+    var input = document.getElementById('search-input');
+    var label = document.getElementById('search-label')
+    //eprime site:mlln.cn
+    label.onclick= function(ev){
+      var key = input.value;
+      var shortUrl = 'http://jupyter.cn'.replace('http://', '').replace('https://', '').replace('www.', '');
+      var keyWords = `${key} site:${shortUrl}`;
+      var dest = `https://www.baidu.com/s?wd=${keyWords}`
+      window.open(dest)
+    }
+    
+  })();
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+    </body>
+
+</html>
